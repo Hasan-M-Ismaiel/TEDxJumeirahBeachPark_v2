@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+   
+    RewriteEngine On
+
+   
+    RewriteRule ^(.*)$ public/$1 [L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^tedxjumeirahbeachpark\.com [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+
+   
+</IfModule>
