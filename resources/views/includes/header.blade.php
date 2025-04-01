@@ -52,6 +52,7 @@
                                 </li>
                                         <li class="nav-item"><a href="{{ route('home') }}">Blog</a></li>
                                         <li class="nav-item"><a href="{{ route('podcasts') }}">Podcast</a></li>
+                                        <li class="nav-item"><a href="{{ route('galary') }}">Galary</a></li>
                                         <li class="nav-item"><a href="#footer">Contact</a></li>
                                         
                                     </ul>

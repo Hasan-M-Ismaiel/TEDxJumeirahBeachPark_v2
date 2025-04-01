@@ -135,7 +135,7 @@
         </div>
     </div>
     <div class="section-title mt-3">
-        <p class="wow fadeInUp" data-wow-delay=".6s"> Human exploration continues to drive innovation. The near future of humanity in space is opening up new doors and economic opportunities. Houston's history in helping lead the efforts and its impact on the economy and commerce will continue to evolve.
+        <p class="wow fadeInUp" data-wow-delay=".6s"> Human exploration continues to drive innovation. The near future of humanity in space is opening up new doors and economic opportunities.
         </p>
     </div>
     <div class="row align-items-center justify-content-center">

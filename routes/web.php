@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\SponserController;
 
 use App\Http\Controllers\Admin\VolunteerController;
 use App\Http\Controllers\Admin\VolunteerStatusMessageController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MainHomeController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PodcastController;
@@ -22,6 +23,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\SponserStatusMessageController;
 use App\Http\Controllers\StoreFormInformationController;
 use App\Http\Controllers\UploadController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,9 +55,12 @@ Route::get('/', [MainHomeController::class, 'main'])->name('main');
 Route::get('/aboutTed', [MainHomeController::class, 'aboutTed'])->name('aboutTed');
 Route::get('/members', [MainHomeController::class, 'members'])->name('members');
 Route::get('/galary', [MainHomeController::class, 'galary'])->name('galary');
-Route::get('/single', [MainHomeController::class, 'single'])->name('single');
+Route::get('/category/{category}', [MainHomeController::class, 'images'])->name('images');
+
 Route::get('/team', [MainHomeController::class, 'team'])->name('team');
 Route::get('/teammembers/{teammember}', [MainHomeController::class, 'teammember'])->name('teammember');
+
+
 
 
 Route::get('/TEDx-event-1', [MainHomeController::class, 'tedx_event_1'])->name('tedx_event_1');

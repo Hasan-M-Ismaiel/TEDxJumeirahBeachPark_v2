@@ -31,14 +31,13 @@
                         A TEDx talk should center on an idea.
                     </h2> -->
                     <p class="wow fadeInUp" data-wow-delay=".6s">
-                        If you want to be a speaker who will give a powerful talk that foster the love of learning in the audience, then don’t miss this opportunity!
-                        A TEDx talk should center on an idea.
+                        some description realted to this page in general for all team members... 
                     </p>
                     <br>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">A great, well-formed idea can be one of two things: it can be something that’s new and surprising; an idea or invention that the audience has never heard about or it can be a great basic idea (that the audience has maybe already heard) with a compelling new argument behind it that challenges beliefs and perspectives.
+                    <p class="wow fadeInUp" data-wow-delay=".6s">continue description...
                     </p>
                     <br>
-                    <strong>Be a TEDx speaker and inspire the world!</strong>
+                    <strong>continue description...</strong>
                 </div>
             </div>
         </div>
@@ -46,7 +45,7 @@
             <main class="main">
 
                 <!-- Portfolio Details Section -->
-                <section id="portfolio-details" class="portfolio-details section">
+                <section id="portfolio-details" class="portfolio-details">
                     <div class="container" data-aos="fade-up" data-aos-delay="100">
                         <div class="row gy-4">
                             <div class="col-lg-8">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Event;
 use App\Models\Teammember;
 
@@ -208,14 +209,16 @@ class MainHomeController extends Controller
     {
         $events = Event::all();
         $event = $events->first();
-        return view('includes/galary', ['event' => $event]);
+        $categories = Category::all();
+        return view('includes/galary', ['event' => $event, 'categories' => $categories]);
     }
 
-    public function single()
+    public function images(Category $category)
     {
         $events = Event::all();
         $event = $events->first();
-        return view('includes/single', ['event' => $event]);
+        $images= $category->images;
+        return view('includes/single', ['event' => $event, 'images' => $images]);
     }
 
 }

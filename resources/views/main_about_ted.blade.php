@@ -37,7 +37,7 @@
                      <br>
                      <p class="wow fadeInUp" data-wow-delay=".6s">Dubai's skyline is a harmonious blend of innovation and heritage. These architectural marvels mirror the UAE's ethos—a fusion of tradition and modernity. Behind Dubai's architectural allure lies the golden ratio—a mathematical concept that defines beauty. At TEDxJumeirahBeachPark, we explore how mathematics and aesthetics intersect, creating a symphony of balance and allure. </p>
                      <br>
-                     <p class="wow fadeInUp" data-wow-delay=".6s">Feel the pulse of diversity, witness architectural wonders, and embrace the golden ratio. Join us on November 24, 2024, at Dubai Jumeirah Beach Park.</p>
+                     <p class="wow fadeInUp" data-wow-delay=".6s">Feel the pulse of diversity, witness architectural wonders, and embrace the golden ratio.</p>
                  </div>
             <!-- </div> -->
             </div>
