@@ -160,66 +160,18 @@
                                         <div class="image-wrap-2">
                                             <div class="image-info">
                                                 <h2 class="mb-3">{{$category->title}}</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
+                                                <a href="{{ route('images', [$category->id]) }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
                                             </div>
-                                            <img src="asset('{{$category->path}}')" alt="Image" class="img-fluid">
+                                            <img src="{{ asset($category->path) }}" alt="Image" class="img-fluid">
                                         </div>
                                     </div>
                                     @endforeach
-
-                                    <div class="col-lg-4">
-                                        <div class="image-wrap-2">
-                                            <div class="image-info">
-                                                <h2 class="mb-3">TEDxJBP Event</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                                            </div>
-                                            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="image-wrap-2">
-                                            <div class="image-info">
-                                                <h2 class="mb-3">Backstage</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                                            </div>
-                                            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="image-wrap-2">
-                                            <div class="image-info">
-                                                <h2 class="mb-3">Speakers</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                                            </div>
-                                            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="image-wrap-2">
-                                            <div class="image-info">
-                                                <h2 class="mb-3">Team members</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                                            </div>
-                                            <img src="images/img_5.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="image-wrap-2">
-                                            <div class="image-info">
-                                                <h2 class="mb-3">Others</h2>
-                                                <a href="{{ route('single') }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
-                                            </div>
-                                            <img src="images/img_6.jpg" alt="Image" class="img-fluid">
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
