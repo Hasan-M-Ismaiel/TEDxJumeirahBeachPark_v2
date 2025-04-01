@@ -268,6 +268,12 @@
     </div>
 </section>
 
+
+<!-- Start Call Action Area -->
+@include('includes.call_action')
+<!-- End Call Action Area -->
+
+
 <script>
     let video = document.querySelector('video');
     let isPaused = false;
