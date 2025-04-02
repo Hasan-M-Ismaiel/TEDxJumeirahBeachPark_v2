@@ -9,33 +9,31 @@
     <div class="main__circle3"></div>
     <div class="main__circle4"></div>
     <div class="container d-flex justify-content-start">
-        <div class="row ">
-            <div class="col-lg-12 offset-lg-12 col-md-12 col-12">
-                <div class="hero-content">
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                        Beauty of Diversity
-                    </h2>
-                    <p class="wow fadeInUp" style="font-size: 20px;" data-wow-delay=".6s">Golden Ratio’s Hidden Patterns
-                    </p>
-                    <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Dubai,
-                        UAE
-                    </h5>
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-12">
-                            <div class="section-title mb-0">
-                                <div class="button mt-4 ms-0" style="float: center;">
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <!-- End Hero Area -->
-
+<div class="container-fluid mt-3">
+    <div class="tedx-banner">
+        <div class="logo-container">
+            <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
+        </div>
+        <div class="theme">
+            Theme: Beauty of Diversity: The Golden<br>
+            Ratio's Hidden Patterns
+        </div>
+        <div class="event-info">
+            <div class="event-date">
+                This event occurred on<br>
+                February 23, 2025
+            </div>
+            <div class="event-location">
+                Dubai, Dubayy<br>
+                United Arab Emirates
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Start Features Area -->
 @include('includes.features_area')
 <!-- /End Features Area -->

@@ -2170,7 +2170,7 @@ ol {
   position: relative;
   background-color: #101130;
   padding: 200px 0 150px 0;
-  padding-bottom: 240px;
+  padding-bottom: 500px;
   background-image: url("../images/hero/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -2322,6 +2322,41 @@ ol {
   .hero-area .hero-content .button .btn {
     width: 80%;
   }
+}
+
+
+/* this event is occured on 23 feb */
+.tedx-banner {
+  background-color: #111; /* Dark background */
+  color: #fff;
+  padding: 30px;
+}
+
+.logo-container {
+  margin-bottom: 5px;
+}
+
+.tedx-subtitle {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.theme {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.event-date, .event-location {
+  line-height: 1.5;
 }
 
 /*======================================
