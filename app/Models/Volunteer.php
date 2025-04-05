@@ -17,7 +17,8 @@ class Volunteer extends Model
         'nationality',
         
         'residence_country',
-        'birthday', 
+        'birthday',
+        'education',
         'work', 
         'linkedin_account', 
         'other_account',
