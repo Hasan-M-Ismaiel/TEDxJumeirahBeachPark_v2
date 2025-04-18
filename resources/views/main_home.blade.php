@@ -40,13 +40,13 @@
 <div class="logos overflow-hidden position-relative d-flex mt-2">
     <div class="logos-slide d-flex" style="white-space:nowrap;">
         @foreach ($images as $image)
-        <!-- <section class="card_ ml-1 mr-1 c1 text-bg-warning py-2 px-2 rounded-3 d-flex justify-content-center align-items-center flex-column">
+        <section class="card_ ml-1 mr-1 c1 text-bg-warning py-2 px-2 rounded-3 d-flex justify-content-center align-items-center flex-column">
             <div class="d-flex mt-5">
                 <span class="s1">
-                    <img width="150px" src="{{ asset($image->path)}}" alt="">
+                    <img width="150px" src="{{ asset($image->path)}}" loading="lazy" alt="">
                 </span>
             </div>
-        </section> -->
+        </section>
         @endforeach
     </div>
 </div>

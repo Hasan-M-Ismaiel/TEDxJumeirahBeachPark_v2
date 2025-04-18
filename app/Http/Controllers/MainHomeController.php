@@ -24,8 +24,9 @@ class MainHomeController extends Controller
             return $category->images;
         });
     
+        $images_ = $images->take(20); // Just the first 20 images overall
         $event = $events->first();
-        return view('main_home', ['event' => $event, 'images' => $images]);
+        return view('main_home', ['event' => $event, 'images' => $images_]);
     }
 
     public function about()
