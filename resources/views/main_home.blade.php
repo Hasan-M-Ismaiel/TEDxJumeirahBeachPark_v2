@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Start Hero Area -->
-<section class="hero-area">
+<section class="hero-area" loading="lazy">
     <div class="main__circle"></div>
     <div class="main__circle2"></div>
     <div class="main__circle3"></div>
@@ -14,7 +14,7 @@
 <div class="container-fluid mt-3">
     <div class="tedx-banner">
         <div class="logo-container">
-            <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
+            <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" loading="lazy" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
         </div>
         <div class="theme">
             Theme: Beauty of Diversity: The Golden<br>
@@ -88,7 +88,7 @@
         <div class="section-title row">
             <div class="col-lg-6  col-md-8 col-12 border-end">
                 <a class="navbar-brand" href="{{ route('main') }}">
-                    <img src="{{ asset('assets_main/assets/images/logo/logo-black.png') }}" style="width:500px; height:auto" alt="Logo">
+                    <img src="{{ asset('assets_main/assets/images/logo/logo-black.png') }}" loading="lazy" style="width:500px; height:auto" alt="Logo">
                 </a>
             </div>
             <div class="col-lg-6  col-md-4 col-12 d-flex  align-items-center justify-content-center">
@@ -133,7 +133,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-0.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-0.png);">
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <span>Design partner</span>
@@ -143,7 +143,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-2.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-2.png);">
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <span>Speakers' Coaching Partner</span>
@@ -153,7 +153,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-1.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1.png);">
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <span>Media partner</span>
@@ -162,7 +162,7 @@
                     </div>
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-5.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy"style="background-image: url(assets_main/assets/carosel/images/work-5.png);">
                                 <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
                                     <span class="ion-ios-search"></span>
                                 </a> -->
@@ -175,7 +175,7 @@
                     </div>
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-4.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded"loading="lazy"  style="background-image: url(assets_main/assets/carosel/images/work-4.png);">
                                 <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
                                     <span class="ion-ios-search"></span>
                                 </a> -->
@@ -188,7 +188,7 @@
                     </div>
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-3.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-3.png);">
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <span>Community Partner</span>
@@ -198,7 +198,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-9.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-9.png);">
 
                             </div>
                             <div class="text pt-3 w-100 text-center">
@@ -209,7 +209,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-30.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-30.png);">
 
                             </div>
                             <div class="text pt-3 w-100 text-center">
@@ -220,7 +220,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-1000.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1000.png);">
 
                             </div>
                             <div class="text pt-3 w-100 text-center">
@@ -231,7 +231,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-10001.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-10001.png);">
 
                             </div>
                             <div class="text pt-3 w-100 text-center">
@@ -241,7 +241,7 @@
                     </div>
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-3300.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-3300.png);">
 
                             </div>
                             <div class="text pt-3 w-100 text-center">
@@ -269,7 +269,7 @@
                 <div class="featured-carousel owl-carousel">
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-1012.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded"  loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1012.png);">
                                 <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
                                     <span class="ion-ios-search"></span>
                                 </a> -->
@@ -285,7 +285,7 @@
 
                     <div class="item">
                         <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets_main/assets/carosel/images/work-550.png);">
+                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-550.png);">
                                 <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
                                     <span class="ion-ios-search"></span>
                                 </a> -->

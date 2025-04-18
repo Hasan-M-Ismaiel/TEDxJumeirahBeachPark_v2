@@ -20,7 +20,7 @@
                             <div class="single-speaker">
                                 <div class="top-content">
                                     <div class="image">
-                                        <img src="{{ asset('assets_main/assets/images/speakers/1.png') }}" alt="#">
+                                        <img src="{{ asset('assets_main/assets/images/speakers/1.png') }}" loading="lazy" alt="#">
                                     </div>
                                     <ul class="social">
                                         <li class="linkedin"><a href="http://www.linkedin.com/in/alaadalghan" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>

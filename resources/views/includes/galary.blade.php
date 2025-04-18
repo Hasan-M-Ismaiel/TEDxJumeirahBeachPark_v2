@@ -159,7 +159,7 @@
                                                 <h2 class="mb-3">{{$category->title}}</h2>
                                                 <a href="{{ route('images', [$category->id]) }}" class="btn btn-outline-white py-2 px-4">More Photos</a>
                                             </div>
-                                            <img src="{{ asset($category->path) }}" alt="Image" class="img-fluid">
+                                            <img src="{{ asset($category->path) }}" loading="lazy" alt="Image" class="img-fluid">
                                         </div>
                                     </div>
                                     @endforeach
