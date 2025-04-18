@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-6 col-12 wow fadeIn" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
                 <div class="content">
-                    <h2 class="mb-3">Podcast List</h2>
+                    <h2 class="mb-3">Beayond The Stage Podcast Series</h2>
                     <div class="accordion" id="accordionExample">
                         @foreach ($podcasts as $podcast)
                         <div class="accordion-item" id="{{$loop->iteration}}">

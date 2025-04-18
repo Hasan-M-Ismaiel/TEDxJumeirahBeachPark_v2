@@ -141,8 +141,9 @@
     <div class="row align-items-center justify-content-center">
         <div class="col-12">
             <div class="section-title mb-0">
+                <p class="wow fadeInUp mt-5" data-wow-delay=".4s">🎤 Watch Podcast Interview ⬇️
                 <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="{{ route('podcasts') }}" class="btn" style="color: white;">Listen to the podcast!</a>
+                    <a href="https://www.youtube.com/watch?v=2TTJrjL-Cxs" target="_blank" class="btn" style="color: white;">YouTube</a>
                 </div>
             </div>
         </div>

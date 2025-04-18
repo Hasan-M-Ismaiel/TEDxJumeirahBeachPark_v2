@@ -2170,7 +2170,10 @@ ol {
   position: relative;
   background-color: #101130;
   padding: 200px 0 150px 0;
-  padding-bottom: 500px;
+  margin-top: 13px;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding-bottom: 300px;
   background-image: url("../images/hero/hero-bg.png");
   background-size: cover;
   background-position: center;

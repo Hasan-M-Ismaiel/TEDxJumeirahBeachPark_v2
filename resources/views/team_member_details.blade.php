@@ -33,11 +33,6 @@
                     <p class="wow fadeInUp" data-wow-delay=".6s">
                         some description realted to this page in general for all team members... 
                     </p>
-                    <br>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">continue description...
-                    </p>
-                    <br>
-                    <strong>continue description...</strong>
                 </div>
             </div>
         </div>
@@ -48,7 +43,7 @@
                 <section id="portfolio-details" class="portfolio-details">
                     <div class="container" data-aos="fade-up" data-aos-delay="100">
                         <div class="row gy-4">
-                            <div class="col-lg-8">
+                            <div class="col-lg-4">
                                 <div class="portfolio-details-slider swiper init-swiper">
                                     <div class="swiper-wrapper align-items-center">
                                         <div class="swiper-slide">
@@ -58,7 +53,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-8">
                                 <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
                                     <h3>Team member information</h3>
                                     <ul>
@@ -76,7 +71,7 @@
                                         @elseif ($member->subteam == "filter-production")
                                         <li><strong>Team</strong>: Production team </li>
                                         @endif
-                                        <li><strong>LinkedIn Account</strong>: <a href="#">linkedin</a></li>
+                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $member->caption }}">linkedin</a></li>
                                     </ul>
 
                                 </div>

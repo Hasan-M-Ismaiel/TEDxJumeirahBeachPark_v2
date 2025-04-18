@@ -190,7 +190,7 @@ class MainHomeController extends Controller
     public function team()
     {
         $events = Event::all();
-        $members = Teammember::inRandomOrder()->get();
+        $members = Teammember::all();
         $event = $events->first();
         return view('main_team', [
             'event' => $event,

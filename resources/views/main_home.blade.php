@@ -8,9 +8,7 @@
     <div class="main__circle2"></div>
     <div class="main__circle3"></div>
     <div class="main__circle4"></div>
-    <div class="container d-flex justify-content-start">
-
-    </div>
+    <div class="container d-flex justify-content-start"></div>
 </section>
 <!-- End Hero Area -->
 <div class="container-fluid mt-3">
@@ -28,7 +26,11 @@
                 February 23, 2025
             </div>
             <div class="event-location">
-                Dubai, Dubayy<br>
+                <i class="bi bi-geo-alt-fill" style = "color:red;"></i>
+                <strong>Radisson RED Hotel</strong> |
+                <strong>Dubai Silicon Oasis</strong>
+                <br>
+                Dubai, Dubayy | 
                 United Arab Emirates
             </div>
         </div>
