@@ -17,8 +17,15 @@ class MainHomeController extends Controller
     public function main()
     {
         $events = Event::all();
+        $categories = Category::with('images')->get(); // Eager load images with categories
+    
+        // Gather all images from all categories
+        $images = $categories->flatMap(function ($category) {
+            return $category->images;
+        });
+    
         $event = $events->first();
-        return view('main_home', ['event' => $event]);
+        return view('main_home', ['event' => $event, 'images' => $images]);
     }
 
     public function about()

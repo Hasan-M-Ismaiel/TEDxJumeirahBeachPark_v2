@@ -4475,3 +4475,35 @@ only screen and (min-width: 1400px) {
   width: 100%;
   height: 100%;
 }
+
+/* image photo strip */
+.logos-slide {
+  white-space: nowrap;
+  animation: 150s slide infinite linear;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide img {
+  height: 150px;
+  height: 150px;
+  margin: 0 50px;
+}
+
+.card_ {
+  white-space: wrap;
+  min-width: 200px;
+  margin: 0 5px;
+}
+
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(-100%);
+  }
+}
