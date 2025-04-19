@@ -13,10 +13,9 @@
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="isotope-layout" data-default-filter=".filter-core-team" data-layout="masonry" data-sort="original-order">
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-core-team">Core team</li>
+                        <li data-filter=".filter-core-team" class="filter-active">Core team</li>
                         <li data-filter=".filter-marketing">Marketing & Communication team</li>
                         <li data-filter=".filter-production">Production team</li>
                         <li data-filter=".filter-operation-logistics">Operations & Logistics team</li>
