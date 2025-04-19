@@ -51,7 +51,7 @@
     </div>
 </div>
 <div class="section-title">
-    <p class="wow fadeInUp mt-5" data-wow-delay=".4s">👀 View more photos on <strong>Flickr</strong>
+    <p class="wow fadeInUp mt-5" data-wow-delay=".4s">View more photos on <strong>Flickr</strong>
     <div class="button">
         <a href="https://www.flickr.com/photos/201995414@N03/" class="btn" target="_blank">Flickr
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">

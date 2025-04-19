@@ -31,7 +31,7 @@
                         A TEDx talk should center on an idea.
                     </h2> -->
                     <p class="wow fadeInUp" data-wow-delay=".6s">
-                        some description realted to this page in general for all team members... 
+                        some description realted to this page in general for all team members...
                     </p>
                 </div>
             </div>
@@ -61,13 +61,12 @@
                                         <li><strong>Title</strong>: {{ $member->title }}</li>
 
                                         @if ($member->subteam == "filter-marketing")
-                                        <li><strong>Team</strong>: Marketing team</li>
+                                        <li><strong>Team</strong>: Marketing & Communication Team
+                                        </li>
                                         @elseif ($member->subteam == "filter-core-team")
                                         <li><strong>Team</strong>: Core team</li>
-                                        @elseif ($member->subteam == "filter-logistics")
-                                        <li><strong>Team</strong>: Logistics team</li>
-                                        @elseif ($member->subteam == "filter-operation")
-                                        <li><strong>Team</strong>: Operations team</li>
+                                        @elseif ($member->subteam == "filter-operation-logistics")
+                                        <li><strong>Team</strong>: Operations & Logistics Team</li>
                                         @elseif ($member->subteam == "filter-production")
                                         <li><strong>Team</strong>: Production team </li>
                                         @endif
