@@ -47,7 +47,7 @@
                                 <div class="portfolio-details-slider swiper init-swiper">
                                     <div class="swiper-wrapper align-items-center">
                                         <div class="swiper-slide">
-                                            <img src="{{asset($member->image)}}" alt="">
+                                            <img src="{{asset($member->image)}}" alt="" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
