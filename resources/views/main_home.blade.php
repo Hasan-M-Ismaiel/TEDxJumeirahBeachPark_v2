@@ -276,13 +276,10 @@
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span>Live Band</span>
+                                <span></span>
                             </div>
                         </div>
                     </div>
-
-
-
                     <div class="item">
                         <div class="work">
                             <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-550.png);">
@@ -292,7 +289,7 @@
                             </div>
                             <div class="text pt-3 w-100 text-center">
                                 <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span>Live Band</span>
+                                <span></span>
                             </div>
                         </div>
                     </div>

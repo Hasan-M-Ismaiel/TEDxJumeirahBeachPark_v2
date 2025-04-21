@@ -152,7 +152,7 @@
             <!-- images -->
             <div class="row" id="lightgallery">
                 @foreach ($images as $image)
-                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="{{ asset($image->path)}}" data-sub-html="<h4>Fading Light</h4><p>{{$image->description}}</p>">
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="{{ asset($image->path)}}" data-sub-html="<h4></h4><p></p>">
                     <a href="#"><img src="{{ asset($image->path)}}" loading="lazy" alt="IMage" class="img-fluid"></a>
                 </div>
                 @endforeach
