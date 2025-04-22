@@ -28,8 +28,9 @@
                                 </div>
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Alaa Dalghan</a></h3>
-                                    <span>AI Expert & Executive Advisor</span>
-                                    <a href="https://www.youtube.com/watch?v=CSbbXUT3gtI" target="_blank" ><span style="color: red;">Art in the Age of AI <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span><strong>AI Expert & Executive Advisor</strong></span>
+                                    <span style="color: black;"><strong>Art in the Age of AI </strong></span><br> 
+                                    <a href="https://www.youtube.com/watch?v=CSbbXUT3gtI" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch Beyond the Stage Podcast Interview </a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -50,7 +51,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Corrie Block</a></h3>
                                     <span>Chief Executive Coach</span>
-                                    <a href="https://www.youtube.com/watch?v=cOhKai5jHj0" target="_blank" ><span style="color: red;">Redefining Executive Coaching <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>Redefining Executive Coaching </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=cOhKai5jHj0" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -71,7 +74,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Enrico Gallorini</a></h3>
                                     <span>Researcher, Author & Entrepreneur</span>
-                                    <a href="https://www.youtube.com/watch?v=aONrhC2u6XU" target="_blank" ><span style="color: red;">The Secret Ingredients of In-Person Experiences <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>The Secret Ingredients of In-Person Experiences</strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=aONrhC2u6XU" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -92,7 +97,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Heba Alshehhi</a></h3>
                                     <span>PMO Expert & Author</span>
-                                    <a href="https://www.youtube.com/watch?v=uNedNjIeJfI" target="_blank" ><span style="color: red;">Kindness: The small act that changes everything <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>Kindness: The small act that changes everything </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=uNedNjIeJfI" style="TEXT-DECORATION: underline; color:red" target="_blank">Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -112,7 +119,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Karen Holliday</a></h3>
                                     <span>Architect of Shared Happiness</span>
-                                    <a href="https://www.youtube.com/watch?v=UdmunxkFKEU" target="_blank" ><span style="color: red;">Common Ground in Uncommon Times <br> Watch Beyond the Stage Podcast Interview</span></a>
+                                    <span style="color: black;"><strong>Common Ground in Uncommon Times </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=UdmunxkFKEU" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -133,7 +142,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Maher Al Kaabi</a></h3>
                                     <span>Visionary Leader & Advisor</span>
-                                    <a href="https://www.youtube.com/watch?v=1mMxwJp9jks" target="_blank" ><span style="color: red;">Educating for Tomorrow: Are We Ready? <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>Educating for Tomorrow: Are We Ready? </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=1mMxwJp9jks" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -154,7 +165,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Mark Skljarov</a></h3>
                                     <span>European Climate Pact Ambassador</span>
-                                    <a href="https://www.youtube.com/watch?v=Ok3Jqf8T1NY" target="_blank" ><span style="color: red;">AI-Driven Circularity in Smart Cities <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>AI-Driven Circularity in Smart Cities </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=Ok3Jqf8T1NY" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -175,7 +188,9 @@
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Shashi Shekhar Singh</a></h3>
                                     <span>Urban Mobility Technocrat</span>
-                                    <a href="https://www.youtube.com/watch?v=NRad-CA9tNE" target="_blank" ><span style="color: red;">Human-Centric Smart Cities <br> Watch Beyond the Stage Podcast Interview </span></a>
+                                    <span style="color: black;"><strong>Human-Centric Smart Cities </strong></span><br> 
+
+                                    <a href="https://www.youtube.com/watch?v=NRad-CA9tNE" style="TEXT-DECORATION: underline; color:red" target="_blank">Watch Beyond the Stage Podcast Interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
