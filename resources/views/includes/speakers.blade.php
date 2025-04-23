@@ -30,7 +30,7 @@
                                     <h3><a href="javascript:void(0)">Alaa Dalghan</a></h3>
                                     <span><strong>AI Expert & Executive Advisor</strong></span>
                                     <span style="color: black;"><strong>Art in the Age of AI </strong></span><br> 
-                                    <a href="https://www.youtube.com/watch?v=CSbbXUT3gtI" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch Beyond the Stage Podcast Interview </a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=CSbbXUT3gtI" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch the podcast interview </a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -53,7 +53,7 @@
                                     <span>Chief Executive Coach</span>
                                     <span style="color: black;"><strong>Redefining Executive Coaching </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=cOhKai5jHj0" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=cOhKai5jHj0" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -76,7 +76,7 @@
                                     <span>Researcher, Author & Entrepreneur</span>
                                     <span style="color: black;"><strong>The Secret Ingredients of In-Person Experiences</strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=aONrhC2u6XU" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=aONrhC2u6XU" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -99,7 +99,7 @@
                                     <span>PMO Expert & Author</span>
                                     <span style="color: black;"><strong>Kindness: The small act that changes everything </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=uNedNjIeJfI" style="TEXT-DECORATION: underline; color:red" target="_blank">Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=uNedNjIeJfI" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -121,7 +121,7 @@
                                     <span>Architect of Shared Happiness</span>
                                     <span style="color: black;"><strong>Common Ground in Uncommon Times </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=UdmunxkFKEU" style="TEXT-DECORATION: underline; color:red" target="_blank" >Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=UdmunxkFKEU" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -144,7 +144,7 @@
                                     <span>Visionary Leader & Advisor</span>
                                     <span style="color: black;"><strong>Educating for Tomorrow: Are We Ready? </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=1mMxwJp9jks" style="TEXT-DECORATION: underline; color:red" target="_blank" > Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=1mMxwJp9jks" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -167,7 +167,7 @@
                                     <span>European Climate Pact Ambassador</span>
                                     <span style="color: black;"><strong>AI-Driven Circularity in Smart Cities </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=Ok3Jqf8T1NY" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=Ok3Jqf8T1NY" style="TEXT-DECORATION: underline; color:red" target="_blank">  Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->
@@ -190,7 +190,7 @@
                                     <span>Urban Mobility Technocrat</span>
                                     <span style="color: black;"><strong>Human-Centric Smart Cities </strong></span><br> 
 
-                                    <a href="https://www.youtube.com/watch?v=NRad-CA9tNE" style="TEXT-DECORATION: underline; color:red" target="_blank">Watch Beyond the Stage Podcast Interview</a>
+                                    🎙️ <a href="https://www.youtube.com/watch?v=NRad-CA9tNE" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch the podcast interview</a>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->

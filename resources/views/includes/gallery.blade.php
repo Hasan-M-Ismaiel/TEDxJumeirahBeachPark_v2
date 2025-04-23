@@ -63,7 +63,7 @@
                                         <a href="{{ route('aboutTed') }}" aria-label="Toggle navigation">About</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a href="{{ route('galary') }}" aria-label="Toggle navigation">Gallery</a>
+                                        <a href="{{ route('gallery') }}" aria-label="Toggle navigation">Gallery</a>
                                     </li>
                                     <li class="nav-item">
                                         <a a href="{{ route('main') }}#speakers" aria-label="Toggle navigation">Speakers</a>
@@ -139,7 +139,7 @@
                 <div class="col-12">
                     <div class="section-title">
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Photos</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">See how wanderful the event was</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">See how wonderful the event was</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s">The TEDxJumeirahBeachPark event is brought to life by a dedicated team of passionate individuals who believe in the power of ideas. Our team members come from diverse backgrounds and share a common drive to create a platform for inspiring conversations.</p>
                     </div>
                 </div>

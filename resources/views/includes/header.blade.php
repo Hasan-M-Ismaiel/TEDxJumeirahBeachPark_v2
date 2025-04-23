@@ -23,7 +23,7 @@
                                     <a href="{{ route('aboutTed') }}" aria-label="Toggle navigation">About</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a href="{{ route('galary') }}" aria-label="Toggle navigation">Gallery</a>
+                                    <a href="{{ route('gallery') }}" aria-label="Toggle navigation">Gallery</a>
                                 </li>
                                 <li class="nav-item">
                                     <a a href="{{ route('main') }}#speakers" aria-label="Toggle navigation">Speakers</a>

@@ -2,15 +2,6 @@
 
 @section('content')
 
-<!--[if lte IE 9]>
-    <p class="browserupgrade">
-    You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-    your experience and security.
-    </p>
-<![endif]-->
-
-
 <!-- Start Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container">
@@ -31,7 +22,7 @@
 
 <!-- Start Speakers Area -->
 <!-- <section id="speakers" class=" section"> -->
-@include('includes.galary')
+@include('includes.gallery')
 <!-- </section> -->
 <!-- /End Speakers Area -->
 

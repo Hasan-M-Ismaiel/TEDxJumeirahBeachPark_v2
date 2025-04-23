@@ -54,7 +54,7 @@ Route::post('/storeEmail', [StoreFormInformationController::class, 'storeEmail']
 Route::get('/', [MainHomeController::class, 'main'])->name('main');
 Route::get('/aboutTed', [MainHomeController::class, 'aboutTed'])->name('aboutTed');
 Route::get('/members', [MainHomeController::class, 'members'])->name('members');
-Route::get('/galary', [MainHomeController::class, 'galary'])->name('galary');
+Route::get('/gallery', [MainHomeController::class, 'gallery'])->name('gallery');
 Route::get('/category/{category}', [MainHomeController::class, 'images'])->name('images');
 
 Route::get('/team', [MainHomeController::class, 'team'])->name('team');

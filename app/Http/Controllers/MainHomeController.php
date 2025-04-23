@@ -213,12 +213,12 @@ class MainHomeController extends Controller
         return view('team_member_details', ['event' => $event, 'member' => $teammember]);
     }
 
-    public function galary()
+    public function gallery()
     {
         $events = Event::all();
         $event = $events->first();
         $categories = Category::all();
-        return view('includes/galary', ['event' => $event, 'categories' => $categories]);
+        return view('includes/gallery', ['event' => $event, 'categories' => $categories]);
     }
 
     public function images(Category $category)

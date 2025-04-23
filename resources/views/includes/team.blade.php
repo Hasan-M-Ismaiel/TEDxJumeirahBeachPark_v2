@@ -27,7 +27,7 @@
                             <img src="{{ asset($member->image) }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>{{$member->full_name}}</h4>
-                                <p>{{$member->title}}</p>
+                                <p style="font-size: 12px;">{{$member->title}}</p>
                                 <a href="{{ asset($member->image) }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                 <a href="{{ route('teammember', [$member->id]) }}" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                             </div>
