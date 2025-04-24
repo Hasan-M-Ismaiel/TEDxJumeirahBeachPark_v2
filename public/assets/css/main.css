@@ -86,16 +86,16 @@
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 650;
+  padding-right: 40px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
-  padding-right: 50px;
+  padding-right: 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link,
