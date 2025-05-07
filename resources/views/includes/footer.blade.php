@@ -14,7 +14,7 @@
                                 </div>
                                 <p>This independent TEDx event is operated under a license from TED.</p>
                                 <span class="social-title">
-                                    Follow Us On:
+                                    Follow Us On
                                 </span>
                                 <ul class="social">
                                     <li>

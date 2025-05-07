@@ -1,4 +1,4 @@
-<section class="features section pb-0 mb-0">
+<section class="features section pb-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12 col-12 d-flex  align-items-center justify-content-center">

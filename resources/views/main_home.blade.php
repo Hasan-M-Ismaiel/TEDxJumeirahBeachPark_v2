@@ -10,6 +10,7 @@
     <div class="main__circle4"></div>
     <div class="container d-flex justify-content-start"></div>
 </section>
+
 <!-- End Hero Area -->
 <div class="container-fluid mt-3">
     <div class="tedx-banner">
@@ -50,6 +51,8 @@
         @endforeach
     </div>
 </div>
+
+<!-- flicker button -->
 <div class="section-title">
     <p class="wow fadeInUp mt-5" data-wow-delay=".4s">View more photos on <strong>Flickr</strong>
     <div class="button">
@@ -62,6 +65,7 @@
     </div>
     </p>
 </div>
+
 <script src="" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
@@ -70,45 +74,11 @@
     document.querySelector('.logos').appendChild(cloneEl);
 </script>
 
-<!-- Start Features Area -->
-@include('includes.features_area')
-<!-- /End Features Area -->
-
-<div style="background-color: #F4F7FA;" class="pt-3">
-    <div class="">
-        <video id="myvideo" width="100%" height="auto" controls poster="{{ asset('assets_main/assets/images/poster_video.png') }}">
-            <source src="{{ asset('assets_main/assets/hero_video/promo.mp4') }}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</div>
-
-<div class="row mt-5">
-    <div class="col-12">
-        <div class="section-title row">
-            <div class="col-lg-6  col-md-8 col-12 border-end">
-                <a class="navbar-brand" href="{{ route('main') }}">
-                    <img src="{{ asset('assets_main/assets/images/logo/logo-black.png') }}" loading="lazy" style="width:500px; height:auto" alt="Logo">
-                </a>
-            </div>
-            <div class="col-lg-6  col-md-4 col-12 d-flex  align-items-center justify-content-center">
-                <p class="wow fadeInUp" data-wow-delay=".6s">Is an Independently Organized
-                    <span class="text-danger">TED</span> Event.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-@include('includes.about_ted_main')
-
-
-<!-- Start about Area -->
-@include('includes.aboutEvent')
-<!-- /End about Area -->
+<!-- Start testimonials Area -->
+@include('includes.testimonials')
+<!-- /End testimonials Area -->
 
 @include('includes.speakers')
-
 
 <section class="ftco-section" id="partners">
     <div class="container">
@@ -298,7 +268,6 @@
         </div>
     </div>
 </section>
-
 
 <script>
     let video = document.querySelector('video');

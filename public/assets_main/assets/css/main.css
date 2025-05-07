@@ -4306,9 +4306,9 @@ only screen and (min-width: 1400px) {
 }
 
 .testimonials .single-testimonial .top-section img {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border-radius: 0%;
   position: absolute;
   left: 0;
   top: 0;
@@ -4507,3 +4507,14 @@ only screen and (min-width: 1400px) {
       transform: translateX(-100%);
   }
 }
+
+
+.read-more-link {
+  color: #ff0024;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
