@@ -26,7 +26,7 @@
                         His Highness Sheikh Salem bin Sultan Al Qasimi attended the closing of the 'TEDx Jumeirah Beach Park' event in Dubai.
                     </p>
                     <p class="">
-                        <strong>Read the full article → </strong> <a href="https://nbdelemirate.ae/159868.html">link</a>
+                        <strong>Read the full article → </strong> <a href="https://nbdelemirate.ae/159868.html" target="_blank">link</a>
                     </p>
                 </div>
 
