@@ -4292,6 +4292,30 @@ only screen and (min-width: 1400px) {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-bottom: 4px solid transparent;
+  height: auto; /* reset in case previously set */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: height 0.4s ease, transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+
+.single-testimonial.expanded {
+  height: auto !important;
+}
+
+
+
+.testimonial-text-wrapper {
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  position: relative;
+}
+
+.single-testimonial.expanded .testimonial-text-wrapper {
+  max-height: 1000px; /* big enough to show all content */
 }
 
 .testimonials .single-testimonial:hover {
@@ -4312,6 +4336,10 @@ only screen and (min-width: 1400px) {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.testimonials .testimonial-text {
+  flex-grow: 1;
 }
 
 .testimonials .single-testimonial .top-section h3 {

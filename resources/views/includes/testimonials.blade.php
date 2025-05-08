@@ -17,22 +17,15 @@
                     <div class="top-section">
                         <img src="{{ asset('assets_main/assets/images/image.png') }}" alt="person">
                         <h3>
-                            Sheikh Salem bin Sultan Al Qasimi
-                            <span>Chairman of the Department of Civil Aviation in Ras Al Khaimah</span>
+                            Nabd Al Emarat
+                            <span>News Website</span>
                             <span style="color: black;">February 25, 2025</span>
                         </h3>
-                        <ul class="rating">
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                        </ul>
                     </div>
                     <p class="testimonial-text">
                         His Highness Sheikh Salem bin Sultan Al Qasimi attended the closing of the 'TEDx Jumeirah Beach Park' event in Dubai.
                     </p>
-                    <p class="testimonial-text">
+                    <p class="">
                         <strong>Read the full article → </strong> <a href="https://nbdelemirate.ae/159868.html">link</a>
                     </p>
                 </div>
@@ -46,13 +39,6 @@
                             <span>Portal Production | Podcast Partner</span>
                             <span style="color: black;">March 19, 2025</span>
                         </h3>
-                        <ul class="rating">
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                        </ul>
                     </div>
                     <p class="testimonial-text">
                         TEDx Jumeirah Beach Park in Dubai was an exceptional experience - well-organized, inspiring, and truly collaborative. As the podcast partner, Portal Productions had the privilege of capturing powerful conversations with the speakers, and the team went above and beyond to support us. Their generosity opened doors to incredible opportunities, and we’re grateful to have been part of something so special. It's a shining example of what a purpose-driven team can achieve with the intention of giving back to the community - and we’re proud to be part of it.
@@ -68,13 +54,6 @@
                             <span>IAORA | Innovation Partner</span>
                             <span style="color: black;">March 20, 2025</span>
                         </h3>
-                        <ul class="rating">
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                            <li><i class="lni lni-star-filled"></i></li>
-                        </ul>
                     </div>
                     <p class="testimonial-text">
                         We at IAORA Technologies are truly honored to have been the Technology Partner for the TEDxJumeirahBeachPark event, bringing the magic of holograms to an event that celebrates ideas, innovation, and inspiration. It was an incredible moment to see the opening introduction delivered through our hologram, blending cutting-edge technology with the spirit of storytelling that TEDx embodies.
@@ -123,37 +102,72 @@
             const fullText = p.innerHTML.trim();
             if (fullText.length <= maxLength) return;
 
+            const parentCard = p.closest('.single-testimonial');
+            const wrapper = document.createElement("div");
+            wrapper.className = "testimonial-text-wrapper";
+
             const shortText = fullText.substring(0, maxLength) + "...";
+            const shortSpan = document.createElement("span");
+            shortSpan.className = "short-text";
+            shortSpan.innerHTML = shortText;
+
+            const fullSpan = document.createElement("span");
+            fullSpan.className = "full-text";
+            fullSpan.innerHTML = fullText;
+            fullSpan.style.display = "none";
+
             const moreLink = document.createElement("a");
             moreLink.className = "read-more-link";
             moreLink.textContent = " Read more";
             moreLink.href = "#";
 
-            const fullSpan = document.createElement("span");
-            fullSpan.style.display = "none";
-            fullSpan.textContent = fullText;
-
-            const shortSpan = document.createElement("span");
-            shortSpan.className = "short-text";
-            shortSpan.textContent = shortText;
-
+            wrapper.appendChild(shortSpan);
+            wrapper.appendChild(fullSpan);
             p.innerHTML = "";
-            p.appendChild(shortSpan);
-            p.appendChild(fullSpan);
+            p.appendChild(wrapper);
             p.appendChild(moreLink);
 
             moreLink.addEventListener("click", function(e) {
                 e.preventDefault();
-                if (fullSpan.style.display === "none") {
-                    fullSpan.style.display = "inline";
+                const isExpanded = parentCard.classList.contains("expanded");
+
+                if (!isExpanded) {
                     shortSpan.style.display = "none";
+                    fullSpan.style.display = "inline";
+                    parentCard.classList.add("expanded");
                     moreLink.textContent = " Show less";
                 } else {
-                    fullSpan.style.display = "none";
                     shortSpan.style.display = "inline";
+                    fullSpan.style.display = "none";
+                    parentCard.classList.remove("expanded");
                     moreLink.textContent = " Read more";
                 }
             });
         });
     });
+</script>
+
+<script>
+    function setEqualTestimonialHeights() {
+        const slides = document.querySelectorAll('.single-testimonial');
+
+        // Reset all heights
+        slides.forEach(slide => {
+            slide.style.height = 'auto';
+        });
+
+        // Find max height
+        let maxHeight = 0;
+        slides.forEach(slide => {
+            maxHeight = Math.max(maxHeight, slide.offsetHeight);
+        });
+
+        // Apply max height
+        slides.forEach(slide => {
+            slide.style.height = maxHeight + 'px';
+        });
+    }
+
+    window.addEventListener('load', setEqualTestimonialHeights);
+    window.addEventListener('resize', setEqualTestimonialHeights);
 </script>
