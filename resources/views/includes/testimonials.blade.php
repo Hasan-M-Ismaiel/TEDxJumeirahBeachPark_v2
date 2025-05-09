@@ -23,7 +23,7 @@
                         </h3>
                     </div>
                     <p class="testimonial-text">
-                        His Highness Sheikh Salem bin Sultan Al Qasimi attended the closing of the 'TEDx Jumeirah Beach Park' event in Dubai.
+                        <em>&ldquo;His Highness Sheikh Salem bin Sultan Al Qasimi attended the closing of the 'TEDx Jumeirah Beach Park' event in Dubai.&rdquo;</em>
                     </p>
                     <p class="">
                         <strong>Read the full article → </strong> <a href="https://nbdelemirate.ae/159868.html" target="_blank">link</a>
@@ -41,7 +41,7 @@
                         </h3>
                     </div>
                     <p class="testimonial-text">
-                        TEDx Jumeirah Beach Park in Dubai was an exceptional experience - well-organized, inspiring, and truly collaborative. As the podcast partner, Portal Productions had the privilege of capturing powerful conversations with the speakers, and the team went above and beyond to support us. Their generosity opened doors to incredible opportunities, and we’re grateful to have been part of something so special. It's a shining example of what a purpose-driven team can achieve with the intention of giving back to the community - and we’re proud to be part of it.
+                        <em>&ldquo;TEDx Jumeirah Beach Park in Dubai was an exceptional experience - well-organized, inspiring, and truly collaborative. As the podcast partner, Portal Productions had the privilege of capturing powerful conversations with the speakers, and the team went above and beyond to support us. Their generosity opened doors to incredible opportunities, and we’re grateful to have been part of something so special. It's a shining example of what a purpose-driven team can achieve with the intention of giving back to the community - and we’re proud to be part of it.&rdquo;</em>
                     </p>
                 </div>
 
@@ -56,10 +56,10 @@
                         </h3>
                     </div>
                     <p class="testimonial-text">
-                        We at IAORA Technologies are truly honored to have been the Technology Partner for the TEDxJumeirahBeachPark event, bringing the magic of holograms to an event that celebrates ideas, innovation, and inspiration. It was an incredible moment to see the opening introduction delivered through our hologram, blending cutting-edge technology with the spirit of storytelling that TEDx embodies.
-                        At IAORA, our mission is to redefine the way people experience digital content, and this collaboration with TEDxJumeirahBeachPark perfectly aligns with our vision of immersive and impactful communication. Seeing the audience reaction of a lifelike, futuristic introduction reinforced our belief in the power of holograms to enhance human connection and storytelling.
-                        We extend our deepest gratitude to the TEDxJumeirahBeachPark team, and Amal & Joelle in particular for trusting IAORA Technologies to be a part of this remarkable event. It’s partnerships like these that inspire us to push the boundaries of what’s possible in holographic technology and experiential storytelling.
-                        We look forward to many more opportunities to bring innovation to the TEDx stage and beyond!
+                        <em>&ldquo;We at IAORA Technologies are truly honored to have been the Technology Partner for the TEDxJumeirahBeachPark event, bringing the magic of holograms to an event that celebrates ideas, innovation, and inspiration. It was an incredible moment to see the opening introduction delivered through our hologram, blending cutting-edge technology with the spirit of storytelling that TEDx embodies.
+                            At IAORA, our mission is to redefine the way people experience digital content, and this collaboration with TEDxJumeirahBeachPark perfectly aligns with our vision of immersive and impactful communication. Seeing the audience reaction of a lifelike, futuristic introduction reinforced our belief in the power of holograms to enhance human connection and storytelling.
+                            We extend our deepest gratitude to the TEDxJumeirahBeachPark team, and Amal & Joelle in particular for trusting IAORA Technologies to be a part of this remarkable event. It’s partnerships like these that inspire us to push the boundaries of what’s possible in holographic technology and experiential storytelling.
+                            We look forward to many more opportunities to bring innovation to the TEDx stage and beyond!&rdquo;</em>
                     </p>
                 </div>
 

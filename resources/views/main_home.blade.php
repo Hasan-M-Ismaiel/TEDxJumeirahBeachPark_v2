@@ -74,12 +74,11 @@
     document.querySelector('.logos').appendChild(cloneEl);
 </script>
 
-<!-- Start testimonials Area -->
-@include('includes.testimonials')
-<!-- /End testimonials Area -->
 
 @include('includes.speakers')
 
+
+<!-- main partners -->
 <section class="ftco-section" id="partners">
     <div class="container">
         <div class="row">
@@ -225,6 +224,7 @@
     </div>
 </section>
 
+<!-- performance partners -->
 <section class="ftco-section" id="partners">
     <div class="container">
         <div class="row">
@@ -268,6 +268,9 @@
         </div>
     </div>
 </section>
+
+@include('includes.testimonials')
+
 
 <script>
     let video = document.querySelector('video');
