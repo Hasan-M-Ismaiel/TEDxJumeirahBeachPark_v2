@@ -36,10 +36,10 @@
             </div>
             <div class="col-lg-8 col-md-12 col-12 d-flex justify-content-center align-items-center">
                 <div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s"><span class="text-danger display-6">TEDx</span> <span class="display-6">JumeirahBeachPark </span><span class="text-danger display-6">&nbsp; Podcast</span></h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s"><span class="text-danger display-6">TEDx</span> <span class="display-6">JumeirahBeachPark </span><span class="text-danger display-6">&nbsp; Interviews</span></h2>
 
 
-                    <p class="wow fadeInUp" data-wow-delay=".6s">At TEDx JumeirahBeachPark, we are passionate about sharing ideas that inspire and connect. Our podcast series ”Beyond the Stage” brings you thought-provoking conversations from diverse voices across Dubai — a city that blends tradition with innovation. Tune in for fresh perspectives and inspiring stories that spark new ideas.</p>
+                    <p class="wow fadeInUp" data-wow-delay=".6s">At TEDx JumeirahBeachPark, we are passionate about sharing ideas that inspire and connect. Our Interviews series ”Beyond the Stage” brings you thought-provoking conversations from diverse voices across Dubai — a city that blends tradition with innovation. Tune in for fresh perspectives and inspiring stories that spark new ideas.</p>
                     <br>
                 </div>
             </div>
@@ -54,7 +54,7 @@
             </div>
             <div class="col-lg-6 col-12 wow fadeIn" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
                 <div class="content">
-                    <h2 class="mb-3">Beyond The Stage Podcast Series</h2>
+                    <h2 class="mb-3">Beyond The Stage Series</h2>
                     <div class="accordion" id="accordionExample">
                         @foreach ($podcasts as $podcast)
                         <div class="accordion-item" id="{{$loop->iteration}}">
