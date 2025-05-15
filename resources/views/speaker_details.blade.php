@@ -61,7 +61,7 @@
                                         <li><strong>Title</strong>: {{ $speaker->title }}</li>
                                         <li><strong>Topic title </strong>: {{ $speaker->topic_title }} </li>
                                         <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}">linkedin</a></li>
-                                        <li><strong>Beayond the Stage Podcast Interview </strong>: {{ $speaker->podcast }} </li>
+                                        <li><strong>Beayond the Stage Podcast Interview </strong>: <a href="{{ $speaker->podcast }}">podcast</a> </li>
                                         <li><strong>TEDx Officia Talk </strong>: {{ $speaker->talk }} </li>
                                     </ul>
                                 </div>
