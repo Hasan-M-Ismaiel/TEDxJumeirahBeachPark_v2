@@ -60,9 +60,9 @@
                                         <li><strong>Name</strong>: {{ $speaker->name }}</li>
                                         <li><strong>Title</strong>: {{ $speaker->title }}</li>
                                         <li><strong>Topic title </strong>: {{ $speaker->topic_title }} </li>
-                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}">linkedin</a></li>
-                                        <li><strong>Beayond the Stage Podcast Interview </strong>: <a href="{{ $speaker->podcast }}">podcast</a> </li>
-                                        <li><strong>TEDx Officia Talk </strong>: {{ $speaker->talk }} </li>
+                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}" target="_blank">linkedin</a></li>
+                                        <li><strong>Beayond the Stage Podcast Interview </strong>: <a href="{{ $speaker->podcast }}" target="_blank">podcast</a> </li>
+                                        <li><strong>TEDx Officia Talk </strong>: <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a> </li>
                                     </ul>
                                 </div>
                                 <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
