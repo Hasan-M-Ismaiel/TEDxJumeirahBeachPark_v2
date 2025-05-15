@@ -30,7 +30,7 @@
                                     <h3><a href="{{ route('speaker', [$speaker->id]) }}">{{$speaker->name}}</a></h3>
                                     <span><strong>{{$speaker->title}}</strong></span>
                                     <span style="color: black;"><strong>{{$speaker->topic}}</strong></span><br> 
-                                    @if($speaker->name != 'Maher Al Kaabi' or $speaker->name != 'Corrie Block')
+                                    @if($speaker->name != 'Maher Al Kaabi' and $speaker->name != 'Corrie Block')
                                     🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch on TEDx YouTube Channel </a>
                                     @endif
                                 </div>
