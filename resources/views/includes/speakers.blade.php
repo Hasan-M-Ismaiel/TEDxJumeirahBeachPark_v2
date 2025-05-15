@@ -15,26 +15,28 @@
                     <div class="row align-items-center justify-content-center">
 
                         <!--Alaa Dalghan-->
+                        @foreach ($speakers as $speaker)
                         <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
-                            <!-- Start Single Speaker -->
                             <div class="single-speaker">
                                 <div class="top-content">
                                     <div class="image">
-                                        <img src="{{ asset('assets_main/assets/images/speakers/1.png') }}" loading="lazy" alt="#">
+                                        <img src="{{asset($speaker->image)}}" loading="lazy" alt="#">
                                     </div>
                                     <ul class="social">
-                                        <li class="linkedin"><a href="http://www.linkedin.com/in/alaadalghan" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                        <li class="linkedin"><a href="{{ $speaker->linkedin }}" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="name">
-                                    <h3><a href="javascript:void(0)">Alaa Dalghan</a></h3>
-                                    <span><strong>AI Expert & Executive Advisor</strong></span>
-                                    <span style="color: black;"><strong>Art in the Age of AI </strong></span><br> 
-                                    🎙️ <a href="https://www.youtube.com/watch?v=M0fcs2rzdpg" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch on TEDx YouTube Channel </a>
+                                    <h3><a href="{{ route('speaker', [$speaker->id]) }}">{{$speaker->name}}</a></h3>
+                                    <span><strong>{{$speaker->title}}</strong></span>
+                                    <span style="color: black;"><strong>{{$speaker->topic}}</strong></span><br> 
+                                    @if($speaker->name != 'Maher Al Kaabi' or $speaker->name != 'Corrie Block')
+                                    🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch on TEDx YouTube Channel </a>
+                                    @endif
                                 </div>
                             </div>
-                            <!-- End Single Speaker -->
                         </div>
+                        @endforeach
 
                         <!--Corrie Block-->
                         <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
@@ -113,7 +115,7 @@
                                         <img src="{{ asset('assets_main/assets/images/speakers/5.png') }}" alt="#">
                                     </div>
                                     <ul class="social">
-                                        <li class="linkedin"><a href="https://www.linkedin.com/in/dr-eng-suaad-alshamsi-35410b3b/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/karen-holliday/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="name">

@@ -12,19 +12,15 @@ class Speaker extends Model implements HasMedia
     use HasFactory, InteractsWithMedia;
 
     protected $fillable = [
-        'first_name', 
-        'last_name', 
-        'email', 
-        'phone_number', 
-        'bio', 
-        'profession', 
-
-        'facebook', 
-        'twitter', 
-        'instagram',
-        'linkedin',
-        
-        'website',
+        'name', 
+        'title',
+        'topic_title', 
+        'linkedin', 
+        'background', 
+        'idea', 
+        'podcast', 
+        'talk', 
+        'image', 
     ];
 
     public function events ()

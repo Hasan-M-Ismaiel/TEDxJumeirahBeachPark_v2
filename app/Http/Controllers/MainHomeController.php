@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Event;
+use App\Models\Speaker;
 use App\Models\Teammember;
 
 class MainHomeController extends Controller
@@ -18,6 +19,7 @@ class MainHomeController extends Controller
     {
         $events = Event::all();
         $categories = Category::with('images')->get(); // Eager load images with categories
+        $speakers = Speaker::get();
     
         // Gather all images from all categories
         $images = $categories->flatMap(function ($category) {
@@ -26,7 +28,7 @@ class MainHomeController extends Controller
     
         $images_ = $images->take(20); // Just the first 20 images overall
         $event = $events->first();
-        return view('main_home', ['event' => $event, 'images' => $images_]);
+        return view('main_home', ['event' => $event, 'images' => $images_, 'speakers' => $speakers]);
     }
 
     public function about()
@@ -212,6 +214,16 @@ class MainHomeController extends Controller
         $event = $events->first();
         return view('team_member_details', ['event' => $event, 'member' => $teammember]);
     }
+
+    
+
+    public function speaker(Speaker $speaker)
+    {
+        $events = Event::all();
+        $event = $events->first();
+        return view('speaker_details', ['event' => $event, 'member' => $speaker]);
+    }
+
 
     public function gallery()
     {

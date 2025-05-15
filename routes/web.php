@@ -59,6 +59,7 @@ Route::get('/category/{category}', [MainHomeController::class, 'images'])->name(
 
 Route::get('/team', [MainHomeController::class, 'team'])->name('team');
 Route::get('/teammembers/{teammember}', [MainHomeController::class, 'teammember'])->name('teammember');
+Route::get('/speakers/{speaker}', [MainHomeController::class, 'speaker'])->name('speaker');
 
 
 
