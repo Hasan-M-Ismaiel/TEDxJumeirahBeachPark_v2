@@ -221,7 +221,7 @@ class MainHomeController extends Controller
     {
         $events = Event::all();
         $event = $events->first();
-        return view('speaker_details', ['event' => $event, 'member' => $speaker]);
+        return view('speaker_details', ['event' => $event, 'speaker' => $speaker]);
     }
 
 
