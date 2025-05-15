@@ -19,7 +19,7 @@ class MainHomeController extends Controller
     {
         $events = Event::all();
         $categories = Category::with('images')->get(); // Eager load images with categories
-        $speakers = Speaker::get();
+        $speakers = Speaker::orderBy('name', 'asc')->get();
     
         // Gather all images from all categories
         $images = $categories->flatMap(function ($category) {
