@@ -13,8 +13,6 @@
             <div class="container">
                 <div class="all-speakers">
                     <div class="row align-items-center justify-content-center">
-
-                        <!--Alaa Dalghan-->
                         @foreach ($speakers as $speaker)
                         <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-speaker">
@@ -29,10 +27,8 @@
                                 <div class="name">
                                     <h3><a href="{{ route('speaker', [$speaker->id]) }}">{{$speaker->name}}</a></h3>
                                     <span><strong>{{$speaker->title}}</strong></span>
-                                    <span style="color: black;"><strong>{{$speaker->topic}}</strong></span><br> 
-                                    @if($speaker->name != 'Maher Al Kaabi' and $speaker->name != 'Corrie Block')
-                                    🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank" >  Watch on TEDx YouTube Channel </a>
-                                    @endif
+                                    <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
+                                    🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube Channel </a>
                                 </div>
                             </div>
                         </div>
