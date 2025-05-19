@@ -25,7 +25,7 @@
                                     </ul>
                                 </div>
                                 <div class="name">
-                                    <h3><a href="{{ route('speaker', [$speaker->id]) }}">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
+                                    <h3><a href="{{ route('speaker', [$speaker->id]) }}" target="_blank">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
                                     <span><strong>{{$speaker->title}}</strong></span>
                                     <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
                                     🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube Channel </a>
