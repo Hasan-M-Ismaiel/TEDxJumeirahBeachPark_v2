@@ -184,7 +184,7 @@
                             <input name="question_9" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_9') }}">
                         </label>
 
-                        <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments ðŸ¤— </h2>
+                        <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments</h2>
 
                         <!--notes-->
                         <label class="d-block mb-4">

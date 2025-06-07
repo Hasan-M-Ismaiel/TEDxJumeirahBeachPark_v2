@@ -276,7 +276,7 @@
                     </label>
 
                     <!-- Personal Info Section -->
-                    <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments ðŸ¤— </h2>
+                    <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments</h2>
                     <!--favourit speaker-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Please mention your favorite TED or TEDx talk?</strong></span>
