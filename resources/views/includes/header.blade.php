@@ -42,6 +42,7 @@
                                             <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Salons</a>
                                             <ul class="sub-menu collapse" id="submenu-1-2">
                                                 <li class="nav-item"><a href="{{ route('tedx_event_1') }}">TEDx - navigating space</a></li>
+                                                <li class="nav-item"><a href="{{ route('tedx_event_2') }}">TEDx - How Can Art Communicate Ideas</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item"><a href="{{ route('podcasts') }}">Interviews</a></li>

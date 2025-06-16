@@ -31,7 +31,7 @@
                             <div class="row mt-1 pt-3">
                                 <div class="row">
                                     <div class="section-title">
-                                        <h2 class="wow fadeInUp" data-wow-delay=".4s"> navigating space 😍🚀
+                                        <h2 class="wow fadeInUp" data-wow-delay=".4s"> Navigating space 🚀
                                         </h2>
                                         <br>
                                         <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Dtec, Dubai - Silicon Oasis
