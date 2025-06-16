@@ -8,7 +8,7 @@
         <div class="row ">
             <div class="col-lg-12 offset-lg-12 col-md-12 col-12 d-flex justify-content-start ms-5">
                 <div class="breadcrumbs-content">
-                    <h1 class="page-title">TEDx - Art</h1>
+                    <h1 class="page-title">TEDx - How Can Art Communicate Ideas</h1>
                     <ul class="breadcrumb-nav">
                         <li><a href="{{ route('main') }}">Home</a></li>
                         <li>Events</li>
