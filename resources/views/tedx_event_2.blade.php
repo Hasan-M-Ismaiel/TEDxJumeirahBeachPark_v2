@@ -196,7 +196,7 @@
             <div class="section-title mb-0">
                 <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️
                 <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="#" class="btn" style="color: white;">Register</a>
+                    <a href="{{ route('register_salon_2') }}" class="btn" style="color: white;">Register</a>
                 </div>
             </div>
         </div>

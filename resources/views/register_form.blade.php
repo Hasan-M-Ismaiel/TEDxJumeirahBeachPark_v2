@@ -196,7 +196,6 @@
                         <!-- <button type="submit" class="btn" style="background-color: rgb(235, 11, 41); color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px;">Submit</button> -->
                         <button type="submit" class="btn-submit">Submit</button>
                     </form>
-                    
                 </div>
             </div>
         </div>
@@ -222,7 +221,6 @@
     });
 </script>
 <script>
-    
     const form = document.getElementById("signUpForm");
     form.addEventListener("submit", logSubmit);
 </script>

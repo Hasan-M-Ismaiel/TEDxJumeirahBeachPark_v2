@@ -7,6 +7,7 @@ use App\Http\Requests\OtherCreateRequest;
 use App\Http\Requests\PartnerCreateRequest;
 use App\Http\Requests\RegisterCreateRequest;
 use App\Http\Requests\SalonFirstRequest;
+use App\Http\Requests\SalonSecondRequest;
 use App\Models\SalonFirst;
 use App\Http\Requests\VolunteerCreateRequest;
 use App\Mail\SpeakerConfirmationMail;
@@ -16,6 +17,7 @@ use App\Models\MainEvent;
 use App\Models\Other;
 use App\Models\Partner;
 use App\Models\Register;
+use App\Models\SalonSecond;
 use App\Models\TemporaryFile;
 use App\Models\User;
 use App\Models\Volunteer;
@@ -203,31 +205,14 @@ class StoreFormInformationController extends Controller
         return redirect()->back();
     }
 
-    public function storeRegister_salon_2(RegisterCreateRequest $request)
+    public function storeRegister_salon_2(SalonSecondRequest $request)
     {
-        $temporaryFile = TemporaryFile::where('folder', $request->avatar)->first();
-        if ($temporaryFile) {
-            $register = Register::create($request->validated());
+        $SalonSecond = SalonSecond::create($request->validated());
 
-            if ($request->question_10) {
-                $register->question_10 = $request->question_10;
-                $register->save();
-            }
-            Alert::success('Success', 'Your request has been taken, Thank you!');
+        
+        Alert::success('Success', 'Your information has been taken, Thank you!');
 
-            $users = User::all();
-            $user = $users->first();
-            $user->notify(new NewRegister($register));
-
-            Mail::to($register->email)->send(new SpeakerConfirmationMail([
-                'title' => 'Dear ' . $register->full_name,
-            ]));
-
-            return redirect()->back();
-        } else {
-            Alert::warning('Error', 'please upload your video!');
-            return redirect()->back();
-        }
+        return redirect()->back();
     }
 
     public function storeRegister_main_event(MainEventRequest $request)

@@ -2,14 +2,52 @@
 
 @section('content')
 
-<!--[if lte IE 9]>
-    <p class="browserupgrade">
-    You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-    your experience and security.
-    </p>
-<![endif]-->
+<style>
+    .required-label::before {
+        content: "* ";
+        color: red;
+    }
 
+    <style>.required-label::before {
+        content: "* ";
+        color: red;
+    }
+
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 6px;
+        background: #ddd;
+        border-radius: 3px;
+        outline: none;
+        margin: 0;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: red;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #b30000;
+        margin-top: -7px;
+        transition: background 0.3s ease;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: red;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #b30000;
+        transition: background 0.3s ease;
+    }
+</style>
+
+</style>
 
 <!-- Start Breadcrumbs -->
 <div class="breadcrumbs">
@@ -29,20 +67,18 @@
 </div>
 <!-- End Breadcrumbs -->
 
-<!-- Start Speakers Area -->
 <section id="speakers" class="speakers section">
     <div class="row">
         <div class="container">
             <div class="row mx-0 justify-content-center">
-                <div class="">
+                <div class="col-md-10">
 
                     <!-- Validation Errors -->
                     @if ($errors->any())
-                    <div class="mb-4 mt-4" id="signUpForm">
-                        <span class="pe-4 font-medium text-danger border border-danger border-rounded rounded">
-                            <span class="bg-danger py-2 px-2  text-white">Whoops!</span>{{ __(' Something went wrong.') }}
+                    <div class="mb-4 mt-4">
+                        <span class="pe-4 font-medium text-danger border border-danger rounded">
+                            <span class="bg-danger py-2 px-2 text-white">Whoops!</span> {{ __('Something went wrong.') }}
                         </span>
-
                         <ul class="mt-3 list-group list-group-flush text-danger">
                             @foreach ($errors->all() as $error)
                             <li class="list-group-item text-danger">{{ $error }}</li>
@@ -51,270 +87,181 @@
                     </div>
                     @endif
 
-
-                    <!--the form-->
-                    <!--<h1 class="text-center fs-4">Form Wizard - Multi Step Form</h1>-->
-                    <form id="signUpForm" class="w-100 rounded-1 p-4 border bg-white" action='{{ route("storeRegister_salon_2") }}' method="POST">
+                    <!-- The Form -->
+                    <form id="signUpForm" class="w-100 rounded-1 p-4 border bg-white" action="{{ route('storeRegister_salon_2') }}" method="POST">
                         @csrf
-                        <!-- start step indicators -->
+
+                        <!-- Step Indicators -->
                         <div class="form-header d-flex mb-4">
-                            <span class="stepIndicator">personal info</span>
-                            <span class="stepIndicator">other info</span>
-                            <span class="stepIndicator">your comments</span>
+                            <span class="stepIndicator">Personal Information</span>
+                            <span class="stepIndicator">Professional Information</span>
+                            <span class="stepIndicator">Additional Information</span>
                         </div>
-                        <!-- end step indicators -->
 
-                        <!-- step one -->
-                        <div class="step">
-                            <!--first name-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Full name</strong></span>
-                                <input name="full_name" type="text" class="form-control" placeholder="full name" value="{{ old('full_name') }}" />
+                        <!-- Step One -->
+                        <div class="step" style="display: block;">
+                            <label class="d-block mb-4" for="first_name">
+                                <strong class="required-label">First Name </strong>
+                                <input id="first_name" name="first_name" type="text" class="form-control" value="{{ old('first_name') }}" required />
                             </label>
 
-                            <!--email-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Email address</strong></span>
-                                <input name="email" type="email" class="form-control" placeholder="me@example.com" value="{{ old('email') }}" />
+                            <label class="d-block mb-4" for="last_name">
+                                <strong class="required-label">Last Name </strong>
+                                <input id="last_name" name="last_name" type="text" class="form-control" value="{{ old('last_name') }}" required />
                             </label>
 
-                            <!--phone-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Phone number</strong></span>
-                                <input name="phone_number" type="text" class="form-control" placeholder="+971-5555555" value="{{ old('phone_number') }}" />
+                            <label class="d-block mb-4" for="age">
+                                <strong class="required-label">Age</strong>
+                                <input id="age" name="age" type="range" class="form-range" min="10" max="100" step="1" value="{{ old('age', 25) }}" oninput="ageOutput.value = age.value" required />
+                                <div class="mt-2">Selected Age: <output name="ageOutput" id="ageOutput">{{ old('age', 25) }}</output></div>
                             </label>
 
-                            <!--nationality-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Nationality</strong></span>
-                                <input name="nationality" type="text" class="form-control" placeholder="syrian" value="{{ old('nationality') }}" />
+                            <label class="d-block mb-4" for="email">
+                                <strong class="required-label">Email </strong>
+                                <input id="email" name="email" type="email" class="form-control" value="{{ old('email') }}" required />
                             </label>
 
-                            <!--residence country-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Residence country</strong></span>
-                                <input name="residence_country" type="text" class="form-control" placeholder="UAE" value="{{ old('residence_country') }}" />
+                            <label class="d-block mb-4" for="phone_number">
+                                <strong class="required-label">Phone Number </strong>
+                                <input id="phone_number" name="phone_number" type="text" class="form-control" value="{{ old('phone_number') }}" required />
                             </label>
 
-                            <!--birthday-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Birthday</strong></span>
-                                <input name="birthday" type="date" class="form-control" placeholder="06-0-1900" value="{{ old('birthday') }}" />
+                            <label class="d-block mb-4" for="country_of_residence">
+                                <strong class="required-label">Country of Residence </strong>
+                                <input id="country_of_residence" name="country_of_residence" type="text" class="form-control" value="{{ old('country_of_residence') }}" required />
                             </label>
 
-                            <!--Education-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Education</strong></span>
-                                <input name="education" type="text" class="form-control" placeholder="software engineer" value="{{ old('education') }}">
+                            <label class="d-block mb-4" for="city_of_residence">
+                                <strong class="required-label">City of Residence </strong>
+                                <input id="city_of_residence" name="city_of_residence" type="text" class="form-control" value="{{ old('city_of_residence') }}" required />
                             </label>
 
-                            <!--Work-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Work</strong></span>
-                                <input name="work" type="text" class="form-control" placeholder="web developer" value="{{ old('work') }}">
+                            <label class="d-block mb-4" for="nationality">
+                                <strong class="required-label">Nationality </strong>
+                                <input id="nationality" name="nationality" type="text" class="form-control" value="{{ old('nationality') }}" required />
                             </label>
 
-                            <!--linkedin account-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Linkedin account</strong></span>
-                                <input name="linkedin_account" type="text" class="form-control" placeholder="" value="{{ old('linkedin_account') }}">
-                            </label>
-
-                            <!--other social media account-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Other social media account</strong></span>
-                                <input name="other_account" type="text" class="form-control" placeholder="" value="{{ old('other_account') }}">
-                            </label>
-
-                            <!--have you heard about ted-->
-                            <label class="d-block mb-4">
-                                <div class="form-group">
-                                    <label for="question_1"><span class="me-2 text-danger h6">*</span><strong>Have you heard about what TED & TEDx events are?</strong></label>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_1" id="question_1_yes" value="yes" checked>
-                                        <label class="form-check-label" for="question_1_yes">
-                                            yes
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_1" id="question_1_no" value="no">
-                                        <label class="form-check-label" for="question_1_no">
-                                            no
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_1" id="question_1_not_sure" value="not sure">
-                                        <label class="form-check-label" for="question_1_not_sure">
-                                            not sure
-                                        </label>
-                                    </div>
-                                </div>
+                            <label class="d-block mb-4" for="education">
+                                <strong class="required-label">Education </strong>
+                                <input id="education" name="education" type="text" class="form-control" value="{{ old('education') }}" required />
                             </label>
                         </div>
 
-                        <!-- step two -->
-                        <div class="step">
-
-                            <!--why-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Why do you want to be a partner at TEDxJumeirahbeachpark?</strong></span>
-                                <textarea rows="4" cols="50" name="question_2" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_2') }}"></textarea>
+                        <!-- Step Two -->
+                        <div class="step" style="display: none;">
+                            <label class="d-block mb-4" for="job_title">
+                                <strong class="required-label">Occupation / Job Title </strong>
+                                <input id="job_title" name="job_title" type="text" class="form-control" value="{{ old('job_title') }}" required />
                             </label>
 
-                            <!--do you have a buisness?-->
-                            <label class="d-block mb-4">
-                                <div class="form-group">
-                                    <label for="question_3"><span class="me-2 text-danger h6">*</span><strong>Do you have a buisness?</strong></label>
-
-                                    <!--yes-->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_3" id="question_3_yes" value="yes" checked>
-                                        <label class="form-check-label" for="question_3_yes">
-                                            yes
-                                        </label>
-                                    </div>
-
-                                    <!--no-->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_3" id="question_3_no" value="no">
-                                        <label class="form-check-label" for="question_3_no">
-                                            no
-                                        </label>
-                                    </div>
-
-                                    <!-- part of-->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_3" id="question_3_part" value="part of buisness">
-                                        <label class="form-check-label" for="question_3_part">
-                                            I'm part of a buisness
-                                        </label>
-                                    </div>
-                                </div>
+                            <label class="d-block mb-4" for="company_name">
+                                <strong class="">Company / Organization Name</strong>
+                                <input id="company_name" name="company_name" type="text" class="form-control" value="{{ old('company_name') }}" />
                             </label>
 
-                            <!--in what field is your business-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><strong>What is the field of the mentioned buisness? (if it is there)</strong></span>
-                                <input name="question_4" type="text" class="form-control" placeholder="In..." value="{{ old('question_4') }}">
+                            <label class="d-block mb-4" for="industry">
+                                <strong class="required-label">Industry </strong>
+                                <input id="industry" name="industry" type="text" class="form-control" value="{{ old('industry') }}" required />
                             </label>
 
-                            <!--in which area you can help?-->
-                            <label class="d-block mb-4">
-                                <dive class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>In which area you can offer your services?</strong></dive>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_1" name="services[]" value="Marketing & Design">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Marketing & Design
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_2" name="services[]" value="Web Development">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Web Development
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_3" name="services[]" value="Photograph & Videograph">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Photograph & Videograph
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_4" name="services[]" value="Media Coverage">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Media Coverage
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_5" name="services[]" value="Food & Beverage">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Food & Beverage
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_6" name="services[]" value="Printing Services">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Printing Services
-                                    </label>
-                                </div>
-
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="service_7" name="services[]" value="Tech & Logistics Services">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Tech & Logistics Services
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="skill_18" name="services[]" value="other">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Other:
-                                    </label>
-                                    <input name="question_6" type="text" class="form-control" placeholder="" value="{{ old('question_6') }}">
-                                </div>
-                            </label>
-
-                            <label class="d-block mb-4">
-                                <div class="form-group">
-                                    <label for="question_7"><span class="me-2 text-danger h6">*</span><strong>Have you previously partnered with any non-profit social events?</strong></label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_7" id="question_7_yes" value="yes" checked>
-                                        <label class="form-check-label" for="question_7_yes">
-                                            yes
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="question_7" id="question_7_no" value="no">
-                                        <label class="form-check-label" for="question_7_no">
-                                            no
-                                        </label>
-                                    </div>
-                                </div>
+                            <label class="d-block mb-4" for="years_of_professional_experience">
+                                <strong class="required-label">Years of Experience </strong>
+                                <input id="years_of_professional_experience" name="years_of_professional_experience" type="number" class="form-control" value="{{ old('years_of_professional_experience') }}" min="0" required />
                             </label>
                         </div>
 
-                        <!-- step three -->
-                        <div class="step">
-                            <!--favourit speaker-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Please mention your favorite TED or TEDx talk?</strong></span>
-                                <input name="question_8" type="text" class="form-control" placeholder="Because ..." value="{{ old('quesiton_8') }}">
+                        <!-- Step Three -->
+                        <div class="step" style="display: none;">
+                            <label class="d-block mb-4" for="how_did_you_hear">
+                                <strong class="required-label">How did you hear about the event? </strong>
+                                <input id="how_did_you_hear" name="how_did_you_hear" type="text" class="form-control" value="{{ old('how_did_you_hear') }}" required />
                             </label>
 
-                            <!--notes-->
-                            <label class="d-block mb-4">
-                                <span class="form-label d-block"><strong>Please add any notes or comments?</strong></span>
-                                <textarea rows="4" cols="50" name="question_9" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_9') }}"></textarea>
+                            <label class="d-block mb-4" for="have_you_attend">
+                                <strong class="required-label">Attended TEDx before? Where? </strong>
+                                <textarea id="have_you_attend" name="have_you_attend" rows="3" class="form-control" required>{{ old('have_you_attend') }}</textarea>
                             </label>
 
+                            <label class="d-block mb-4" for="why_attend">
+                                <strong class="required-label">Why do you want to attend? </strong>
+                                <textarea id="why_attend" name="why_attend" rows="3" class="form-control" required>{{ old('why_attend') }}</textarea>
+                            </label>
                         </div>
 
-                        <!-- start previous / next buttons -->
+                        <!-- Other steps here -->
+
+                        <!-- Newsletter Checkbox -->
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="subscribed" name="subscribed" value="1" {{ old('subscribed') ? 'checked' : '' }}>
+                            <label class="form-check-label" for="subscribed">
+                                Sign-Up to subscribe to future updates about TEDx events or related content.
+                            </label>
+                        </div>
+
+                        <!-- Hidden Submit -->
+                        <button type="submit" id="hiddenSubmitBtn" style="display: none;"></button>
+
+                        <!-- Navigation Buttons -->
                         <div class="form-footer d-flex">
-                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="btn btn-secondary me-2" style="display:none;">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)" class="btn btn-primary">Next</button>
                         </div>
-                        <!-- end previous / next buttons -->
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- /End Speakers Area -->
 
-<!-- Start Call Action Area -->
 @include('includes.call_action')
-<!-- End Call Action Area -->
+
+<!-- Step Form Script -->
+<script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll(".step");
+
+    document.addEventListener("DOMContentLoaded", () => {
+        showStep(currentStep);
+    });
+
+    function showStep(n) {
+        steps.forEach((step, i) => {
+            step.style.display = (i === n) ? "block" : "none";
+        });
+
+        document.getElementById("prevBtn").style.display = (n === 0) ? "none" : "inline";
+        document.getElementById("nextBtn").innerHTML = (n === steps.length - 1) ? "Submit" : "Next";
+    }
+
+    function nextPrev(n) {
+        if (n === 1 && !validateForm()) return;
+
+        currentStep += n;
+
+        if (currentStep >= steps.length) {
+            document.getElementById("hiddenSubmitBtn").click();
+            return;
+        }
+
+        showStep(currentStep);
+    }
+
+    function validateForm() {
+        const inputs = steps[currentStep].querySelectorAll("input, textarea");
+        let valid = true;
+
+        inputs.forEach(input => {
+            if (input.hasAttribute("required") && !input.value.trim()) {
+                input.classList.add("is-invalid");
+                valid = false;
+            } else {
+                input.classList.remove("is-invalid");
+            }
+        });
+
+        return valid;
+    }
+</script>
 
 @endsection
