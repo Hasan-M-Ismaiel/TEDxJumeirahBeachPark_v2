@@ -11,7 +11,7 @@
                     <h1 class="page-title">TEDx - How Can Art Communicate Ideas</h1>
                     <ul class="breadcrumb-nav">
                         <li><a href="{{ route('main') }}">Home</a></li>
-                        <li>Events</li>
+                        <li>Salons</li>
                     </ul>
                 </div>
             </div>
@@ -81,31 +81,12 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Ayeh Naraghi</a></h3>
-                                            <span>Artist</span>
+                                            <!-- <span>Artist</span> -->
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
                                 </div>
                                 <!--Second speaker-->
-                                <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s">
-                                    <!-- Start Single Speaker -->
-                                    <div class="single-speaker">
-                                        <div class="top-content">
-                                            <div class="image">
-                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/khawla.png') }}" alt="#">
-                                            </div>
-                                            <ul class="social">
-                                                <li class="linkedin"><a href="https://www.linkedin.com/in/khawlaabousaleh/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="name">
-                                            <h3><a href="javascript:void(0)">Khawla Abu Saleh</a></h3>
-                                            <span>visual artist and senior art director</span>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Speaker -->
-                                </div>
-                                <!--Third speaker-->
                                 <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".8s">
                                     <!-- Start Single Speaker -->
                                     <div class="single-speaker">
@@ -119,7 +100,27 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Kristel Bechara</a></h3>
-                                            <span>contemporary visual artist</span>
+                                            <!-- <span>contemporary visual artist</span> -->
+                                        </div>
+                                    </div>
+                                    <!-- End Single Speaker -->
+                                </div>
+
+                                <!--Third speaker-->
+                                <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".2s">
+                                    <!-- Start Single Speaker -->
+                                    <div class="single-speaker">
+                                        <div class="top-content">
+                                            <div class="image">
+                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/khawla.png') }}" alt="#">
+                                            </div>
+                                            <ul class="social">
+                                                <li class="linkedin"><a href="https://www.linkedin.com/in/khawlaabousaleh/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="name">
+                                            <h3><a href="javascript:void(0)">Khawla Abu Saleh</a></h3>
+                                            <!-- <span>visual artist and senior art director</span> -->
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
@@ -138,7 +139,7 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Shehzad Yunus</a></h3>
-                                            <span>executive creative director</span>
+                                            <!-- <span>executive creative director</span> -->
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->

@@ -11,7 +11,7 @@
                     <h1 class="page-title">TEDx - navigating space</h1>
                     <ul class="breadcrumb-nav">
                         <li><a href="{{ route('main') }}">Home</a></li>
-                        <li>Events</li>
+                        <li>Salons</li>
                     </ul>
                 </div>
             </div>
