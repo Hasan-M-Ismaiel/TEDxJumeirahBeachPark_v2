@@ -129,7 +129,7 @@
                                     <div class="single-speaker">
                                         <div class="top-content">
                                             <div class="image">
-                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/ayeh.png') }}" alt="#">
+                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/ayeh.png') }}" loading="lazy" alt="#">
                                             </div>
                                             <ul class="social">
                                                 <li class="linkedin"><a href="https://www.linkedin.com/in/ayehnaraghi/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
@@ -148,7 +148,7 @@
                                     <div class="single-speaker">
                                         <div class="top-content">
                                             <div class="image">
-                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/kristel.png') }}" alt="#">
+                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/kristel.png') }}" loading="lazy" alt="#">
                                             </div>
                                             <ul class="social">
                                                 <li class="linkedin"><a href="https://www.linkedin.com/in/kristel-bechara-1567b4150/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
@@ -168,7 +168,7 @@
                                     <div class="single-speaker">
                                         <div class="top-content">
                                             <div class="image">
-                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/khawla.png') }}" alt="#">
+                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/khawla.png') }}" loading="lazy" alt="#">
                                             </div>
                                             <ul class="social">
                                                 <li class="linkedin"><a href="https://www.linkedin.com/in/khawlaabousaleh/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
@@ -187,7 +187,7 @@
                                     <div class="single-speaker">
                                         <div class="top-content">
                                             <div class="image">
-                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/shehzad.png') }}" alt="#">
+                                                <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/shehzad.png') }}" loading="lazy" alt="#">
                                             </div>
                                             <ul class="social">
                                                 <li class="linkedin"><a href="https://www.linkedin.com/in/shehzad-yunus-4a033712/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
@@ -223,7 +223,7 @@
                             <div class="single-speaker">
                                 <div class="top-content">
                                     <div class="image">
-                                        <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/alaa.png') }}" alt="#">
+                                        <img src="{{ asset('assets_main/assets/images/speakers-salon-event-2/alaa.png') }}" loading="lazy" alt="#">
                                     </div>
                                     <ul class="social">
                                         <li class="linkedin"><a href="https://www.linkedin.com/in/alaadalghan/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
