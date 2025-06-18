@@ -32,7 +32,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".4s"> How Can Art Communicate Ideas ✨
                                 </h2>
                                 <br>
-                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Kanvas, Dubai - <a href="https://g.co/kgs/yBQ3b9h"><u>location</u></a>
+                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Kanvas, Dubai - <a href="https://maps.app.goo.gl/hWvVU7Tcd4Q16wwR6"><u>location</u></a>
                                 </h5>
                                 <br>
                                 <div class="text pt-3 w-100 text-center">
@@ -62,7 +62,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Panellists</h3>
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Panelists</h3>
                     </div>
                     <div class="container">
                         <div class="all-speakers">
@@ -81,7 +81,7 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Ayeh Naraghi</a></h3>
-                                            <!-- <span>Artist</span> -->
+                                            <span>Cultural Industries Expert</span>
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
@@ -100,7 +100,7 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Kristel Bechara</a></h3>
-                                            <!-- <span>contemporary visual artist</span> -->
+                                            <span>Contemporary Visual Artist</span>
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
@@ -120,7 +120,7 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Khawla Abu Saleh</a></h3>
-                                            <!-- <span>visual artist and senior art director</span> -->
+                                            <span>Visual Artist & Art Director</span>
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
@@ -139,7 +139,7 @@
                                         </div>
                                         <div class="name">
                                             <h3><a href="javascript:void(0)">Shehzad Yunus</a></h3>
-                                            <!-- <span>executive creative director</span> -->
+                                            <span>Executive Creative Director</span>
                                         </div>
                                     </div>
                                     <!-- End Single Speaker -->
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Alaa Dalghan</a></h3>
-                                    <span>AI expert and the Managing Director of Cognit DX</span>
+                                    <span>AI Expert & Advisor</span>
                                 </div>
                             </div>
                             <!-- End Single Speaker -->

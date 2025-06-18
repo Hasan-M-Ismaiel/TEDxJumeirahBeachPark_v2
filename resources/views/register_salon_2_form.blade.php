@@ -155,7 +155,7 @@
                             </label>
 
                             <label class="d-block mb-4" for="company_name">
-                                <strong class="">Company / Organization Name</strong>
+                                <strong class="">Company / Organization Name  - optional: </strong>
                                 <input id="company_name" name="company_name" type="text" class="form-control" value="{{ old('company_name') }}" />
                             </label>
 
