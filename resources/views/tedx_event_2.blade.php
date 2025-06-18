@@ -57,59 +57,7 @@
     </div>
 
 
-    <!-- main partners -->
-    <section class="ftco-section" id="partners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center mb-5">
-                    <div class="section-title">
-                        <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Our Partners</h3> -->
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="featured-carousel owl-carousel">
-                        <div class="item">
-                            <div class="work">
-                                <div class="img d-flex align-items-center justify-content-center rounded"
-                                    loading="lazy"
-                                    style="
-                                    background-image: url('assets_main/assets/carosel/images/wise.png');
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    width: 100%;
-                                    height: 150px;
-                                ">
-                                </div>
-                                <div class="text pt-3 w-100 text-center">
-                                    <!-- <span>Design partner</span> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="work">
-                                <div class="img d-flex align-items-center justify-content-center rounded"
-                                    loading="lazy"
-                                    style="
-                                    background-image: url('assets_main/assets/carosel/images/kanvas.jpg');
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    width: 100%;
-                                    height: 150px;
-                                ">
-                                </div>
-                                <div class="text pt-3 w-100 text-center">
-                                    <!-- <span>Speakers' Coaching Partner</span> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more items here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
     <!-- label - Panellists -->
@@ -257,6 +205,61 @@
             </div>
         </div>
     </div>
+
+
+    <!-- main partners -->
+    <section class="ftco-section" id="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <div class="section-title">
+                        <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Our Partners</h3> -->
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded"
+                                    loading="lazy"
+                                    style="
+                                    background-image: url('assets_main/assets/carosel/images/wise.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;
+                                    height: 150px;
+                                ">
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <!-- <span>Design partner</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded"
+                                    loading="lazy"
+                                    style="
+                                    background-image: url('assets_main/assets/carosel/images/kanvas.jpg');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;
+                                    height: 150px;
+                                ">
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <!-- <span>Speakers' Coaching Partner</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
 <!-- End Call Action Area -->
 
