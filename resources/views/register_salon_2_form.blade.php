@@ -8,7 +8,7 @@
         color: red;
     }
 
-    <style>.required-label::before {
+   .required-label::before {
         content: "* ";
         color: red;
     }
@@ -45,8 +45,6 @@
         border: 2px solid #b30000;
         transition: background 0.3s ease;
     }
-</style>
-
 </style>
 
 <!-- Start Breadcrumbs -->

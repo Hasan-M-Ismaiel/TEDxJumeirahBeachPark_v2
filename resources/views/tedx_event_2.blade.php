@@ -32,7 +32,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".4s"> How Can Art Communicate Ideas ✨
                                 </h2>
                                 <br>
-                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Kanvas, Dubai - <a href="https://maps.app.goo.gl/hWvVU7Tcd4Q16wwR6"><u>location</u></a>
+                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Kanvas, Dubai - <a href="https://maps.app.goo.gl/hWvVU7Tcd4Q16wwR6" target="_blank"><u>location</u></a>
                                 </h5>
                                 <br>
                                 <div class="text pt-3 w-100 text-center">
@@ -55,6 +55,62 @@
             </div>
         </div>
     </div>
+
+
+    <!-- main partners -->
+    <section class="ftco-section" id="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <div class="section-title">
+                        <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Our Partners</h3> -->
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded"
+                                    loading="lazy"
+                                    style="
+                                    background-image: url('assets_main/assets/carosel/images/wise.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;
+                                    height: 150px;
+                                ">
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <!-- <span>Design partner</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded"
+                                    loading="lazy"
+                                    style="
+                                    background-image: url('assets_main/assets/carosel/images/kanvas.jpg');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;
+                                    height: 150px;
+                                ">
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <!-- <span>Speakers' Coaching Partner</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more items here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- label - Panellists -->
     <section class="ftco-section">
@@ -196,7 +252,7 @@
             <div class="section-title mb-0">
                 <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️
                 <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="{{ route('register_salon_2') }}" class="btn" style="color: white;">Register</a>
+                    <a href="{{ route('register_salon_2') }}" target="_blank" class="btn" style="color: white;">Register</a>
                 </div>
             </div>
         </div>
