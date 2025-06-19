@@ -22,8 +22,8 @@ class SalonSecondRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'first_name'                        => ['required', 'string', 'max:100'],
-            'last_name'                         => ['required', 'string', 'max:100'],
+            'first_name'                        => ['required', 'string', 'max:250'],
+            'last_name'                         => ['required', 'string', 'max:250'],
             'age'                               => ['required', 'integer', 'min:0', 'max:120'],
             'email'                             => ['required', 'email', 'max:500'],
             'phone_number'                      => ['required', 'string', 'max:500'],
@@ -34,9 +34,9 @@ class SalonSecondRequest extends FormRequest
             'company_name'                      => ['nullable', 'string', 'max:500'],
             'industry'                          => ['required', 'string', 'max:500'],
             'years_of_professional_experience'  => ['required', 'integer', 'min:0', 'max:99'], // FIXED
-            'how_did_you_hear'                  => ['required', 'string', 'max:500'],
-            'have_you_attend'                   => ['required', 'string', 'max:500'],
-            'why_attend'                        => ['required', 'string', 'max:1020'],
+            'how_did_you_hear'                  => ['required', 'string', 'max:9000'],
+            'have_you_attend'                   => ['required', 'string', 'max:9000'],
+            'why_attend'                        => ['required', 'string', 'max:9000'],
             'subscribed'                     => ['nullable', 'boolean'],
 
         ];
