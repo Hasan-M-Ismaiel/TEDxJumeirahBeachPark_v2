@@ -34,11 +34,10 @@ class SalonSecondRequest extends FormRequest
             'company_name'                      => ['nullable', 'string', 'max:500'],
             'industry'                          => ['required', 'string', 'max:500'],
             'years_of_professional_experience'  => ['required', 'integer', 'min:0', 'max:99'], // FIXED
-            'how_did_you_hear'                  => ['required', 'string', 'max:9000'],
-            'have_you_attend'                   => ['required', 'string', 'max:9000'],
-            'why_attend'                        => ['required', 'string', 'max:9000'],
-            'subscribed'                     => ['nullable', 'boolean'],
-
+            'how_did_you_hear'                  => ['required', 'string', 'max:2000'],
+            'have_you_attend'                   => ['required', 'string', 'max:2000'],
+            'why_attend'                        => ['required', 'string', 'max:2000'],
+            'subscribed'                        => ['nullable', 'boolean'],
         ];
     }
 
