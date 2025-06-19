@@ -139,10 +139,10 @@
                                 <input id="nationality" name="nationality" type="text" class="form-control" value="{{ old('nationality') }}" required />
                             </label>
 
-                            <label class="d-block mb-4" for="education">
+                            <!-- <label class="d-block mb-4" for="education">
                                 <strong class="required-label">Education </strong>
                                 <input id="education" name="education" type="text" class="form-control" value="{{ old('education') }}" required />
-                            </label>
+                            </label> -->
                         </div>
 
                         <!-- Step Two -->
