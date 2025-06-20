@@ -2,14 +2,6 @@
 
 @section('content')
 
-<!--[if lte IE 9]>
-    <p class="browserupgrade">
-    You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-    your experience and security.
-    </p>
-<![endif]-->
-
 
 <!-- Start Breadcrumbs -->
 <div class="breadcrumbs">
@@ -35,7 +27,6 @@
         <div class="container">
             <div class="row mx-0 justify-content-center">
                 <div class="">
-
                     <!-- Validation Errors -->
                     @if ($errors->any())
                     <div class="mb-4 mt-4" id="signUpForm">
@@ -51,7 +42,7 @@
                     </div>
                     @endif
 
-<!--the form-->
+                    <!--the form-->
                     <form id="signUpForm" class="w-100 rounded-1 p-4 border bg-white" action='{{ route("storeRegister") }}' method="POST" enctype="multipart/form-data">
                         @csrf
 
@@ -74,12 +65,12 @@
 
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Nationality</strong></span>
-                            <input name="nationality" type="text" class="form-control"  value="{{ old('nationality') }}" />
+                            <input name="nationality" type="text" class="form-control" value="{{ old('nationality') }}" />
                         </label>
 
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Residence country</strong></span>
-                            <input name="residence_country" type="text" class="form-control"  value="{{ old('residence_country') }}" />
+                            <input name="residence_country" type="text" class="form-control" value="{{ old('residence_country') }}" />
                         </label>
 
                         <label class="d-block mb-4">
@@ -89,12 +80,12 @@
 
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Education</strong></span>
-                            <input name="education" type="text" class="form-control"  value="{{ old('education') }}" />
+                            <input name="education" type="text" class="form-control" value="{{ old('education') }}" />
                         </label>
 
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Work</strong></span>
-                            <input name="work" type="text" class="form-control"  value="{{ old('work') }}" />
+                            <input name="work" type="text" class="form-control" value="{{ old('work') }}" />
                         </label>
 
                         <label class="d-block mb-4">
@@ -226,6 +217,4 @@
 </script>
 
 @endsection
-
-
 @endsection

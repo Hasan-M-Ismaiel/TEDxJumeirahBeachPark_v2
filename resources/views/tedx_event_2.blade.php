@@ -190,11 +190,12 @@
         </div>
     </div>
 
-
+    <!-- desc -->
     <div class="section-title mt-3">
         <p class="wow fadeInUp" data-wow-delay=".6s"> This event is one of the TEDx Salon gatherings, an intimate setting designed to spark thoughtful discussions on how art transcends aesthetics to communicate, challenge, and connect ideas. The event will explore the power of art in expressing complex messages, shifting perspectives, and raising awareness. We’ll also dive into how art fosters connection and shared experiences within communities, as well as the role of various mediums in creative expression. It’s a space to reflect, engage, and be inspired by the deeper impact of art in our lives.</p>
     </div>
 
+    <!-- register -->
     <div class="row align-items-center justify-content-center">
         <div class="col-12">
             <div class="section-title mb-0">
