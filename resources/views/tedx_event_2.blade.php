@@ -199,9 +199,10 @@
     <div class="row align-items-center justify-content-center">
         <div class="col-12">
             <div class="section-title mb-0">
-                <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️
+                <!-- <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️</p> -->
                 <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="{{ route('register_salon_2') }}" target="_blank" class="btn" style="color: white;">Register</a>
+                    <!-- <a href="{{ route('register_salon_2') }}" target="_blank" class="btn" style="color: white;">Happened</a> -->
+                    <div class="btn" style="color: white;">Happened</div>
                 </div>
             </div>
         </div>
