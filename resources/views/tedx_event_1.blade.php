@@ -141,9 +141,14 @@
     <div class="row align-items-center justify-content-center">
         <div class="col-12">
             <div class="section-title mb-0">
-                <p class="wow fadeInUp mt-5" data-wow-delay=".4s">🎤 Watch Podcast Interview ⬇️
+                <!-- <p class="wow fadeInUp mt-5" data-wow-delay=".4s">🎤 Watch Podcast Interview ⬇️ -->
                 <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="https://www.youtube.com/watch?v=2TTJrjL-Cxs" target="_blank" class="btn" style="color: white;">YouTube</a>
+                    <a href="https://www.youtube.com/watch?v=2TTJrjL-Cxs" target="_blank" class="btn" style="color: white;">YouTube | Watch Podcast Interview</a>
+                </div>
+            </div>
+            <div class="section-title mb-0">
+                <div class="button mt-2 ms-0" style="float: center;">
+                    <a href="https://www.flickr.com/photos/201995414@N03/albums/72177720324506525/" target="_blank" class="btn" style="color: white;">Flickr | View Photos</a>
                 </div>
             </div>
         </div>

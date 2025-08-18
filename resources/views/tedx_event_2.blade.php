@@ -202,7 +202,7 @@
                 <!-- <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️</p> -->
                 <div class="button mt-2 ms-0" style="float: center;">
                     <!-- <a href="{{ route('register_salon_2') }}" target="_blank" class="btn" style="color: white;">Happened</a> -->
-                    <div class="btn" style="color: white;">Happened</div>
+                    <a target="_blank" href="https://www.flickr.com/photos/201995414@N03/albums/72177720327542593/" class="btn" style="color: white;">View Photos on Flickr</a>
                 </div>
             </div>
         </div>
