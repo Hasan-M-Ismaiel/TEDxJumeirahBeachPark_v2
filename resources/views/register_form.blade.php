@@ -172,7 +172,7 @@
                         <!--favourit speaker-->
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Please mention your favorite TED or TEDx talk?</strong></span>
-                            <input name="question_9" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_9') }}">
+                            <input name="question_9" type="text" class="form-control"  value="{{ old('question_9') }}">
                         </label>
 
                         <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments</h2>
