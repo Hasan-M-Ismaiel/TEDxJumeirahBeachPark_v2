@@ -61,12 +61,13 @@
             </div>
         </nav>
 
-        {{ $slot }}
+        <!--content-->
+        @yield('content')
 
         <footer id="newsletter"
             class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
             <div class="pb-4">
-                <img src="{{ asset('assets_main/assets/images/122.png') }}" class="mx-auto -mb-6" style="width: 145px;">
+                <img src="{{ asset('assets_main/assets/images/logo/TEDx-X.png') }}" class="mx-auto -mb-6" style="width: 145px;">
             </div>
 
             <h5 class="text-3xl mt-5">Stay in touch with the latest articales</h5>
@@ -78,7 +79,7 @@
                         @csrf
                         <div class="lg:py-3 lg:px-5 flex items-center">
                             <label for="email" class="hidden lg:inline-block">
-                                <img src="./images/mailbox-icon.svg" alt="mailbox letter">
+                                <img src="{{ asset('assets_main/assets/icons/mailbox-icon.svg') }}" alt="mailbox letter">
                             </label>
 
                             <div>

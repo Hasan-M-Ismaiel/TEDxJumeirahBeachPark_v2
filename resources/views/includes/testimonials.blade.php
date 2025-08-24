@@ -15,7 +15,7 @@
                 <!-- Slide 1 -->
                 <div class="single-testimonial ms-1">
                     <div class="top-section">
-                        <img src="{{ asset('assets_main/assets/images/image.png') }}" alt="person">
+                        <img src="{{ asset('assets_main/assets/images/testimonials/nabd-Alemarat.png') }}" alt="nabd-Alemarat image">
                         <h3>
                             Nabd Al Emarat
                             <span>News Website</span>
@@ -33,7 +33,7 @@
                 <!-- Slide 2 -->
                 <div class="single-testimonial mx-1">
                     <div class="top-section">
-                        <img src="{{ asset('assets_main/assets/images/portal.png') }}" alt="person">
+                        <img src="{{ asset('assets_main/assets/images/testimonials/portal-production.png') }}" alt="portal production image">
                         <h3>
                             Zeena Zalamea & Thomas Smith
                             <span>Portal Production | Podcast Partner</span>
@@ -48,7 +48,7 @@
                 <!-- Slide 3 -->
                 <div class="single-testimonial">
                     <div class="top-section">
-                        <img src="{{ asset('assets_main/assets/images/iaora.png') }}" alt="person">
+                        <img src="{{ asset('assets_main/assets/images/testimonials/iaora.png') }}" alt="iaora image">
                         <h3>
                             Sunil Padmanabhan
                             <span>IAORA | Innovation Partner</span>

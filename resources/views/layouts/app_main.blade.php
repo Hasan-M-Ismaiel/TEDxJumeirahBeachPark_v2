@@ -7,17 +7,15 @@
     <title>TEDx JumierahBeachPark</title>
     <meta name="description" content="JumierahBeachPark, TED, TEDx, talk, event, conference, UAE, dubai, jumeirah, park" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets_main/assets/icons/16.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets_main/assets/icons/TEDxJumierahBeachPark-icon.png') }}" />
     <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/LineIcons.3.0.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/animate.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/tiny-slider.css') }}" />
-    <!-- <link rel="stylesheet" href="{{ asset('assets_main/assets/css/glightbox.min.css') }}" /> -->
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/main.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets_main/assets/css/multistepsform.css') }}" />
-
 
     <!-- carousel -->
     <link rel="stylesheet" href="{{ asset('assets_main/assets/carosel/css/owl.carousel.min.css') }}">
@@ -37,8 +35,6 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
 
 </head>
@@ -89,7 +85,6 @@
         color: white !important;
         /* White text */
     }
-
 
 
     /* Style the select component */
@@ -207,7 +202,6 @@
 <body>
     <!-- Preloader -->
     <div id="preloaderted">
-
     </div>
 
     <div class="loading" id="loading" style="display: none;"></div>
@@ -216,7 +210,6 @@
 
     <!--content-->
     @yield('content')
-
 
     <!-- Start Footer Area -->
     @include('includes.footer')
@@ -326,30 +319,7 @@
         });
     </script>
 
-    <script>
-        const startYear = 1900; // Adjust as needed
-        const endYear = new Date().getFullYear(); // Current year
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        const dropdownButton = document.getElementById('yearDropdown');
-        const hiddenInput = document.getElementById('selectedYearInput');
-
-        // Populate dropdown with years
-        for (let year = startYear; year <= endYear; year++) {
-            const yearItem = document.createElement('div');
-            yearItem.className = 'dropdown-item';
-            yearItem.textContent = year;
-            yearItem.style.cursor = 'pointer';
-
-            yearItem.addEventListener('click', function() {
-                dropdownButton.textContent = year; // Update button text
-                hiddenInput.value = year; // Update hidden input value
-            });
-
-            dropdownMenu.appendChild(yearItem);
-        }
-    </script>
-
-
+    <!--For main event registeration form-->
     <script>
         $(document).ready(function() {
             const options = {

@@ -32,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12 col-12 d-flex  align-items-center justify-content-center">
-                <img src="{{ asset('assets_main/assets/images/podcast_tedx.png') }}" style="width:250px; height:auto" alt="Logo">
+                <img src="{{ asset('assets_main/assets/images/podcast/podcast_tedx.png') }}" style="width:250px; height:auto" alt="Logo">
             </div>
             <div class="col-lg-8 col-md-12 col-12 d-flex justify-content-center align-items-center">
                 <div>
@@ -50,7 +50,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-12 wow fadeIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-                <img src="{{ asset('assets_main/assets/images/podcast.jpg') }}" style="width:500px; height:auto" alt="Logo">
+                <img src="{{ asset('assets_main/assets/images/podcast/podcast.jpg') }}" style="width:500px; height:auto" alt="Logo">
             </div>
             <div class="col-lg-6 col-12 wow fadeIn" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
                 <div class="content">

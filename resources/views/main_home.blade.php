@@ -4,11 +4,6 @@
 
 <!-- Start Hero Area -->
 <section class="hero-area" loading="lazy">
-    <div class="main__circle"></div>
-    <div class="main__circle2"></div>
-    <div class="main__circle3"></div>
-    <div class="main__circle4"></div>
-    <div class="container d-flex justify-content-start"></div>
 </section>
 
 <!-- End Hero Area -->
@@ -38,13 +33,14 @@
     </div>
 </div>
 
+<!--Event images-->
 <div class="logos overflow-hidden position-relative d-flex mt-2">
     <div class="logos-slide d-flex" style="white-space:nowrap;">
         @foreach ($images as $image)
         <section class="card_ ml-1 mr-1 c1 text-bg-warning py-2 px-2 rounded-3 d-flex justify-content-center align-items-center flex-column">
             <div class="d-flex mt-5">
                 <span class="s1">
-                    <img width="150px" src="{{ asset($image->path)}}" loading="lazy" alt="">
+                    <img width="150px" src="{{ asset($image->path)}}" loading="lazy" alt="Event images">
                 </span>
             </div>
         </section>
@@ -66,212 +62,27 @@
     </p>
 </div>
 
+
+@include('includes.speakers')
+
+@include('includes.partners')
+
+@include('includes.performance')
+
+@include('includes.testimonials')
+
+
 <script src="" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
+
+<!--logos for partners moving-->
 <script>
     const cloneEl = document.querySelector(".logos-slide").cloneNode(true)
     document.querySelector('.logos').appendChild(cloneEl);
 </script>
 
-
-@include('includes.speakers')
-
-
-<!-- main partners -->
-<section class="ftco-section" id="partners">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center mb-5">
-                <!-- <h2 class="heading-section mb-5 pb-md-4">our Partners</h2> -->
-                <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Our Partners</h3>
-                </div>
-                <div class="item mb-1">
-                    <div class="work">
-                        <img src="assets_main/assets/carosel/images/hero.png" />
-                        <div class="text w-100 text-center">
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-12">
-                <div class="featured-carousel owl-carousel">
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-0.png);">
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Design partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-2.png);">
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Speakers' Coaching Partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1.png);">
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Media partner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy"style="background-image: url(assets_main/assets/carosel/images/work-5.png);">
-                                <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
-                                    <span class="ion-ios-search"></span>
-                                </a> -->
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span>Promotion Partner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded"loading="lazy"  style="background-image: url(assets_main/assets/carosel/images/work-4.png);">
-                                <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
-                                    <span class="ion-ios-search"></span>
-                                </a> -->
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span>Podcast Partner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-3.png);">
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Community Partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-9.png);">
-
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Event Support Partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-30.png);">
-
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Innovation partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1000.png);">
-
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Gift & Merchandies Partner</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-10001.png);">
-
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>Volunteer Partner</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-3300.png);">
-
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <span>AV Partner</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- performance partners -->
-<section class="ftco-section" id="partners">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <!-- <h2 class="heading-section mb-5 pb-md-4">our Partners</h2> -->
-                <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Performance Partners</h3>
-                </div>
-
-            </div>
-            <div class="col-md-12">
-                <div class="featured-carousel owl-carousel">
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded"  loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-1012.png);">
-                                <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
-                                    <span class="ion-ios-search"></span>
-                                </a> -->
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <div class="img d-flex align-items-center justify-content-center rounded" loading="lazy" style="background-image: url(assets_main/assets/carosel/images/work-550.png);">
-                                <!-- <a href="#" class="icon d-flex align-items-center justify-content-center">
-                                    <span class="ion-ios-search"></span>
-                                </a> -->
-                            </div>
-                            <div class="text pt-3 w-100 text-center">
-                                <!-- <h3><a href="#">Creators Media</a></h3> -->
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@include('includes.testimonials')
-
-
+<!--about video script-->
 <script>
     let video = document.querySelector('video');
     let isPaused = false;
@@ -290,4 +101,5 @@
     });
     observer.observe(video);
 </script>
+
 @endsection

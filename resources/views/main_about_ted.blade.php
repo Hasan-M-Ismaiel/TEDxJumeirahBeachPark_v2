@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 col-12 d-flex  align-items-center justify-content-center">
                 <!-- <img src="{{ asset('assets_main/assets/images/logo/logo-black.png') }}" alt="Logo"> -->
-                <img src="{{ asset('assets_main/assets/images/122.png') }}" style="width:500px; height:auto" alt="Logo">
+                <img src="{{ asset('assets_main/assets/images/logo/TEDx-X.png') }}" style="width:500px; height:auto" alt="Logo">
             </div>
             <div class="col-lg-8 col-md-12 col-12 d-flex justify-content-center align-items-center">
                 <!-- <div class="section-title"> -->
@@ -49,7 +49,7 @@
 
 <div style="background-color: #F4F7FA;" class="pt-3">
     <div class="">
-        <video id="myvideo" width="100%" height="auto" controls poster="{{ asset('assets_main/assets/images/poster_video.png') }}">
+        <video id="myvideo" width="100%" height="auto" controls poster="{{ asset('assets_main/assets/images/poster/poster_video.png') }}">
             <source src="{{ asset('assets_main/assets/hero_video/promo.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>

@@ -37,7 +37,7 @@
 
             <footer class="flex justify-between items-center mt-8">
                 <div class="flex items-center text-sm">
-                    <img src="/images/Tedx-Theme.svg" width="15%" alt="theme">
+                    <img src="{{ asset('assets_main/assets/images/logo/Tedx-Theme.svg') }}" width="15%" alt="theme">
                     <div class="ml-3">
                         <h5 class="font-bold">
 

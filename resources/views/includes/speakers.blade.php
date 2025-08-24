@@ -18,7 +18,7 @@
                             <div class="single-speaker">
                                 <div class="top-content">
                                     <div class="image">
-                                        <img src="{{asset($speaker->image)}}" loading="lazy" alt="#">
+                                        <img src="{{asset($speaker->image)}}" loading="lazy" alt="speaker image">
                                     </div>
                                     <ul class="social">
                                         <li class="linkedin"><a href="{{ $speaker->linkedin }}" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>

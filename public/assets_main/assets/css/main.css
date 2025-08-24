@@ -2174,7 +2174,7 @@ ol {
   margin-left: 14px;
   margin-right: 14px;
   padding-bottom: 300px;
-  background-image: url("../images/hero/hero-bg.png");
+  background-image: url("../images/hero/group-photo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3118,7 +3118,6 @@ ol {
     Call To Action CSS
 ========================================*/
 .call-action_main {
-  /* background-image: url("../images/call-action/call-bg_main.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
