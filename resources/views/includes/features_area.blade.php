@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12 col-12 d-flex  align-items-center justify-content-center">
-                <img src="{{ asset('assets_main/assets/images/122.png') }}" style="width:400px; height:auto" alt="Logo">
+                <img src="{{ asset('assets_main/assets/images/logo/TEDx-X.png') }}" style="width:400px; height:auto" alt="Logo">
             </div>
             <div class="col-lg-8 col-md-12 col-12 mt-4">
                 <div>
