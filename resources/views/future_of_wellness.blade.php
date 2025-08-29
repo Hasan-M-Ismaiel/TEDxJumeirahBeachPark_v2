@@ -111,21 +111,44 @@
 
     <!-- desc -->
     <div class="section-title mt-3">
-        <p class="wow fadeInUp" data-wow-delay=".6s"> This event is one of the TEDx Salon gatherings, an intimate setting designed to spark thoughtful discussions on health and wellness The event will open with a guided meditation to create a calm and focused atmosphere, helping participants release tension, find mental clarity and achieve emotional balance, setting the tone for an inspiring and engaging evening. Following the sound healing session, a Super Energy session will share practical, science-backed strategies to elevate health and vitality. We’ll discover how to enhance sleep for deeper rest, skyrocket energy levels for peak performance, boost the immune system for greater resilience, optimize hormones for balance and improve recovery so we can perform at our best every day.</p>
+        <p class="wow fadeInUp" data-wow-delay=".6s"> This TEDx Salon is an intimate gathering designed to spark thoughtful discussions on health and wellness. 
+The evening begins with a Sound Healing Session to create calm, clarity and emotional balance. 
+A Super Energy session will follow, offering practical, science-backed strategies to enhance sleep, energy, immunity, hormone balance and recovery, so we can perform at our best every day.</p>
     </div>
 
     <!-- register -->
-    <div class="row align-items-center justify-content-center">
-        <div class="col-12">
-            <div class="section-title mb-0">
-                <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️</p>
-                <div class="button mt-2 ms-0" style="float: center;">
-                    <a href="https://www.rotary.ae/events/rotary-club-of-jumeirah-and-tedx-jumeirah-beach-park-the-future-of-wellness-nourishing-the-body-mind-and-purpose/form" target="_blank" class="btn" style="color: white;">register</a>
-                    <!-- <a target="_blank" href="https://www.flickr.com/photos/201995414@N03/albums/72177720327542593/" class="btn" style="color: white;">View Photos on Flickr</a> -->
+    <div class="row align-items-center justify-content-center mt-5">
+        <div class="col-lg-8 col-md-10 col-12">
+            <div class="section-title mb-0 text-center">
+
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+
+                    <!-- Payment Info -->
+                    <div class="register-info text-md-end text-center pe-md-4">
+                        <p class="mb-1" style="font-weight: 600;">Reserve your spot now, pay at the venue!</p>
+                        <span style="font-size: 1.2rem; font-weight: bold;">🎟 200 AED</span>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="d-none d-md-block"
+                        style="border-left: 1px solid #ddd; height: 50px;">
+                    </div>
+
+                    <!-- Register Section -->
+                    <div class="text-center ps-md-4">
+                        <!-- <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️</p> -->
+                        <div class="button mt-2 ms-0" style="float: center;">
+                            <a href="https://www.rotary.ae/events/rotary-club-of-jumeirah-and-tedx-jumeirah-beach-park-the-future-of-wellness-nourishing-the-body-mind-and-purpose/form" target="_blank" class="btn" style="color: white;"> register now</a>
+                            <!-- <a target="_blank" href="https://www.flickr.com/photos/201995414@N03/albums/72177720327542593/" class="btn" style="color: white;">View Photos on Flickr</a> -->
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
+
 
 
     <!-- main partners -->
@@ -139,24 +162,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="featured-carousel owl-carousel">
-                        <div class="item">
-                            <div class="work">
-                                <div class="img d-flex align-items-center justify-content-center rounded"
-                                    loading="lazy"
-                                    style="
-                                    background-image: url('assets_main/assets/carosel/images/altha-main-gold.png');
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    background-position: center;
-                                    width: 100%;
-                                    height: 150px;
-                                ">
-                                </div>
-                                <div class="text pt-3 w-100 text-center">
-                                    <!-- <span>Design partner</span> -->
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="item">
                             <div class="work">
                                 <div class="img d-flex align-items-center justify-content-center rounded"
