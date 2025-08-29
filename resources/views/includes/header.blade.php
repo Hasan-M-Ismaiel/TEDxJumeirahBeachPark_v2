@@ -43,6 +43,7 @@
                                             <ul class="sub-menu collapse" id="submenu-1-2">
                                                 <li class="nav-item"><a href="{{ route('tedx_event_1') }}">TEDx - navigating space</a></li>
                                                 <li class="nav-item"><a href="{{ route('tedx_event_2') }}">TEDx - How Can Art Communicate Ideas</a></li>
+                                                <li class="nav-item"><a href="{{ route('future_of_wellness') }}">TEDx - The future of wellness</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item"><a href="{{ route('podcasts') }}">Interviews</a></li>

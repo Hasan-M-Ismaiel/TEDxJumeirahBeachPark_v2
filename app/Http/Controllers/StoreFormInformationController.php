@@ -7,6 +7,7 @@ use App\Http\Requests\OtherCreateRequest;
 use App\Http\Requests\PartnerCreateRequest;
 use App\Http\Requests\RegisterCreateRequest;
 use App\Http\Requests\SalonFirstRequest;
+use App\Http\Requests\SalonRegisterFutureOfWellnessRequest;
 use App\Http\Requests\SalonSecondRequest;
 use App\Models\SalonFirst;
 use App\Http\Requests\VolunteerCreateRequest;
@@ -17,6 +18,7 @@ use App\Models\MainEvent;
 use App\Models\Other;
 use App\Models\Partner;
 use App\Models\Register;
+use App\Models\SalonFutureOfWellness;
 use App\Models\SalonSecond;
 use App\Models\TemporaryFile;
 use App\Models\User;
@@ -215,6 +217,16 @@ class StoreFormInformationController extends Controller
         return redirect()->back();
     }
 
+    public function store_register_future_of_wellness_form(SalonRegisterFutureOfWellnessRequest $request)
+    {
+        $SalonSecond = SalonFutureOfWellness::create($request->validated());
+
+        Alert::success('Success', 'Your information has been taken, Thank you!');
+
+        return redirect()->back();
+    }
+
+    
     public function storeRegister_main_event(MainEventRequest $request)
     {
         $my_string = implode(",", $request->selected_options);

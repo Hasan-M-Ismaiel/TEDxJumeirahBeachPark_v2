@@ -66,6 +66,7 @@ Route::get('/speakers/{speaker}', [MainHomeController::class, 'speaker'])->name(
 
 Route::get('/TEDx-event-1', [MainHomeController::class, 'tedx_event_1'])->name('tedx_event_1');
 Route::get('/TEDx-event-2', [MainHomeController::class, 'tedx_event_2'])->name('tedx_event_2');
+Route::get('/future-of-wellness', [MainHomeController::class, 'future_of_wellness'])->name('future_of_wellness');
 Route::get('/TEDx-main-event', [MainHomeController::class, 'tedx_main_event'])->name('tedx_main_event');
 
 Route::get('/register', [MainHomeController::class, 'register'])->name('register');
@@ -91,12 +92,14 @@ Route::post('/storeOther', [StoreFormInformationController::class, 'storeOther']
 
 Route::get('/register-salon-1', [MainHomeController::class, 'register_salon_1'])->name('register_salon_1');
 Route::get('/register-salon-2', [MainHomeController::class, 'register_salon_2'])->name('register_salon_2');
+Route::get('/register-future-of-wellness', [MainHomeController::class, 'register_future_of_wellness'])->name('register_future_of_wellness');
 Route::get('/register-main-event', [MainHomeController::class, 'register_main_event_form'])->name('register_main_event_form');
 
 
 // data 
 Route::post('/storeRegister_salon_1', [StoreFormInformationController::class, 'storeRegister_salon_1'])->name('storeRegister_salon_1');
 Route::post('/storeRegister_salon_2', [StoreFormInformationController::class, 'storeRegister_salon_2'])->name('storeRegister_salon_2');
+Route::post('/store-register-future-of-wellness-form', [StoreFormInformationController::class, 'store_register_future_of_wellness_form'])->name('store_register_future_of_wellness_form');
 Route::post('/storeRegister_main_event', [StoreFormInformationController::class, 'storeRegister_main_event'])->name('storeRegister_main_event');
 
 

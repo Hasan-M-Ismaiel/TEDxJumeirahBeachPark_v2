@@ -161,6 +161,13 @@ class MainHomeController extends Controller
         return view('tedx_event_2', ['event' => $event]);
     }
 
+    public function future_of_wellness()
+    {
+        $events = Event::all();
+        $event = $events->first();
+        return view('future_of_wellness', ['event' => $event]);
+    }
+
     // main registeration form 
     public function tedx_main_event()
     {
@@ -193,6 +200,15 @@ class MainHomeController extends Controller
         $events = Event::all();
         $event = $events->first();
         return view('register_salon_2_form', [
+            'event' => $event,
+        ]);
+    }
+
+    public function register_future_of_wellness()
+    {
+        $events = Event::all();
+        $event = $events->first();
+        return view('register_future_of_wellness_form', [
             'event' => $event,
         ]);
     }
