@@ -77,7 +77,7 @@
                                         <li class="instagram"><a href="https://www.instagram.com/ergogenic_health/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="name mb-5">
+                                <div class="name mb-4">
                                     <h3><a href="javascript:void(0)">Lucas Aoun</a></h3>
                                     <span>Naturopath & Health Coach</span>
                                 </div>
@@ -96,7 +96,7 @@
                                         <li class="instagram"><a href="https://www.instagram.com/althahealing/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="name">
+                                <div class="name px-0">
                                     <h3><a href="javascript:void(0)">Letizia Silvestri</a></h3>
                                     <span>Board Certified Clinical Hypnotherapist & Sound Healing Expert</span>
                                 </div>
