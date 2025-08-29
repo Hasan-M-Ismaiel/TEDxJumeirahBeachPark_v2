@@ -77,7 +77,7 @@
                                         <li class="instagram"><a href="https://www.instagram.com/ergogenic_health/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
                                     </ul>
                                 </div>
-                                <div class="name">
+                                <div class="name mb-5">
                                     <h3><a href="javascript:void(0)">Lucas Aoun</a></h3>
                                     <span>Naturopath & Health Coach</span>
                                 </div>
