@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Lucas Aoun</a></h3>
-                                    <span>Qualified Naturopath</span>
+                                    <span>Naturopath & Health Coach</span>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="name">
                                     <h3><a href="javascript:void(0)">Letizia Silvestri</a></h3>
-                                    <span>Sound Healing Expert</span>
+                                    <span>Board Certified Clinical Hypnotherapist & Sound Healing Expert</span>
                                 </div>
                             </div>
                         </div>
