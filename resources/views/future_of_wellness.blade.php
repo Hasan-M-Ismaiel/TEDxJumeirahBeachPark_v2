@@ -32,7 +32,7 @@
                                 <h2 class="wow fadeInUp" data-wow-delay=".4s"> <span style="background-color: #f03355; color: white; padding-left: 15px; padding-right: 15px">The Future of wellness </span> Nourishing the body, mind and purpose
                                 </h2>
                                 <br>
-                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> jw marriott hotel marina, Dubai - <a href="https://maps.app.goo.gl/kxzE3XCb4XEaEpTB6" target="_blank"><u>location</u></a>
+                                <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> JW Marriott Hotel Marina, Dubai - <a href="https://maps.app.goo.gl/kxzE3XCb4XEaEpTB6" target="_blank"><u>location</u></a>
                                 </h5>
                                 <br>
                                 <div class="text pt-3 w-100 text-center">
