@@ -5,6 +5,16 @@
     <title>TEDxJumeirahBeachPark Confirmation Mail</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38GJFJPLPW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38GJFJPLPW');
+</script>
+
 <body>
     <p>{{ $data['title'] }}</p>
     <p>Thank you for registering your interest in our event. We appreciate your time and enthusiasm.</p>

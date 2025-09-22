@@ -24,6 +24,15 @@
         -webkit-line-clamp: 1;
     }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38GJFJPLPW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38GJFJPLPW');
+</script>
 
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">

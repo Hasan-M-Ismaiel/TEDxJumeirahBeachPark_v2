@@ -38,6 +38,15 @@
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-38GJFJPLPW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-38GJFJPLPW');
+</script>
 
 <style>
     /* Style the select component */
