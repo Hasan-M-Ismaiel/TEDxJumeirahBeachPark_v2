@@ -138,7 +138,8 @@ A Super Energy session will follow, offering practical, science-backed strategie
                     <div class="text-center ps-md-4">
                         <!-- <p class="wow fadeInUp mt-5" data-wow-delay=".4s"> Register Now ⬇️</p> -->
                         <div class="button mt-2 ms-0" style="float: center;">
-                            <a href="https://www.rotary.ae/events/rotary-club-of-jumeirah-and-tedx-jumeirah-beach-park-the-future-of-wellness-nourishing-the-body-mind-and-purpose/form" target="_blank" class="btn" style="color: white;"> register now</a>
+                            <a href="#" class="btn" style="color: white;"> Registration is closed</a>
+                            <!-- <a href="https://www.rotary.ae/events/rotary-club-of-jumeirah-and-tedx-jumeirah-beach-park-the-future-of-wellness-nourishing-the-body-mind-and-purpose/form" target="_blank" class="btn" style="color: white;"> register now</a> -->
                             <!-- <a target="_blank" href="https://www.flickr.com/photos/201995414@N03/albums/72177720327542593/" class="btn" style="color: white;">View Photos on Flickr</a> -->
                         </div>
                     </div>
