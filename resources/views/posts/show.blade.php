@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.blog_layout')
 @section('content')
 
 <section class="px-6 py-8">
@@ -55,14 +55,6 @@
                 </div>
             </div>
 
-            <!-- comment section -->
-            <section class="col-span-8 col-start-5 mt-10 space-y-6">
-                @include('posts._add-comment-form')
-
-                @foreach($post->comments as $comment)
-                <x-post-comment :comment="$comment" />
-                @endforeach
-            </section>
         </article>
     </main>
 </section>

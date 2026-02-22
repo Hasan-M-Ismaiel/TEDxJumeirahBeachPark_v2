@@ -63,7 +63,6 @@ class StoreFormInformationController extends Controller
         }
     }
 
-
     public function storeVolunteer(VolunteerCreateRequest $request)
     {
         $my_string = implode(",", $request->selected_skills);
@@ -163,24 +162,6 @@ class StoreFormInformationController extends Controller
         return redirect()->back();
     }
 
-    public function storeOther(OtherCreateRequest $request)
-    {
-        $other = Other::create($request->validated());
-        if ($request->question_4) {
-            $other->question_4 = $request->question_4;
-            $other->save();
-        }
-
-        Alert::success('Success', 'Your request has been taken, Thank you!');
-
-        $users = User::all();
-        $user = $users->first();
-        $user->notify(new NewOther($other));
-
-        return redirect()->back();
-    }
-
-
     public function storeEmail(Request $request)
     {
         if (! Email::where('email', $request->input('email'))->exists()) {
@@ -198,61 +179,4 @@ class StoreFormInformationController extends Controller
         return redirect()->back();
     }
 
-    public function storeRegister_salon_1(SalonFirstRequest $request)
-    {
-        $SalonFirst = SalonFirst::create($request->validated());
-
-        Alert::success('Success', 'Your information has been taken, Thank you!');
-
-        return redirect()->back();
-    }
-
-    public function storeRegister_salon_2(SalonSecondRequest $request)
-    {
-        $SalonSecond = SalonSecond::create($request->validated());
-
-        
-        Alert::success('Success', 'Your information has been taken, Thank you!');
-
-        return redirect()->back();
-    }
-
-    public function store_register_future_of_wellness_form(SalonRegisterFutureOfWellnessRequest $request)
-    {
-        $SalonSecond = SalonFutureOfWellness::create($request->validated());
-
-        Alert::success('Success', 'Your information has been taken, Thank you!');
-
-        return redirect()->back();
-    }
-
-    
-    public function storeRegister_main_event(MainEventRequest $request)
-    {
-        $my_string = implode(",", $request->selected_options);
-        if ($request->question_5_options) {
-            $my_string .= ", " . $request->question_5_options;
-        }
-        Log::info($request->secondary_dropdown);
-        $MainEvent = MainEvent::create([
-            'full_name'        => $request->full_name,
-            'email'            => $request->email,
-            'phone_number'     => $request->phone_number,
-
-            'country'          => $request->country,
-            'city'             => $request->city,
-            'birthday'         => $request->selected_year,
-            'education'        => $request->education,
-            'work'             => $request->work,
-            'selected_options' => $my_string,
-            'industry'         => $request->industry,
-            'mainSelect'       => $request->main_select,
-            'secondaryDropdown' => $request->secondary_dropdown,
-            'why'              => $request->why,
-        ]);
-
-        Alert::success('Success', 'Your information has been taken, Thank you!');
-
-        return redirect()->back();
-    }
 }

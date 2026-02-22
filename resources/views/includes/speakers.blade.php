@@ -13,8 +13,8 @@
             <div class="container">
                 <div class="all-speakers">
                     <div class="row align-items-center justify-content-center">
-                        @foreach ($speakers as $speaker)
-                        <div class="col-lg-4 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
+                        @foreach ($event->speakers as $speaker)
+                        <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-speaker">
                                 <div class="top-content">
                                     <div class="image">
@@ -25,10 +25,10 @@
                                     </ul>
                                 </div>
                                 <div class="name">
-                                    <h3><a href="{{ route('speaker', [$speaker->id]) }}" target="_blank">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
+                                    <h3><a href="{{ route('speaker', [$speaker->slug]) }}" target="_blank">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
                                     <span><strong>{{$speaker->title}}</strong></span>
                                     <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
-                                    🎙️ <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube Channel </a>
+                                    <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube Channel </a>
                                 </div>
                             </div>
                         </div>

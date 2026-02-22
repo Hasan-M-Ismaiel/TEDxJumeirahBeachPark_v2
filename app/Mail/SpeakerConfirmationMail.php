@@ -39,7 +39,7 @@ class SpeakerConfirmationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'speaker-mail-confirmation',
+            view: 'mail.speaker-mail-confirmation',
         );
     }
 

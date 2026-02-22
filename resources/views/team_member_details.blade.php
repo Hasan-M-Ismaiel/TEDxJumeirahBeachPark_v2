@@ -26,12 +26,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <!-- <h3 class="wow zoomIn" data-wow-delay=".2s">Ready to take the stage?</h3> -->
-                    <!-- <h2 class="wow fadeInUp" data-wow-delay=".4s">If you want to be a speaker who will give a powerful talk that foster the love of learning in the audience, then don’t miss this opportunity!
-                        A TEDx talk should center on an idea.
-                    </h2> -->
                     <p class="wow fadeInUp" data-wow-delay=".6s">
-                        <!-- some description realted to this page in general for all team members... -->
                     </p>
                 </div>
             </div>
@@ -70,9 +65,8 @@
                                         @elseif ($member->subteam == "filter-production")
                                         <li><strong>Team</strong>: Production team </li>
                                         @endif
-                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $member->caption }}">linkedin</a></li>
+                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $member->linkedin }}">linkedin</a></li>
                                     </ul>
-
                                 </div>
                                 <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
                                     <h2>Short Bio</h2>
@@ -81,12 +75,9 @@
                                     </p>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
-                </section><!-- /Portfolio Details Section -->
+                </section>
             </main>
         </div>
     </div>

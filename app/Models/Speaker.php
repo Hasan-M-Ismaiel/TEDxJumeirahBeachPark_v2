@@ -12,27 +12,29 @@ class Speaker extends Model implements HasMedia
     use HasFactory, InteractsWithMedia;
 
     protected $fillable = [
-        'name', 
+        'name',
         'title',
-        'topic_title', 
-        'linkedin', 
-        'background', 
-        'idea', 
-        'podcast', 
-        'talk', 
-        'image', 
+        'topic_title',
+        'linkedin',
+        'background',
+        'idea',
+        'podcast',
+        'talk',
+        'image',
     ];
 
-    public function events ()
+    public function events()
     {
         return $this->belongsToMany(Event::class);
     }
 
+
+
     public function checkifAssignedToEvent(Event $event)
     {
         $numeberOfAssignedEvents = $this->events()
-                    ->where('events.id', $event->id)
-                    ->count();
-        return $numeberOfAssignedEvents > 0 ? true : false; 
+            ->where('events.id', $event->id)
+            ->count();
+        return $numeberOfAssignedEvents > 0 ? true : false;
     }
 }

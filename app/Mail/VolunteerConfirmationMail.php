@@ -38,7 +38,7 @@ class VolunteerConfirmationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'volunteer-mail-confirmation',
+            view: 'mail.volunteer-mail-confirmation',
         );
     }
 

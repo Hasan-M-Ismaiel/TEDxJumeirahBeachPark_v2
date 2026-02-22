@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.blog_layout')
 @section('content')
 
 @include('posts._header')

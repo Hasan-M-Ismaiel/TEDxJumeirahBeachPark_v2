@@ -9,24 +9,27 @@ class Teammember extends Model
 {
     use HasFactory;
     protected $fillable = [
-        "full_name", 
+        "full_name",
         "title",
         "bio",
         "image",
+        "linkedin",
         "caption",
+        "department",
         "subteam"
     ];
 
-    public function events ()
+    public function events()
     {
         return $this->belongsToMany(Event::class);
     }
 
+
     public function checkifAssignedToEvent(Event $event)
     {
         $numeberOfAssignedEvents = $this->events()
-                    ->where('events.id', $event->id)
-                    ->count();
-        return $numeberOfAssignedEvents > 0 ? true : false; 
+            ->where('events.id', $event->id)
+            ->count();
+        return $numeberOfAssignedEvents > 0 ? true : false;
     }
 }

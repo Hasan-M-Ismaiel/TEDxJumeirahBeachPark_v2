@@ -19,23 +19,70 @@
                         <li data-filter=".filter-marketing">Marketing & Communication team</li>
                         <li data-filter=".filter-production">Production team</li>
                         <li data-filter=".filter-operation-logistics">Operations & Logistics team</li>
-                    </ul><!-- End Portfolio Filters -->
+                    </ul>
 
                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                        @foreach ($members as $member)
+                        @foreach ($event->teammembers as $member)
                         <div class="col-lg-3 col-md-6 portfolio-item isotope-item {{$member->subteam}}">
                             <img src="{{ asset($member->image) }}" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>{{$member->full_name}}</h4>
                                 <p>{{$member->title}}</p>
-                                <a href="{{ asset($member->image) }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                <a href="{{ route('teammember', [$member->id]) }}" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+
+                                <a href="{{ asset($member->image) }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                </a>
+
+                                <a href="{{ route('teammember', [$member->slug]) }}" target="_blank" title="More Details" class="details-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
                             </div>
-                        </div><!-- End Portfolio Item -->
+
+                        </div>
                         @endforeach
-                    </div><!-- End Portfolio Container -->
+                    </div>
                 </div>
             </div>
-        </section><!-- /Portfolio Section -->
+        </section>
     </div>
 </section>
+
+<!-- team taps -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        var grid = document.querySelector('.isotope-container');
+
+        var iso = new Isotope(grid, {
+            itemSelector: '.isotope-item',
+            layoutMode: 'masonry'
+        });
+
+        // تطبيق الفلتر الافتراضي
+        var defaultFilter = document.querySelector('.isotope-layout')
+            .getAttribute('data-default-filter');
+
+        iso.arrange({
+            filter: defaultFilter
+        });
+
+        var filtersElem = document.querySelector('.portfolio-filters');
+
+        filtersElem.addEventListener('click', function(event) {
+            if (!event.target.matches('li')) return;
+
+            document.querySelector('.filter-active')
+                .classList.remove('filter-active');
+
+            event.target.classList.add('filter-active');
+
+            var filterValue = event.target.getAttribute('data-filter');
+
+            iso.arrange({
+                filter: filterValue
+            });
+        });
+
+    });
+</script>

@@ -14,59 +14,64 @@ class Event extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia;
 
-    protected $fillable = ['title', 'description', 'date', 'location', 'facebook', 'linkedin', 'twitter', 'linedin', 'instagram', 'website', 'phone'];
-
-    public function sponsers()
-    {
-        return $this->belongsToMany(Sponser::class);
-    }
+    protected $fillable = ['title', 'slug', 'description', 'short_description', 'type', 'cover_image', 'date', 'location', 'audience_count', 'is_upcoming'];
 
     public function speakers()
     {
         return $this->belongsToMany(Speaker::class);
     }
 
-    public function volunteers()
+    public function teammembers()
     {
-        return $this->belongsToMany(Volunteer::class);
+        return $this->belongsToMany(Teammember::class);
     }
 
-    public function members()
+    public function sponsors()
     {
-        return $this->belongsToMany(Member::class);
+        return $this->belongsToMany(Sponsor::class);
     }
 
-    public function registers()
+    public function partners()
     {
-        return $this->belongsToMany(Register::class);
+        return $this->belongsToMany(Partner::class);
     }
 
-    public function remainingTime()
+    public function testimonials()
     {
-
-        $date_now_ = date('Y-m-d h:i:s a', time());;
-
-        $date_now = new DateTime($date_now_);
-        $date_event_created = new DateTime($this->created_at);
-        $date_for_event = new DateTime($this->date);
-
-
-        $from_now_to_occure = $date_for_event->diff($date_now);
-        $from_created_to_occure = $date_event_created->diff($date_for_event);
-
-        $passedDayes = $from_created_to_occure->d - $from_now_to_occure->d;
-        return ($passedDayes*100)/$from_created_to_occure->d;
-
+        return $this->hasMany(Testimonial::class);
     }
 
-    public function remaining_time()
+    public function getRouteKeyName()
     {
-        $date_now_ = date('Y-m-d h:i:s a', time());;
-
-        $date_now = new DateTime($date_now_);
-        $date_for_event = new DateTime($this->date);
-        $from_now_to_occure = $date_for_event->diff($date_now);
-
-        return $from_now_to_occure->d;
+        return 'slug';
     }
+
+    // public function remainingTime()
+    // {
+
+    //     $date_now_ = date('Y-m-d h:i:s a', time());;
+
+    //     $date_now = new DateTime($date_now_);
+    //     $date_event_created = new DateTime($this->created_at);
+    //     $date_for_event = new DateTime($this->date);
+
+
+    //     $from_now_to_occure = $date_for_event->diff($date_now);
+    //     $from_created_to_occure = $date_event_created->diff($date_for_event);
+
+    //     $passedDayes = $from_created_to_occure->d - $from_now_to_occure->d;
+    //     return ($passedDayes*100)/$from_created_to_occure->d;
+
+    // }
+
+    // public function remaining_time()
+    // {
+    //     $date_now_ = date('Y-m-d h:i:s a', time());;
+
+    //     $date_now = new DateTime($date_now_);
+    //     $date_for_event = new DateTime($this->date);
+    //     $from_now_to_occure = $date_for_event->diff($date_now);
+
+    //     return $from_now_to_occure->d;
+    // }
 }

@@ -1,15 +1,59 @@
-@extends('layouts.app')
+@extends('layouts.app_main')
 
 @section('content')
-<div class="body flex-grow-1 px-3 main-img test">
-    <div class="container-lg ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="row">
-                </div>
+
+<!-- Start Hero Area -->
+<section class="hero-area" loading="lazy">
+</section>
+
+<!-- theme section -->
+<div class="container-fluid mt-3">
+    <div class="tedx-banner">
+        <div class="logo-container">
+            <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" loading="lazy" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
+        </div>
+        <div class="theme">
+            {{ $event->title }}<br>
+        </div>
+        <div>
+            <p>{{ $event->short_description }}</p>
+        </div>
+        <div class="event-info">
+            <div class="event-date">
+                This event will occurre at<br>
+                {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
+            </div>
+            <div class="event-location">
+                <i class="bi bi-geo-alt-fill" style="color:red;"></i>
+                <strong>To Be Confirmed</strong>
+                <!-- <strong>Dubai Silicon Oasis</strong> -->
+                <br>
+                Dubai, |
+                United Arab Emirates | {{ $event->location }}
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- partners section -->
+@if($event->partners()->exists())
+@include('includes.partners', ['partners' => $event->partners])
+@endif
+
+<!-- performances -->
+@if($event->partners()->where('type', 'performance')->exists())
+@include('includes.performance')
+@endif
+
+<!-- sponsors section -->
+@if($event->partners()->where('type', 'sponsor')->exists())
+@include('includes.sponsors')
+@endif
+
+<!-- team members section -->
+@if($event->teammembers()->exists())
+@include('includes.team')
+@endif
 
 @endsection

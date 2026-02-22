@@ -38,7 +38,7 @@ class PartnerConfirmationMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'partner-mail-confirmation',
+            view: 'mail.partner-mail-confirmation',
         );
     }
 
