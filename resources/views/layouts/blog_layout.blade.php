@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets_main/assets/icons/16.png') }}" />
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets_main/assets/icons/TEDxJumierahBeachPark-icon.png') }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <style>
@@ -28,14 +28,18 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-38GJFJPLPW"></script>
 
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-38GJFJPLPW');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-38GJFJPLPW');
 </script>
 
 <!-- blog layout -->
+
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
