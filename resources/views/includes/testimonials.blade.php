@@ -12,7 +12,7 @@
 
         <div class="slider-head">
             <div class="testimonial-slider">
-                @foreach($event->testimonials as $testimonial)
+                @foreach($testimonials as $testimonial)
                 <div class="single-testimonial mx-1">
                     <div class="top-section">
                         <img src="{{ asset($testimonial->image) }}" alt="portal production image">

@@ -26,22 +26,18 @@
                                     <a href="{{ route('events.index') }}" aria-label="Toggle navigation">Events</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a href="{{ route('members') }}" aria-label="Toggle navigation">Team</a>
+                                    <a href="{{ route('members') }}" aria-label="Toggle navigation">Previous team members</a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
+                                    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Join Us</a>
                                     <ul class="sub-menu collapse" id="submenu-1-2">
-                                        <li class="nav-item">
-                                            <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Join Us</a>
-                                            <ul class="sub-menu collapse" id="submenu-1-2">
-                                                <li class="nav-item"><a href="{{ route('register') }}">Speakers</a></li>
-                                                <li class="nav-item"><a href="{{ route('volunteer') }}">Volunteers</a></li>
-                                                <li class="nav-item"><a href="{{ route('partner') }}">Partners</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item"><a href="#footer">Contact</a></li>
+                                        <li class="nav-item"><a href="{{ route('register') }}">Speakers</a></li>
+                                        <li class="nav-item"><a href="{{ route('volunteer') }}">Volunteers</a></li>
+                                        <li class="nav-item"><a href="{{ route('partner') }}">Partners</a></li>
                                     </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="#footer" aria-label="Toggle navigation">Contact</a>
                                 </li>
                             </ul>
                         </div> <!-- navbar collapse -->

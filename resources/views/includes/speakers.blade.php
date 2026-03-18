@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Speakers</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Speakers</h2>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s">@if($event->type=="Standard Event") Speakers @else Experts @endif</h3>
+                    <!-- <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our @if($event->type=="Standard Event") Speakers @else Experts @endif</h2> -->
                     <p class="wow fadeInUp" data-wow-delay=".6s">Our TEDxJumeirahbeachpark speakers are visionary thinkers, innovators, and storytellers who bring fresh perspectives and powerful ideas to the stage. Coming from diverse backgrounds and industries, they are united by a passion for sparking meaningful conversations and inspiring change.</p>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                                     <h3><a href="{{ route('speaker', [$speaker->slug]) }}" target="_blank">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
                                     <span><strong>{{$speaker->title}}</strong></span>
                                     <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
-                                    <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube Channel </a>
+                                    <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube</a>
                                 </div>
                             </div>
                         </div>

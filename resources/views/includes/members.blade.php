@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Core Team</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Core Team</h2>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Team</h2>
                     <p class="wow fadeInUp" data-wow-delay=".6s">The TEDxJumeirahbeachpark experience is brought to life by a dedicated team of passionate individuals who believe in the power of ideas. Our team members come from diverse backgrounds and share a common drive to create a platform for inspiring conversations.</p>
                 </div>
             </div>
@@ -14,8 +14,8 @@
                 <div class="all-speakers">
                     <div class="row align-items-center justify-content-center">
 
-                        @foreach ($coreTeamMembers as $member)
-                        @if ($member->department == "Core team")
+                        @foreach ($members as $member)
+                        <!-- if ($member->department == "Core team") -->
                         <div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-speaker">
                                 <div class="top-content">
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                         </div>
-                        @endif
+                        <!-- endif -->
                         @endforeach
                     </div>
                 </div>

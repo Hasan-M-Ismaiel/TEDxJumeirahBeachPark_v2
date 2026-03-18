@@ -105,42 +105,6 @@
     </div>
 </div>
 
-<!-- info graphic -->
-<div class="row text-center mt-5">
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->audience_count ?? 0 }}</h2>
-        <p>Audience</p>
-    </div>
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->speakers->count() }}</h2>
-        <p>Speakers</p>
-    </div>
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->partners->count() }}</h2>
-        <p>Partners</p>
-    </div>
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->partners()->where('type', 'performance')->count() }}</h2>
-        <p>Performances</p>
-    </div>
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->partners()->where('type', 'sponsor')->count() }}</h2>
-        <p>Sponsors</p>
-    </div>
-
-    <div class="col-md-2">
-        <h2 class="text-danger">{{ $event->teammembers->count() }}</h2>
-        <p>Team Members</p>
-    </div>
-</div>
-
-<hr>
-
 <!-- main content -->
 <div class="container mt-5">
 
@@ -188,7 +152,7 @@
                 <div class="col-md-3 col-6 mb-4">
                     <a href="{{ $event->youtube_link }}" target="_blank" class="media-card">
                         <i class="fa-brands fa-youtube"></i>
-                        <span>Watch Talks</span>
+                        <span>Watch on YouTube</span>
                     </a>
                 </div>
                 @endif
@@ -231,7 +195,7 @@
     @endif
 
     <!-- team members section -->
-    @include('includes.team')
+    <!-- include('includes.team') -->
 
     <!-- partners section -->
     @if($event->partners()->exists())
@@ -250,9 +214,7 @@
 
 
     <!-- testimonials section -->
-    @if($event->testimonials()->exists())
-    @include('includes.testimonials', ['testimonials' => $event->testimonials])
-    @endif
+    <!-- removed to the home page -->
 
 
 </div>

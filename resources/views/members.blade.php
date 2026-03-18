@@ -8,10 +8,10 @@
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2 col-md-12 col-12 d-flex justify-content-start">
                 <div class="breadcrumbs-content">
-                    <h1 class="page-title">Core team members</h1>
+                    <h1 class="page-title">Team Members</h1>
                     <ul class="breadcrumb-nav">
                         <li><a href="{{ route('main') }}">Home</a></li>
-                        <li>core team members</li>
+                        <li>team members</li>
                     </ul>
                 </div>
             </div>

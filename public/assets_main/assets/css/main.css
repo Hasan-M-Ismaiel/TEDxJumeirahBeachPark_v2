@@ -2170,8 +2170,11 @@ ol {
   position: relative;
   background-color: #101130;
   padding: 200px 0 150px 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 7px;
   padding-bottom: 300px;
-  background-image: url("../images/hero/hero-bg_.png");
+  background-image: url("../images/hero/group-photo.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

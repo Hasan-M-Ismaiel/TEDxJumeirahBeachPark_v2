@@ -20,8 +20,9 @@
         </div>
         <div class="event-info">
             <div class="event-date">
-                This event will occurre at<br>
-                {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
+                This event will occur soon
+                <br>
+                <!-- \Carbon\Carbon::parse($event->date)->format('F Y') - just add the brackteses  -->
             </div>
             <div class="event-location">
                 <i class="bi bi-geo-alt-fill" style="color:red;"></i>
@@ -35,10 +36,15 @@
     </div>
 </div>
 
+<!-- removed -->
+<!-- team members section -->
+<!-- if(event->teammembers()->exists())
+include('includes.team')
+endif -->
 
 <!-- partners section -->
 @if($event->partners()->exists())
-@include('includes.partners', ['partners' => $event->partners])
+@include('includes.partners', ['partners' => $partners])
 @endif
 
 <!-- performances -->
@@ -51,9 +57,8 @@
 @include('includes.sponsors')
 @endif
 
-<!-- team members section -->
-@if($event->teammembers()->exists())
-@include('includes.team')
-@endif
+<!-- testimonials section -->
+@include('includes.testimonials', ['testimonials' => $testimonials])
+
 
 @endsection

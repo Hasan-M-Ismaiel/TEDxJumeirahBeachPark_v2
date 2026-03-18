@@ -94,6 +94,10 @@
                         {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
                     </small>
 
+                    <small class="mb-3" style="color: #f03355;">
+                        {{ $event->type }}
+                    </small>
+
                     <div class="mt-auto">
                         <a href="{{ route('events.show', $event->slug) }}"
                             class="btn btn-outline-danger btn-sm w-100">

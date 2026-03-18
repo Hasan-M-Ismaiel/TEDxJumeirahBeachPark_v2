@@ -2,6 +2,33 @@
 
 @section('content')
 
+<style>
+    .ted-link {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .ted-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: #E62B1E;
+        left: 0;
+        bottom: -3px;
+        transition: 0.3s;
+    }
+
+    .ted-link:hover {
+        color: #E62B1E;
+    }
+
+    .ted-link:hover::after {
+        width: 100%;
+    }
+</style>
+
 <!-- Start Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container d-flex justify-content-start">
@@ -65,7 +92,15 @@
                                         @elseif ($member->subteam == "filter-production")
                                         <li><strong>Team</strong>: Production team </li>
                                         @endif
-                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $member->linkedin }}">linkedin</a></li>
+                                        <li><strong>LinkedIn Account</strong>: <a href="{{ $member->linkedin }}">LinkedIn</a></li>
+                                        <li>
+                                            <strong>Participated in:</strong>
+                                            <ul>
+                                                @foreach($member->events as $event)
+                                                <li>- <a href="{{ route('events.show', $event->slug) }}" class="ted-link">{{ $event->title }}</a> </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
