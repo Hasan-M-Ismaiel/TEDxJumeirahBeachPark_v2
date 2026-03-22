@@ -29,8 +29,8 @@
                 <strong>To Be Confirmed</strong>
                 <!-- <strong>Dubai Silicon Oasis</strong> -->
                 <br>
-                Dubai, |
-                United Arab Emirates | {{ $event->location }}
+                Dubai, United Arab Emirates 
+                <!-- event->location  -->
             </div>
         </div>
     </div>
