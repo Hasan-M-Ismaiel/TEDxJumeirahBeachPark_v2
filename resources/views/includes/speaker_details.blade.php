@@ -50,11 +50,27 @@
 
                             <div class="col-lg-8">
                                 <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                                    @foreach ($speaker->events as $events)
+                                    @if ($event->type == "Salon Event")
+                                    <h3>Expert Information</h3>
+                                    @break
+                                    @else
                                     <h3>Speaker Information</h3>
+                                    @endif
+                                    @endforeach
                                     <ul>
                                         <li><strong>Name</strong>: {{ $speaker->name }}</li>
                                         <li><strong>Title</strong>: {{ $speaker->title }}</li>
+
+
+                                        @foreach ($speaker->events as $events)
+                                        @if ($event->type == "Salon Event")
+                                        @break
+                                        @else
                                         <li><strong>Topic title </strong>: {{ $speaker->topic_title }} </li>
+                                        @endif
+                                        @endforeach
+
                                         <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}" target="_blank">linkedin</a></li>
                                         @if(!empty($speaker->podcast))
                                         <li>
@@ -62,7 +78,17 @@
                                             <a href="{{ $speaker->podcast }}" target="_blank">Podcast</a>
                                         </li>
                                         @endif
+
+
+                                        @foreach ($speaker->events as $events)
+                                        @if ($event->type == "Salon Event")
+                                        @break
+                                        @else
                                         <li><strong>TEDx Officia Talk </strong>: <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a> </li>
+                                        @endif
+                                        @endforeach
+
+
                                     </ul>
                                 </div>
                                 <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
