@@ -50,7 +50,7 @@
 
                             <div class="col-lg-8">
                                 <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                                    @foreach ($speaker->events as $events)
+                                    @foreach ($speaker->events as $event)
                                     @if ($event->type == "Salon Event")
                                     <h3>Expert Information</h3>
                                     @break
@@ -63,7 +63,7 @@
                                         <li><strong>Title</strong>: {{ $speaker->title }}</li>
 
 
-                                        @foreach ($speaker->events as $events)
+                                        @foreach ($speaker->events as $event)
                                         @if ($event->type == "Salon Event")
                                         @break
                                         @else
@@ -80,7 +80,7 @@
                                         @endif
 
 
-                                        @foreach ($speaker->events as $events)
+                                        @foreach ($speaker->events as $event)
                                         @if ($event->type == "Salon Event")
                                         @break
                                         @else
