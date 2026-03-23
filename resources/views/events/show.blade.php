@@ -2,6 +2,11 @@
 
 @section('content')
 
+@php
+    $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidden Patterns'
+        ? 'breadcrumbs_diversity'
+        : 'breadcrumbs_other_events';
+@endphp
 <!-- css styles -->
 <style>
     .event-meta {
@@ -77,7 +82,7 @@
 </style>
 
 <!-- Start Breadcrumbs -->
-<div class="breadcrumbs">
+<div class="{{ $breadcrumbClass }}">
     <div class="container d-flex justify-content-start">
         <div class="row ">
             <div class="col-lg-12 offset-lg-12 col-md-12 col-12">

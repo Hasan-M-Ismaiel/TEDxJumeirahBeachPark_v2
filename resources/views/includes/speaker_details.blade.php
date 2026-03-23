@@ -2,6 +2,10 @@
 
 @section('content')
 
+@php
+$isSalon = $speaker->events->contains('type', 'Salon Event');
+@endphp
+
 <!-- Start Breadcrumbs -->
 <div class="breadcrumbs">
     <div class="container d-flex justify-content-start">
@@ -50,43 +54,37 @@
 
                             <div class="col-lg-8">
                                 <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                                    @foreach ($speaker->events as $event)
-                                    @if ($event->type == "Salon Event")
+                                    @if ($isSalon)
                                     <h3>Expert Information</h3>
-                                    @break
                                     @else
                                     <h3>Speaker Information</h3>
                                     @endif
-                                    @endforeach
                                     <ul>
                                         <li><strong>Name</strong>: {{ $speaker->name }}</li>
                                         <li><strong>Title</strong>: {{ $speaker->title }}</li>
 
 
-                                        @foreach ($speaker->events as $event)
-                                        @if ($event->type == "Salon Event")
-                                        @break
-                                        @else
-                                        <li><strong>Topic title </strong>: {{ $speaker->topic_title }} </li>
+                                        @if (!$isSalon)
+                                        <li>
+                                            <strong>Topic title </strong>: {{ $speaker->topic_title }}
+                                        </li>
                                         @endif
-                                        @endforeach
 
                                         <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}" target="_blank">linkedin</a></li>
                                         @if(!empty($speaker->podcast))
                                         <li>
-                                            <strong>Beayond the Stage Podcast Interview</strong>:
+                                            <strong>Beyond the Stage Podcast Interview</strong>:
                                             <a href="{{ $speaker->podcast }}" target="_blank">Podcast</a>
                                         </li>
                                         @endif
 
 
-                                        @foreach ($speaker->events as $event)
-                                        @if ($event->type == "Salon Event")
-                                        @break
-                                        @else
-                                        <li><strong>TEDx Officia Talk </strong>: <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a> </li>
+                                        @if (!$isSalon)
+                                        <li>
+                                            <strong>TEDx Official Talk</strong>:
+                                            <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a>
+                                        </li>
                                         @endif
-                                        @endforeach
 
 
                                     </ul>
