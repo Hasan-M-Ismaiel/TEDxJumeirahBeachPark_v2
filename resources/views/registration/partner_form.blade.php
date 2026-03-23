@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Start Breadcrumbs -->
-<div class="breadcrumbs">
+<div class="breadcrumbs_other_events">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2 col-md-12 col-12 d-flex justify-content-start">
