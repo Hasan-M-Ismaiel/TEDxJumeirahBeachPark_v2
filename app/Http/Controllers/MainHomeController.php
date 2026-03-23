@@ -17,11 +17,13 @@ class MainHomeController extends Controller
             ->orderBy('date')
             ->first();
 
+        $members = Teammember::with('events')->get();
+
         if (!$event) {
             $event = Event::orderBy('date', 'desc')->first();
         }
 
-        return view('home', compact('event'));
+        return view('home', compact('event', 'members'));
     }
 
     // core team members page
@@ -158,5 +160,4 @@ class MainHomeController extends Controller
             'event' => $event,
         ]);
     }
-
 }

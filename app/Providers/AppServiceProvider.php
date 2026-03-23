@@ -34,6 +34,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('members', $members);
         });
 
+        
+
         View::composer('home', function ($view) {
             $partners = Partner::all();
             $testimonials = Testimonial::get();

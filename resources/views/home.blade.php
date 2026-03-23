@@ -36,11 +36,10 @@
     </div>
 </div>
 
-<!-- removed -->
 <!-- team members section -->
-<!-- if(event->teammembers()->exists())
-include('includes.team')
-endif -->
+<!-- if($event->teammembers()->exists()) -->
+@include('includes.team')
+<!-- endif -->
 
 <!-- partners section -->
 @if($event->partners()->exists())
