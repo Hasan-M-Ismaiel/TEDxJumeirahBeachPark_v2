@@ -3,9 +3,9 @@
 @section('content')
 
 @php
-    $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidden Patterns'
-        ? 'breadcrumbs_diversity'
-        : 'breadcrumbs_other_events';
+$breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidden Patterns'
+? 'breadcrumbs_diversity'
+: 'breadcrumbs_other_events';
 @endphp
 <!-- css styles -->
 <style>
@@ -96,12 +96,20 @@
                     <div class="event-meta mt-3">
                         <span class="me-4">
                             <i class="fa-solid fa-calendar-days"></i>
+                            @if($event->title == "Upcoming Standard Event: Look Within")
+                            To Be Confirmed
+                            @else
                             {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
+                            @endif
                         </span>
 
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
+                            @if($event->title == "Upcoming Standard Event: Look Within")
+                            To Be Confirmed
+                            @else
                             {{ $event->location }}
+                            @endif
                         </span>
                     </div>
                 </div>
@@ -227,4 +235,3 @@
 @include('includes.call_action')
 
 @endsection
-
