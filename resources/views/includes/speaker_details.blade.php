@@ -2,8 +2,9 @@
 
 @section('content')
 
+
 @php
-$isSalon = $speaker->events->contains('type', 'Salon Event');
+$isSalon = !$speaker->events->contains('type', 'Standard Event');
 @endphp
 
 <!-- Start Breadcrumbs -->
@@ -12,10 +13,19 @@ $isSalon = $speaker->events->contains('type', 'Salon Event');
         <div class="row ">
             <div class="col-lg-12 offset-lg-12 col-md-12 col-12">
                 <div class="breadcrumbs-content">
+                    @if ($isSalon)
+                    <h1 class="page-title">Expert</h1>
+                    @else
                     <h1 class="page-title">Speaker</h1>
+                    @endif
                     <ul class="breadcrumb-nav">
                         <li><a href="{{ route('main') }}">Home</a></li>
+                        @if ($isSalon)
+                        <li>Expert</li>
+                        @else
                         <li>Speaker</li>
+                        @endif
+
                     </ul>
                 </div>
             </div>
@@ -90,7 +100,7 @@ $isSalon = $speaker->events->contains('type', 'Salon Event');
                                     </ul>
                                 </div>
                                 <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                                    <h2>Name and Background</h2>
+                                    <!-- <h2>Name and Background</h2> -->
                                     <p>
                                         {{ $speaker->background }}
                                     </p>

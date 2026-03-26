@@ -41,8 +41,8 @@
     <div class="container">
 
         <div class="section-title text-center mb-5">
-            <h3>Performances</h3>
-            <h2>Live Performances</h2>
+            <h3>Live Performances</h3>
+            <!-- <h2>Live Performances</h2> -->
         </div>
 
         <div class="row">
