@@ -5,6 +5,9 @@
 
 @php
 $isSalon = !$speaker->events->contains('type', 'Standard Event');
+
+$salonEvent = $speaker->events->where('type', '!=', 'Standard Event')->first();
+$salonName = $salonEvent ? $salonEvent->title : 'No Salon Event Found';
 @endphp
 
 <!-- Start Breadcrumbs -->
@@ -93,6 +96,13 @@ $isSalon = !$speaker->events->contains('type', 'Standard Event');
                                         <li>
                                             <strong>TEDx Official Talk</strong>:
                                             <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a>
+                                        </li>
+                                        @endif
+
+                                        @if ($salonName !== "No Salon Event Found")
+                                        <li>
+                                            <strong>Moderator of event</strong>:
+                                            <a href="https://stg.tedxjumeirahbeachpark.com/events/{{ $salonSlug }}" target="_blank">{{$salonName}}</a>
                                         </li>
                                         @endif
 
