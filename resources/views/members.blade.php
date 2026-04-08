@@ -20,7 +20,9 @@
 </div>
 
 <!-- core members -->
-@include('includes.members', ['coreTeamMembers' => $coreTeamMembers ?? collect()])
+<!-- include('includes.members', ['coreTeamMembers' => $coreTeamMembers ?? collect()]) -->
+
+@include('includes.team')
 
 <!-- call to action section -->
 @include('includes.call_action')

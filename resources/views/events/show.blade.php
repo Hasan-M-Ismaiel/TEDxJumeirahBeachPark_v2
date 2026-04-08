@@ -217,7 +217,7 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
 
     <!-- performances -->
     @if($event->partners()->where('type', 'performance')->exists())
-    @include('includes.performance')
+    @include('includes.performance', ['performers' => $event->partners])
     @endif
 
     <!-- sponsors section -->

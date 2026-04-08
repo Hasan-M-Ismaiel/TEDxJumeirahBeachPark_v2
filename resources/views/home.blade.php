@@ -47,9 +47,7 @@
 @endif
 
 <!-- performances -->
-@if($event->partners()->where('type', 'performance')->exists())
-@include('includes.performance')
-@endif
+@include('includes.performance', ['performers' => $performers])
 
 <!-- sponsors section -->
 @if($event->partners()->where('type', 'sponsor')->exists())

@@ -29,7 +29,13 @@ class AppServiceProvider extends ServiceProvider
             $view->with('coreTeamMembers', $coreTeamMembers);
         });
 
-        View::composer('includes.members', function ($view) {
+        // View::composer('includes.members', function ($view) {
+        //     $members = Teammember::with('events')->get();
+        //     $view->with('members', $members);
+        // });
+
+
+        View::composer('includes.team', function ($view) {
             $members = Teammember::with('events')->get();
             $view->with('members', $members);
         });
@@ -38,11 +44,13 @@ class AppServiceProvider extends ServiceProvider
 
         View::composer('home', function ($view) {
             $partners = Partner::all();
+            $performers = Partner::where('type', 'performance')->get();
             $testimonials = Testimonial::get();
 
             $view->with([
                 'testimonials' => $testimonials,
-                'partners' => $partners
+                'partners' => $partners,
+                'performers' => $performers
             ]);
         });
     }

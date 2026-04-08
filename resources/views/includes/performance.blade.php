@@ -41,15 +41,15 @@
     <div class="container">
 
         <div class="section-title text-center mb-5">
-            <h3>Live Performances</h3>
+            <h3>Previous Live Performances</h3>
             <!-- <h2>Live Performances</h2> -->
         </div>
 
         <div class="row">
-            @foreach($event->partners as $index => $performance)
+            @foreach($performers as $index => $performance)
             @if($performance->type == "performance")
 
-            <div class="col-md-3 mb-4"
+            <div class="col-md-4 mb-4"
                 data-aos="{{ $index % 2 == 0 ? 'fade-down' : 'fade-up' }}">
 
                 <div class="performance-card">
