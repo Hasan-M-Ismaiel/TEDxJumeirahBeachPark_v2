@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::post('/upload', [UploadController::class, 'store']);
+Route::delete('/delete-upload', [UploadController::class, 'destroy']);
 
-Route::post('/upload', [UploadController::class,'store']);
 
 // blog
 Route::get('/blog',[PostController::class,'index'])->name('home');
