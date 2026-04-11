@@ -4,13 +4,14 @@
 
 
 @php
-$isSalon = !$speaker->events->contains('type', 'Standard Event');
+    $hasStandardEvent = $speaker->events->contains('type', 'Standard Event');
+    
+    $salonEvent = $speaker->events->where('type', '!=', 'Standard Event')->first();
 
-$salonEvent = $speaker->events->where('type', '!=', 'Standard Event')->first();
+    $isModerator = $hasStandardEvent && $salonEvent;
 
-$salonName = $salonEvent ? $salonEvent->title : null;
-$salonSlug = $salonEvent ? $salonEvent->slug : null;
-
+    $salonName = $salonEvent ? $salonEvent->title : null;
+    $salonSlug = $salonEvent ? $salonEvent->slug : null;
 @endphp
 
 <!-- Start Breadcrumbs -->
@@ -102,7 +103,7 @@ $salonSlug = $salonEvent ? $salonEvent->slug : null;
                                         </li>
                                         @endif
 
-                                        @if ($salonName)
+                                        @if ($isModerator)
                                         <li>
                                             <strong>Moderator of event</strong>:
                                             <a href="https://stg.tedxjumeirahbeachpark.com/events/{{ $salonSlug }}" target="_blank">
