@@ -5,7 +5,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
+                        @if ($event->title ="Upcoming Standard Event: Look Within")
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Partners</h3>
+                        @else
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Previous Partners</h3>
+                        @endif
                         <!-- <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our partners</h2> -->
                         <p class="wow fadeInUp" data-wow-delay=".6s">Our partners from our first journey were visionary thinkers, innovators, and storytellers who brought fresh perspectives and powerful ideas to the stage. Coming from diverse backgrounds and industries, they were united by a shared passion for sparking meaningful conversations and inspiring change.</p>
                     </div>
