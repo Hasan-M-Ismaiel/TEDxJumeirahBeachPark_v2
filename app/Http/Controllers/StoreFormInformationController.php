@@ -38,7 +38,7 @@ class StoreFormInformationController extends Controller
 
     public function storeRegister(RegisterCreateRequest $request)
     {
-        $temporaryFile = TemporaryFile::where('folder', $request->avatar)->first();
+        $temporaryFile = TemporaryFile::where('folder', $request->video)->first();
         if ($temporaryFile) {
             $register = Register::create($request->validated());
 
@@ -170,12 +170,7 @@ class StoreFormInformationController extends Controller
             $email->save();
         }
 
-
         Alert::success('Success', 'Your Email has been registered successfully, Thank you!');
-
-        $users = User::all();
-        $user = $users->first();
-
         return redirect()->back();
     }
 

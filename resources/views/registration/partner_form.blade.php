@@ -271,13 +271,13 @@
                     <!--favourit speaker-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Please mention your favorite TED or TEDx talk?</strong></span>
-                        <input name="question_8" type="text" class="form-control" placeholder="Because ..." value="{{ old('quesiton_8') }}">
+                        <input name="question_8" type="text" class="form-control" placeholder="..." value="{{ old('quesiton_8') }}">
                     </label>
 
                     <!--notes-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><strong>Please add any notes or comments?</strong></span>
-                        <textarea rows="4" cols="50" name="question_9" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_9') }}"></textarea>
+                        <textarea rows="4" cols="50" name="question_9" type="text" class="form-control" placeholder="..." value="{{ old('question_9') }}"></textarea>
                     </label>
                     <button type="submit" class="btn-submit">Submit</button>
                 </form>

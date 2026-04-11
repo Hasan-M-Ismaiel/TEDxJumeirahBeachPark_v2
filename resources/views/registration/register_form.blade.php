@@ -141,7 +141,7 @@
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>It is better to record a video answering the previous questions - 3 min at max & 50 MB max size</strong> </span>
                             <div class="mt-4">
-                                <input type="file" name="avatar" id="avatar">
+                                <input type="file" name="video" id="video">
                             </div>
                         </label>
 
@@ -180,7 +180,7 @@
                         <!--notes-->
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><strong>Please add any notes or comments?</strong></span>
-                            <textarea rows="4" cols="50" name="question_10" type="text" class="form-control" placeholder="Because ..." value="{{ old('question_10') }}">{{ old('question_10') }}</textarea>
+                            <textarea rows="4" cols="50" name="question_10" type="text" class="form-control" placeholder="..." value="{{ old('question_10') }}">{{ old('question_10') }}</textarea>
                         </label>
 
                         <!-- Submit Button -->
@@ -200,7 +200,7 @@
 
 @section('scripts')
 <script>
-    const inputElement = document.querySelector('input[id="avatar"]');
+    const inputElement = document.querySelector('input[id="video"]');
     const pond = FilePond.create(inputElement);
     FilePond.setOptions({
         server: {
