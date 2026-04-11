@@ -11,7 +11,6 @@ use App\Models\Register;
 use App\Models\TemporaryFile;
 use App\Models\Volunteer;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -22,24 +21,13 @@ class StoreFormInformationController extends Controller
     {
         $temporaryFile = TemporaryFile::where('folder', $request->video_speaker)->first();
         if ($temporaryFile) {
-
-            Storage::move(
-                'tmp/' . $temporaryFile->folder . '/' . $temporaryFile->file,
-                'videos/' . $temporaryFile->filename
-            );
-
-            $register = Register::create([
-                ...$request->validated(),
-                'video_speaker' => $temporaryFile->file,
-            ]);
+            
+            $register = Register::create($request->validated());
 
             if ($request->question_10) {
                 $register->question_10 = $request->question_10;
                 $register->save();
             }
-
-            Storage::deleteDirectory('tmp/' . $temporaryFile->folder);
-            $temporaryFile->delete();
 
             // $users = User::all();
             // $user = $users->first();

@@ -20,7 +20,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('/upload', [UploadController::class, 'store']);
-Route::delete('/delete-upload', [UploadController::class, 'destroy']);
 
 
 // blog
