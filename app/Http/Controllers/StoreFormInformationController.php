@@ -27,7 +27,6 @@ class StoreFormInformationController extends Controller
                 $register->question_10 = $request->question_10;
                 $register->save();
             }
-            Alert::success('Success', 'Your request has been taken, Thank you!');
 
             // $users = User::all();
             // $user = $users->first();
