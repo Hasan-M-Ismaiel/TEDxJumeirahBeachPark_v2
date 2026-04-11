@@ -4,14 +4,15 @@
 
 
 @php
-    $hasStandardEvent = $speaker->events->contains('type', 'Standard Event');
-    
-    $salonEvent = $speaker->events->where('type', '!=', 'Standard Event')->first();
+$hasStandardEvent = $speaker->events->contains('type', 'Standard Event');
 
-    $isModerator = $hasStandardEvent && $salonEvent;
+$salonEvent = $speaker->events->where('type', '!=', 'Standard Event')->first();
 
-    $salonName = $salonEvent ? $salonEvent->title : null;
-    $salonSlug = $salonEvent ? $salonEvent->slug : null;
+$isModerator = $hasStandardEvent && $salonEvent;
+$isSalon = !$speaker->events->contains('type', 'Standard Event');
+
+$salonName = $salonEvent ? $salonEvent->title : null;
+$salonSlug = $salonEvent ? $salonEvent->slug : null;
 @endphp
 
 <!-- Start Breadcrumbs -->
