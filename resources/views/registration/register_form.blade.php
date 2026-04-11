@@ -141,7 +141,7 @@
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>It is better to record a video answering the previous questions - 3 min at max & 50 MB max size</strong> </span>
                             <div class="mt-4">
-                                <input type="hidden" name="video_speaker" id="video_speaker_hidden">
+                                <input name="video_speaker" id="video_speaker_hidden">
                             </div>
                         </label>
 
