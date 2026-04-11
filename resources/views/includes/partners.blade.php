@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        @if ($event->title == "Upcoming Standard Event: Look Within" || !Request::is('/'))
+                        @if ($event->title == "Upcoming Standard Event: Look Within" && !Request::is('/'))
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Partners</h3>
                         @else
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Previous Partners</h3>
