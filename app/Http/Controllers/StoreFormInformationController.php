@@ -2,34 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\MainEventRequest;
-use App\Http\Requests\OtherCreateRequest;
 use App\Http\Requests\PartnerCreateRequest;
 use App\Http\Requests\RegisterCreateRequest;
-use App\Http\Requests\SalonFirstRequest;
-use App\Http\Requests\SalonRegisterFutureOfWellnessRequest;
-use App\Http\Requests\SalonSecondRequest;
-use App\Models\SalonFirst;
 use App\Http\Requests\VolunteerCreateRequest;
-use App\Mail\SpeakerConfirmationMail;
-use App\Mail\VolunteerConfirmationMail;
 use App\Models\Email;
-use App\Models\MainEvent;
-use App\Models\Other;
 use App\Models\Partner;
 use App\Models\Register;
-use App\Models\SalonFutureOfWellness;
-use App\Models\SalonSecond;
 use App\Models\TemporaryFile;
-use App\Models\User;
 use App\Models\Volunteer;
-use App\Notifications\NewOther;
-use App\Notifications\NewPartner;
-use App\Notifications\NewRegister;
-use App\Notifications\NewVolunteer;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -48,14 +29,15 @@ class StoreFormInformationController extends Controller
             }
             Alert::success('Success', 'Your request has been taken, Thank you!');
 
-            $users = User::all();
-            $user = $users->first();
-            $user->notify(new NewRegister($register));
+            // $users = User::all();
+            // $user = $users->first();
+            // $user->notify(new NewRegister($register));
 
-            Mail::to($register->email)->send(new SpeakerConfirmationMail([
-                'title' => 'Dear ' . $register->full_name,
-            ]));
+            // Mail::to($register->email)->send(new SpeakerConfirmationMail([
+            //     'title' => 'Dear ' . $register->full_name,
+            // ]));
 
+            Alert::success('Success', 'Your request has been taken, Thank you!');
             return redirect()->back();
         } else {
             Alert::warning('Error', 'please upload your video!');
@@ -105,13 +87,16 @@ class StoreFormInformationController extends Controller
 
         Alert::success('Success', 'Your request has been taken, Thank you!');
 
-        $users = User::all();
-        $user = $users->first();
-        $user->notify(new NewVolunteer($volunteer));
+        // $users = User::all();
+        // $user = $users->first();
+        // $user->notify(new NewVolunteer($volunteer));
 
-        Mail::to($volunteer->email)->send(new VolunteerConfirmationMail([
-            'title' => 'Dear ' . $volunteer->full_name,
-        ]));
+        // Mail::to($volunteer->email)->send(new VolunteerConfirmationMail([
+        //     'title' => 'Dear ' . $volunteer->full_name,
+        // ]));
+
+        Alert::success('Success', 'Your request has been taken, Thank you!');
+
 
         return redirect()->back();
     }
@@ -151,13 +136,16 @@ class StoreFormInformationController extends Controller
 
         Alert::success('Success', 'Your request has been taken, Thank you!');
 
-        $users = User::all();
-        $user = $users->first();
-        $user->notify(new NewPartner($partner));
+        // $users = User::all();
+        // $user = $users->first();
+        // $user->notify(new NewPartner($partner));
 
-        Mail::to($partner->email)->send(new SpeakerConfirmationMail([
-            'title' => 'Dear ' . $partner->full_name,
-        ]));
+        // Mail::to($partner->email)->send(new SpeakerConfirmationMail([
+        //     'title' => 'Dear ' . $partner->full_name,
+        // ]));
+
+
+        Alert::success('Success', 'Your Email has been registered successfully, Thank you!');
 
         return redirect()->back();
     }
@@ -173,5 +161,4 @@ class StoreFormInformationController extends Controller
         Alert::success('Success', 'Your Email has been registered successfully, Thank you!');
         return redirect()->back();
     }
-
 }
