@@ -19,7 +19,7 @@ class StoreFormInformationController extends Controller
 
     public function storeRegister(RegisterCreateRequest $request)
     {
-        $temporaryFile = TemporaryFile::where('folder', $request->video)->first();
+        $temporaryFile = TemporaryFile::where('folder', $request->video_speaker)->first();
         if ($temporaryFile) {
             $register = Register::create($request->validated());
 

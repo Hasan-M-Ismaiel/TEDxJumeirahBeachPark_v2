@@ -141,7 +141,7 @@
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>It is better to record a video answering the previous questions - 3 min at max & 50 MB max size</strong> </span>
                             <div class="mt-4">
-                                <input type="file" name="video" id="video">
+                                <input type="hidden" name="video_speaker" id="video_speaker_hidden">
                             </div>
                         </label>
 
@@ -172,7 +172,7 @@
                         <!--favourit speaker-->
                         <label class="d-block mb-4">
                             <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Please mention your favorite TED or TEDx talk?</strong></span>
-                            <input name="question_9" type="text" class="form-control"  value="{{ old('question_9') }}">
+                            <input name="question_9" type="text" class="form-control" value="{{ old('question_9') }}">
                         </label>
 
                         <h2 class="mb-3" style="text-align: center; margin: 0px; padding: 12px; background-color: rgb(235, 11, 41); color: white;">Your Comments</h2>
@@ -200,13 +200,17 @@
 
 @section('scripts')
 <script>
-    const inputElement = document.querySelector('input[id="video"]');
+    const inputElement = document.querySelector('input[id="video_speaker"]');
     const pond = FilePond.create(inputElement);
     FilePond.setOptions({
         server: {
             url: '/upload', //this would be the route url we can add it to the web.php 
             headers: {
                 'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            onload: (response) => {
+                document.getElementById('video_speaker_hidden').value = response;
+                return response;
             }
         },
     });

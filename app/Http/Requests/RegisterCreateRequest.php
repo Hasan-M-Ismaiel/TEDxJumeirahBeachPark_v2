@@ -46,7 +46,7 @@ class RegisterCreateRequest extends FormRequest
             'question_7'                     => ['required', 'string', 'max:1020'],
             'question_8'                     => ['required', 'string', 'max:1020'],
             'question_9'                     => ['required', 'string', 'max:1020'],
-            // 'video'                          => ['required', 'max:50000'],
+            'video_speaker'                  => ['required', 'string'],
         ];
     }
 
