@@ -13,8 +13,7 @@
             <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" loading="lazy" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
         </div>
         <div class="theme">
-            <a href="{{ route('events.show', $event->slug) }}"
-                class="btn btn-outline-danger btn-sm w-100">
+            <a href="{{ route('events.show', $event->slug) }}">
                 {{ $event->title }}
             </a><br>
         </div>
