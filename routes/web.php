@@ -48,11 +48,13 @@ Route::get('/volunteer', [MainHomeController::class, 'volunteer'])->name('volunt
 Route::get('/register_form', [MainHomeController::class, 'register_form'])->name('register_form');
 Route::get('/partner_form', [MainHomeController::class, 'partner_form'])->name('partner_form');
 Route::get('/volunteer_form', [MainHomeController::class, 'volunteer_form'])->name('volunteer_form');
+Route::get('/registration', [MainHomeController::class, 'registration'])->name('registration');
 
 // store forms
 Route::post('/storeRegister', [StoreFormInformationController::class, 'storeRegister'])->name('storeRegister');
 Route::post('/storePartner', [StoreFormInformationController::class, 'storePartner'])->name('storePartner');
 Route::post('/storeVolunteer', [StoreFormInformationController::class, 'storeVolunteer'])->name('storeVolunteer');
+Route::post('/storeRegistration', [StoreFormInformationController::class, 'storeRegistration'])->name('storeRegistration');
 
 // store email
 Route::post('/storeEmail', [StoreFormInformationController::class, 'storeEmail'])->name('storeEmail');

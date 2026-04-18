@@ -96,11 +96,7 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
                     <div class="event-meta mt-3">
                         <span class="me-4">
                             <i class="fa-solid fa-calendar-days"></i>
-                            @if($event->title == "Upcoming Standard Event: Look Within")
-                            To Be Confirmed
-                            @else
                             {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
-                            @endif
                         </span>
 
                         <span>
@@ -120,7 +116,15 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
 
 <!-- main content -->
 <div class="container mt-5">
-
+    <!-- <div class="row align-items-center justify-content-center">
+        <div class="col-12">
+            <div class="section-title mb-0">
+                <div class="button mt-3 ms-0" style="float: center;">
+                    <a href="{{ route('registration') }}" class="btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- header title -->
     <section id="speakers" class="section">
         <div class="container">

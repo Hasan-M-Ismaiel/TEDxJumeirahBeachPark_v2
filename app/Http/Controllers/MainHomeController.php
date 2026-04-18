@@ -34,7 +34,6 @@ class MainHomeController extends Controller
         return view('members', ['event' => $event]);
     }
 
-
     // about ted page
     public function aboutTed()
     {
@@ -157,6 +156,15 @@ class MainHomeController extends Controller
         $events = Event::all();
         $event = $events->first();
         return view('evaluation.partner_evaluation_form', [
+            'event' => $event,
+        ]);
+    }
+
+    public function registration()
+    {
+        $events = Event::all();
+        $event = $events->first();
+        return view('events.forms.registration', [
             'event' => $event,
         ]);
     }

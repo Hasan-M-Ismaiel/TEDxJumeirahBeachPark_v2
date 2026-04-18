@@ -8,6 +8,7 @@ use App\Http\Requests\VolunteerCreateRequest;
 use App\Models\Email;
 use App\Models\Partner;
 use App\Models\Register;
+use App\Models\Registration;
 use App\Models\TemporaryFile;
 use App\Models\Volunteer;
 use Illuminate\Http\Request;
@@ -21,7 +22,7 @@ class StoreFormInformationController extends Controller
     {
         $temporaryFile = TemporaryFile::where('folder', $request->video_speaker)->first();
         if ($temporaryFile) {
-            
+
             $register = Register::create($request->validated());
 
             if ($request->question_10) {
@@ -95,9 +96,6 @@ class StoreFormInformationController extends Controller
         //     'title' => 'Dear ' . $volunteer->full_name,
         // ]));
 
-        Alert::success('Success', 'Your request has been taken, Thank you!');
-
-
         return redirect()->back();
     }
 
@@ -160,5 +158,42 @@ class StoreFormInformationController extends Controller
 
         Alert::success('Success', 'Your Email has been registered successfully, Thank you!');
         return redirect()->back();
+    }
+
+    public function storeRegistration(Request $request)
+    {
+        $request->validate([
+            'full_name' => 'required|string',
+            'email' => 'required|email',
+            'phone_number' => 'required',
+            'country' => 'required',
+            'city' => 'required',
+            'birthday' => 'required|date',
+            'education' => 'required',
+            'work' => 'required',
+            'industry' => 'required',
+            'heard_about_us' => 'required',
+            'attending_as' => 'required',
+            'why_attend' => 'nullable|string',
+        ]);
+
+        Registration::create([
+            'full_name' => $request->full_name,
+            'email' => $request->email,
+            'phone_number' => $request->phone_number,
+            'country' => $request->country,
+            'city' => $request->city,
+            'birthday' => $request->birthday,
+            'education' => $request->education,
+            'work' => $request->work,
+            'industry' => $request->industry,
+            'heard_about_us' => $request->heard_about_us,
+            'attending_as' => $request->attending_as,
+            'why_attend' => $request->why_attend,
+        ]);
+
+        Alert::success('Success', 'Your registered successfully, Thank you!');
+
+        return redirect()->back()->with('success', 'Registration successful!');
     }
 }
