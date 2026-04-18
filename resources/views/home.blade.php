@@ -20,9 +20,9 @@
         </div>
         <div class="event-info">
             <div class="event-date">
-                This event will occur soon
+                This event will occur
                 <br>
-                <!-- \Carbon\Carbon::parse($event->date)->format('F Y') - just add the brackteses  -->
+                {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
             </div>
             <div class="event-location">
                 <i class="bi bi-geo-alt-fill" style="color:red;"></i>
