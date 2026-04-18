@@ -2,9 +2,46 @@
 
 @section('content')
 
+<style>
+    .event-link {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        /* ضروري لتموضع الخط */
+        display: inline-block;
+    }
+
+    /* إنشاء الخط وتحديد حالته قبل التمرير */
+    .event-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        /* يكون طول الخط 0 في البداية */
+        height: 2px;
+        /* سمك الخط */
+        bottom: -2px;
+        /* المسافة بين النص والخط */
+        left: 0;
+        background-color: white;
+        /* لون الخط */
+        transform-origin: bottom left;
+        /* يبدأ النمو من اليسار */
+        transition: transform 0.3s ease-out;
+        /* سرعة ونعومة الحركة */
+    }
+
+    /* حالة الخط عند تمرير الماوس */
+    .event-link:hover::after {
+        transform: scaleX(1);
+        /* يصبح طول الخط 100% */
+    }
+</style>
+
 <!-- Start Hero Area -->
 <section class="hero-area" loading="lazy">
 </section>
+
 
 <!-- theme section -->
 <div class="container-fluid mt-3">
@@ -13,9 +50,9 @@
             <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" loading="lazy" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
         </div>
         <div class="theme">
-            <a href="{{ route('events.show', $event->slug) }}">
+            <a href="{{ route('events.show', $event->slug) }}" class="text-white no-underline hover:underline">
                 {{ $event->title }}
-            </a><br>
+            </a>
         </div>
         <div>
             <p>{{ $event->short_description }}</p>
