@@ -13,7 +13,10 @@
             <img src="{{ asset('assets_main/assets/images/logo/logo-white-post-event.png') }}" loading="lazy" alt="TEDx Jumeirah Beach Park Logo" class="img-fluid" style="max-height: 100px;">
         </div>
         <div class="theme">
-            {{ $event->title }}<br>
+            <a href="{{ route('events.show', $event->slug) }}"
+                class="btn btn-outline-danger btn-sm w-100">
+                {{ $event->title }}
+            </a><br>
         </div>
         <div>
             <p>{{ $event->short_description }}</p>
@@ -29,7 +32,7 @@
                 <strong>To Be Confirmed</strong>
                 <!-- <strong>Dubai Silicon Oasis</strong> -->
                 <br>
-                Dubai, United Arab Emirates 
+                Dubai, United Arab Emirates
                 <!-- event->location  -->
             </div>
         </div>
