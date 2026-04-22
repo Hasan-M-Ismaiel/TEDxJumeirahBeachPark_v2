@@ -41,7 +41,7 @@
     <div class="container">
 
         <div class="section-title text-center mb-5">
-            <h3>Previous Live Performances</h3>
+            <h3>Previous Performance Partners</h3>
             <!-- <h2>Live Performances</h2> -->
         </div>
 

@@ -11,30 +11,21 @@
         display: inline-block;
     }
 
-    /* إنشاء الخط وتحديد حالته قبل التمرير */
     .event-link::after {
         content: '';
         position: absolute;
         width: 100%;
         transform: scaleX(0);
-        /* يكون طول الخط 0 في البداية */
         height: 2px;
-        /* سمك الخط */
         bottom: -2px;
-        /* المسافة بين النص والخط */
         left: 0;
         background-color: white;
-        /* لون الخط */
         transform-origin: bottom left;
-        /* يبدأ النمو من اليسار */
         transition: transform 0.3s ease-out;
-        /* سرعة ونعومة الحركة */
     }
 
-    /* حالة الخط عند تمرير الماوس */
     .event-link:hover::after {
         transform: scaleX(1);
-        /* يصبح طول الخط 100% */
     }
 </style>
 
