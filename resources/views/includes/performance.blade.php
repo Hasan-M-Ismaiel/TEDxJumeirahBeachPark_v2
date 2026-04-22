@@ -56,12 +56,12 @@
 
                     <!-- Logo -->
                     <div class="performance-logo text-center">
-                        <img src="{{ asset($performance->logo) }}" alt="logo">
+                        <!-- <img src="{{ asset($performance->logo) }}" alt="logo"> -->
                     </div>
 
                     <!-- Hero Image -->
                     <div class="performance-hero">
-                        <img src="{{ asset($performance->image) }}" alt="performance">
+                        <img src="{{ asset($performance->logo) }}" alt="performance">
                     </div>
 
                     <!-- Footer -->
