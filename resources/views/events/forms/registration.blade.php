@@ -14,7 +14,7 @@
                         <li>Registration Form - Look within</li>
                     </ul>
                     <!-- Event Meta Info -->
-                    <div class="event-meta mt-3">
+                    <div class="event-meta mt-3" style="font-size: large;">
                         <span class="me-4">
                             <i class="fa-solid fa-calendar-days" style="color: #ff0024;"></i>
                             <span style="color: white;">6 - June 2026</span>
@@ -78,7 +78,7 @@
 
                     <!--country-->
                     <label class="d-block mb-4">
-                        <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>country</strong></span>
+                        <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Country</strong></span>
                         <input name="country" type="text" class="form-control" value="{{ old('country') }}" />
                     </label>
 
@@ -139,8 +139,9 @@
                         <select name="attending_as" class="form-control" required>
                             <option value="">-- Select --</option>
                             <option value="speaker_guest" {{ old('attending_as') == 'speaker_guest' ? 'selected' : '' }}>Speaker's Guest</option>
+                            <option value="partner_guest" {{ old('attending_as') == 'partner_guest' ? 'selected' : '' }}>Partner's Guest</option>
                             <option value="team_guest" {{ old('attending_as') == 'team_guest' ? 'selected' : '' }}>Team's Guest</option>
-                            <option value="normal_guest" {{ old('attending_as') == 'normal_guest' ? 'selected' : '' }}>Normal Guest</option>
+                            <option value="general_admission" {{ old('attending_as') == 'general_admission' ? 'selected' : '' }}>General Admission</option>
                         </select>
                     </label>
 
