@@ -61,55 +61,55 @@
                     <!--first name-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Full name</strong></span>
-                        <input name="full_name" type="text" class="form-control" placeholder="full name" value="{{ old('full_name') }}" />
+                        <input name="full_name" type="text" class="form-control" placeholder="full name" value="{{ old('full_name') }}" required/>
                     </label>
 
                     <!--email-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Email address</strong></span>
-                        <input name="email" type="email" class="form-control" value="{{ old('email') }}" />
+                        <input name="email" type="email" class="form-control" value="{{ old('email') }}" required />
                     </label>
 
                     <!--phone-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Phone number</strong></span>
-                        <input name="phone_number" type="text" class="form-control" value="{{ old('phone_number') }}" />
+                        <input name="phone_number" type="text" class="form-control" value="{{ old('phone_number') }}" required />
                     </label>
 
                     <!--country-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Country</strong></span>
-                        <input name="country" type="text" class="form-control" value="{{ old('country') }}" />
+                        <input name="country" type="text" class="form-control" value="{{ old('country') }}" required />
                     </label>
 
                     <!--City-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>City</strong></span>
-                        <input name="city" type="text" class="form-control" value="{{ old('city') }}" />
+                        <input name="city" type="text" class="form-control" value="{{ old('city') }}" required />
                     </label>
 
                     <!--birthday-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Birthday</strong></span>
-                        <input name="birthday" type="date" class="form-control" value="{{ old('birthday') }}" />
+                        <input name="birthday" type="date" class="form-control" value="{{ old('birthday') }}" required />
                     </label>
 
                     <!--Education-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Education</strong></span>
-                        <input name="education" type="text" class="form-control" value="{{ old('education') }}">
+                        <input name="education" type="text" class="form-control" value="{{ old('education') }}" required>
                     </label>
 
                     <!--Work-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Work</strong></span>
-                        <input name="work" type="text" class="form-control" value="{{ old('work') }}">
+                        <input name="work" type="text" class="form-control" value="{{ old('work') }}" required>
                     </label>
 
                     <!--industry-->
                     <label class="d-block mb-4">
                         <span class="form-label d-block"><span class="me-2 text-danger h6">*</span><strong>Industry</strong></span>
-                        <input name="industry" type="text" class="form-control" value="{{ old('industry') }}">
+                        <input name="industry" type="text" class="form-control" value="{{ old('industry') }}" required>
                     </label>
 
                     <!--How did you heard about us-->
@@ -146,8 +146,8 @@
                     </label>
 
                     <!--Why would you attend-->
-                    <label class="d-block mb-4" required>
-                        <span class="me-2 text-danger h6">*</span> <span class="form-label d-block"><strong>Why would you attend?</strong></span>
+                    <label class="d-block mb-4">
+                        <span class="form-label d-block"><strong>Why would you attend?</strong></span>
                         <textarea rows="4" cols="50" name="why_attend" type="text" class="form-control" placeholder="...">{{ old('why_attend') }}</textarea>
                     </label>
 
