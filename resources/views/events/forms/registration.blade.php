@@ -146,7 +146,7 @@
                     </label>
 
                     <!--Why would you attend-->
-                    <label class="d-block mb-4">
+                    <label class="d-block mb-4" required>
                         <span class="form-label d-block"><strong>Why would you attend?</strong></span>
                         <textarea rows="4" cols="50" name="why_attend" type="text" class="form-control" placeholder="...">{{ old('why_attend') }}</textarea>
                     </label>
