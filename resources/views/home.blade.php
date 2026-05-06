@@ -56,10 +56,10 @@
             </div>
             <div class="event-location">
                 <i class="bi bi-geo-alt-fill" style="color:red;"></i>
-                <strong>To Be Confirmed</strong>
-                <!-- <strong>Dubai Silicon Oasis</strong> -->
+                <!-- <strong>To Be Confirmed</strong> -->
+                <strong>IFZA HQ, Nadd Hessa - Dubai Silicon Oasis</strong>
                 <br>
-                Dubai, United Arab Emirates
+                United Arab Emirates
                 <!-- event->location  -->
             </div>
         </div>
@@ -72,9 +72,21 @@
 <!-- endif -->
 
 <!-- partners section -->
-@if($event->partners()->exists())
-@include('includes.partners', ['partners' => $partners])
+@if($eventPartners->count())
+@include('includes.partners', [
+'partners' => $eventPartners,
+'title' => 'Our Partners'
+])
 @endif
+
+
+@if($otherPartners->count())
+@include('includes.partners', [
+'partners' => $otherPartners,
+'title' => 'Previous Partners'
+])
+@endif
+
 
 <!-- performances -->
 @include('includes.performance', ['performers' => $performers])

@@ -33,7 +33,6 @@ class EventController extends Controller
         return view('events.index', compact('events', 'years'));
     }
 
-    // صفحة حدث منفرد
     public function show(Event $event)
     {
         $event->load([
@@ -43,6 +42,9 @@ class EventController extends Controller
             'testimonials'
         ]);
 
-        return view('events.show', compact('event'));
+        $partners = $event->partners()->get();
+
+        return view('events.show', compact('event', 'partners'));
+
     }
 }

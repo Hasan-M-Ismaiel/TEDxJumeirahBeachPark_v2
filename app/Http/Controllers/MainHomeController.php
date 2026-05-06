@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Event;
+use App\Models\Partner;
 use App\Models\Speaker;
 use App\Models\Teammember;
 
@@ -23,7 +24,12 @@ class MainHomeController extends Controller
             $event = Event::orderBy('date', 'desc')->first();
         }
 
-        return view('home', compact('event', 'members'));
+        $eventPartners = $event->partners()->get();
+
+        $otherPartners = Partner::whereNotIn('id', $eventPartners->pluck('id'))->get();
+
+        return view('home', compact('event', 'members', 'eventPartners', 'otherPartners'));
+
     }
 
     // core team members page
