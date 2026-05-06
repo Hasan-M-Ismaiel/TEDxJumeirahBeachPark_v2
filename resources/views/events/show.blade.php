@@ -101,11 +101,7 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
 
                         <span>
                             <i class="fa-solid fa-location-dot"></i>
-                            @if($event->title == "Upcoming Standard Event: Look Within")
-                            To Be Confirmed
-                            @else
                             {{ $event->location }}
-                            @endif
                         </span>
                     </div>
                 </div>
