@@ -30,7 +30,10 @@
                                     <span><strong>{{$speaker->title}}</strong></span>
                                     @if ($event->type == "Standard Event")
                                     <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
-                                    <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube</a>
+                                     @if ($event->title == "Upcoming Standard Event: Look Within")
+                                     @else
+                                     <a href="{{ $speaker->talk }}" style="TEXT-DECORATION: underline; color:red" target="_blank"> Watch on TEDx YouTube</a>
+                                     @endif
                                     @else
                                     @endif
                                 </div>
