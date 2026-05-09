@@ -90,18 +90,24 @@ $salonSlug = $salonEvent ? $salonEvent->slug : null;
 
                                         <li><strong>LinkedIn Account</strong>: <a href="{{ $speaker->linkedin }}" target="_blank">linkedin</a></li>
                                         @if(!empty($speaker->podcast))
+                                        @if ($event->title == "Upcoming Standard Event: Look Within")
+                                        @else
                                         <li>
                                             <strong>Beyond the Stage Podcast Interview</strong>:
                                             <a href="{{ $speaker->podcast }}" target="_blank">Podcast</a>
                                         </li>
                                         @endif
+                                        @endif
 
 
                                         @if (!$isSalon)
+                                        @if ($event->title == "Upcoming Standard Event: Look Within")
+                                        @else
                                         <li>
                                             <strong>TEDx Official Talk</strong>:
                                             <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a>
                                         </li>
+                                        @endif
                                         @endif
 
                                         @if ($isModerator)
