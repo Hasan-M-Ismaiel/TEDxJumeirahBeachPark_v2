@@ -71,6 +71,12 @@
 @include('includes.team')
 <!-- endif -->
 
+<!-- speakers section -->
+@if($event->speakers()->exists())
+@include('includes.speakers')
+@endif
+
+
 <!-- partners section -->
 @if($eventPartners->count())
 @include('includes.partners', [
