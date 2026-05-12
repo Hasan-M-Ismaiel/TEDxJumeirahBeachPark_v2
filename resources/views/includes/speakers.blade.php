@@ -27,10 +27,7 @@
                                 </div>
                                 <div class="name">
                                     <h3><a href="{{ route('speaker', [$speaker->slug]) }}" target="_blank">{{$speaker->name}}<i class="bi bi-link-45deg"></i></a></h3>
-                                     @if ($event->title == "Upcoming Standard Event: Look Within")
-                                     @else
                                     <span><strong>{{$speaker->title}}</strong></span>
-                                    @endif
                                     @if ($event->type == "Standard Event")
                                     <span style="color: black;"><strong>{{$speaker->topic_title}}</strong></span><br>
                                      @if ($event->title == "Upcoming Standard Event: Look Within")
