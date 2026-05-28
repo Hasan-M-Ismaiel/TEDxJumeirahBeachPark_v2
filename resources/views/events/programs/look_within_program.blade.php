@@ -149,7 +149,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:00 - 13:15</div>
-                            <div class="event-title">Performance2</div>
+                            <div class="event-title">Performance 2</div>
                             <div class="event-description">Dubai Drums</div>
                         </div>
                     </div>
