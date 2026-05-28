@@ -40,7 +40,7 @@
                             <ul>
                                 <li><a href="{{ route('aboutTed') }}">About TED</a></li>
                                 <li><a href="{{ route('events.index') }}">Events</a></li>
-                                <!-- <li><a href="{{ route('podcasts') }}">Podcasts</a></li> -->
+                                <!-- <li><a href="">Podcasts</a></li> -->
                                 <li><a href="{{ route('home') }}">Blog</a></li>
                             </ul>
                         </div>
