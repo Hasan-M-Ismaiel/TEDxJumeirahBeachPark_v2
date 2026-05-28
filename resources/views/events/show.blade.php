@@ -151,7 +151,7 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
     @endif
 
     <!-- media section -->
-    @if( $event->youtube_link || $event->podcast_link || $event->gallery_link)
+    @if( $event->youtube_link || $event->podcast_link || $event->gallery_link || $event->program)
     <section class="event-media mt-5">
         <div class="container">
             <div class="section-title text-center mb-4">
