@@ -51,7 +51,7 @@
 
                                 <!-- Image Section -->
                                 <div class="col-lg-6 col-md-12 text-center">
-                                    <img src="{{ asset('assets_main/assets/images/events/Hotel.jpg') }}" class="img-fluid rounded" alt="Event Image">
+                                    <img src="{{ asset('assets_main/assets/images/events/IFZA.jpg') }}" class="img-fluid rounded" alt="Event Image">
                                 </div>
                             </div>
                         </div>
