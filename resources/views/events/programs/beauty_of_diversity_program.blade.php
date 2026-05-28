@@ -41,11 +41,11 @@
                                 <!-- Text Section -->
                                 <div class="col-lg-6 col-md-12 text-md-left text-center mb-4">
                                     <div class="card-body">
-                                        <h5 class="card-title fw-bold">🎉 Event Details</h5>
+                                        <h5 class="card-title fw-bold">Event Details</h5>
                                         <hr>
-                                        <p class="card-text"><strong>📅 Date:</strong> Sunday, February 23, 2025</p>
-                                        <p class="card-text"><strong>⏰ Time:</strong> 10:30 AM - 6:30 PM</p>
-                                        <p class="card-text"><strong>📍 Location:</strong> Radisson Red Hotel, Dubai Silicon Oasis, Dubai</p>
+                                        <p class="card-text"><strong>Date:</strong> Sunday, February 23, 2025</p>
+                                        <p class="card-text"><strong>Time:</strong> 10:30 AM - 6:30 PM</p>
+                                        <p class="card-text"><strong>Location:</strong> Radisson Red Hotel, Dubai Silicon Oasis, Dubai</p>
                                     </div>
                                 </div>
 

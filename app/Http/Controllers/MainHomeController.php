@@ -114,6 +114,13 @@ class MainHomeController extends Controller
         return view('events.programs.beauty_of_diversity_program');
     }
 
+
+    //Look within event program
+    public function look_within_program()
+    {
+        return view('events.programs.look_within_program');
+    }
+
     // team member detail page
     public function teammember(Teammember $teammember)
     {

@@ -36,6 +36,7 @@ Route::get('/category/{category}', [MainHomeController::class, 'images'])->name(
 Route::get('/teammembers/{teammember:slug}', [MainHomeController::class, 'teammember'])->name('teammember');
 Route::get('/speakers/{speaker:slug}', [MainHomeController::class, 'speaker'])->name('speaker');
 Route::get('/beauty-of-diversity/program', [MainHomeController::class,'beauty_of_diversity_program']);
+Route::get('/look-within/program', [MainHomeController::class,'look_within_program']);
 // Route::get('/podcasts',[PodcastController::class,'index'])->name('podcasts');
 
 
