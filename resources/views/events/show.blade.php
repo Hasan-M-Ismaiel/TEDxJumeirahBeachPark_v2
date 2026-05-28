@@ -171,12 +171,12 @@ $breadcrumbClass = $event->title == 'Beauty of Diversity: Golden Ratio’s Hidde
                 @endif
 
                 @if($event->podcast_link)
-                <div class="col-md-3 col-6 mb-4">
+                <!-- <div class="col-md-3 col-6 mb-4">
                     <a href="{{ $event->podcast_link }}" target="_blank" class="media-card">
                         <i class="fa-solid fa-podcast"></i>
                         <span>Podcast</span>
                     </a>
-                </div>
+                </div> -->
                 @endif
 
                 @if($event->gallery_link)
