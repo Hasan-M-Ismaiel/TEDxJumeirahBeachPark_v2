@@ -118,7 +118,7 @@
                         <div>
                             <div class="event-time">11:30 - 12:00</div>
                             <div class="event-title">The Force Behind the Stage Session</div>
-                            <div class="event-description">TEDxJumeirahBeachPark Team & Partners</div>
+                            <div class="event-description">TEDxJumeirahBeachPark Team</div>
                         </div>
                     </div>
 
