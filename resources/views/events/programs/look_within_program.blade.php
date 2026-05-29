@@ -86,7 +86,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">10:30 - 10:45</div>
-                            <div class="event-title">Speaker 1 Talk | Dr. Mohanad Alwadiya</div>
+                            <div class="event-title">TEDx Talk | Dr. Mohanad Alwadiya</div>
                             <div class="event-description">Riding the Wealth Escalator: The Proven Path to Your Financial Freedom</div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">10:45 - 11:00</div>
-                            <div class="event-title">Speaker 2 Talk | Bernadette Abra</div>
+                            <div class="event-title">TEDx Talk | Bernadette Abra</div>
                             <div class="event-description">The Hidden Problem with “Once in a While”</div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">11:00 - 11:15</div>
-                            <div class="event-title">Speaker 3 Talk | Reim El Houni</div>
+                            <div class="event-title">TEDx Talk | Reim El Houni</div>
                             <div class="event-description">Why the Most Experienced Voices Remain Invisible</div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                     <div class="event-card" style="background-color:rgb(182, 171, 171);">
                         <div>
                             <div class="event-time">11:15 - 11:30</div>
-                            <div class="event-title">Coffee Break 1</div>
+                            <div class="event-title">Coffee Break</div>
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">01:45 PM - 02:00</div>
-                            <div class="event-title">Speaker 4 Talk | Dr. Saeed Aldhaheri</div>
+                            <div class="event-title">TEDx Talk | Dr. Saeed Aldhaheri</div>
                             <div class="event-description">What a Robot Taught Me About Being Human </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">02:00 PM - 02:15</div>
-                            <div class="event-title">Speaker 5 Talk | Maria Haggo</div>
+                            <div class="event-title">TEDx Talk | Maria Haggo</div>
                             <div class="event-description">The Most Powerful System You've Never Managed</div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:00 - 13:15</div>
-                            <div class="event-title">Performance 2</div>
+                            <div class="event-title">Interactive Experience Session</div>
                             <div class="event-description">Dubai Drums</div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:15 - 13:30</div>
-                            <div class="event-title">Speaker 6 Talk | Dr. Mona Carlos A. Zoughaib</div>
+                            <div class="event-title">TEDx Talk | Dr. Mona Carlos A. Zoughaib</div>
                             <div class="event-description">The Blind Spots in Your Leadership Experience</div>
                         </div>
                     </div>
@@ -165,15 +165,15 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:30 - 13:45</div>
-                            <div class="event-title">Speaker 7 Talk | Aboud Khederchah</div>
-                            <div class="event-description">From Consumption to Design: Using Tech to Transform Yourself</div>
+                            <div class="event-title">TEDx Talk | Abdullah Alsalmani</div>
+                            <div class="event-description">...</div>
                         </div>
                     </div>
 
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:45 - 14:00</div>
-                            <div class="event-title">Speaker 8 Talk | Hadil Al-Khatib</div>
+                            <div class="event-title">TEDx Talk | Hadil Al-Khatib</div>
                             <div class="event-description">The Moment I Chose Myself</div>
                         </div>
                     </div>
@@ -188,15 +188,15 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">14:15 - 14:30</div>
-                            <div class="event-title">Speaker 9 Talk | Abdullah Alsalmani</div>
-                            <div class="event-description">......</div>
+                            <div class="event-title">TEDx Talk | Aboud Khederchah</div>
+                            <div class="event-description">From Consumption to Design: Using Tech to Transform Yourself</div>
                         </div>
                     </div>
 
                     <div class="event-card">
                         <div>
                             <div class="event-time">14:30 - 14:45</div>
-                            <div class="event-title">Speaker 10 Talk | Captain Sahar Al Rasti</div>
+                            <div class="event-title">TEDx Talk | Captain Sahar Al Rasti</div>
                             <div class="event-description">When There is No Map, Become The Captain</div>
                         </div>
                     </div>
