@@ -43,9 +43,10 @@
                                     <div class="card-body">
                                         <h5 class="card-title fw-bold">Event Details</h5>
                                         <hr>
-                                        <p class="card-text"><strong>Date:</strong> Sunday, June 6, 2026</p>
-                                        <p class="card-text"><strong>Time:</strong> 09:00 - 03:45</p>
-                                        <p class="card-text"><strong>Location:</strong> IFZA HQ, Nadd Hessa - Dubai Silicon Oasis</p>
+                                        <p class="card-text"><strong>📅 Date:</strong> Saturday, 6 June 2026</p>
+                                        <p class="card-text"><strong>⏰Time:</strong> 10:00 AM - 03:30 PM | Registration starts at 09:00 AM</p>
+                                        <p class="card-text"><strong>📍Location:</strong> IFZA HQ, Dubai Silicon Oasis <a href="https://maps.app.goo.gl/7JSackV9Zrw3DyVb8"> Google Map.</a> Please ensure the destination is set to “IFZA HQ” on the map </p>
+                                        <p class="card-text"><strong>🅿️ Parking:</strong> Available on-site</p>
                                     </div>
                                 </div>
 
