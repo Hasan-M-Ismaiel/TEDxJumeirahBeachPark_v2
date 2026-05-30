@@ -94,7 +94,7 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">10:45 - 11:00</div>
-                            <div class="event-title">TEDx Talk | Bernadette Abra</div>
+                            <div class="event-title">TEDx Talk | Bernadette Abraham</div>
                             <div class="event-description">The Hidden Problem with “Once in a While”</div>
                         </div>
                     </div>
