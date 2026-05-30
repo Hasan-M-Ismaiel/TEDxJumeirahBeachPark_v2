@@ -125,7 +125,7 @@
 
                     <div class="event-card">
                         <div>
-                            <div class="event-time">01:45 PM - 02:00</div>
+                            <div class="event-time">12:00 - 12:15</div>
                             <div class="event-title">TEDx Talk | Dr. Saeed Aldhaheri</div>
                             <div class="event-description">What a Robot Taught Me About Being Human </div>
                         </div>
@@ -134,7 +134,7 @@
 
                     <div class="event-card">
                         <div>
-                            <div class="event-time">02:00 PM - 02:15</div>
+                            <div class="event-time">12:15 - 12:30</div>
                             <div class="event-title">TEDx Talk | Maria Haggo</div>
                             <div class="event-description">The Most Powerful System You've Never Managed</div>
                         </div>
@@ -142,7 +142,7 @@
 
                     <div class="event-card" style="background-color:rgb(182, 171, 171);">
                         <div>
-                            <div class="event-time">12:30 PM - 13:00</div>
+                            <div class="event-time">12:30 - 13:00</div>
                             <div class="event-title">Lunch Break</div>
                         </div>
                     </div>
