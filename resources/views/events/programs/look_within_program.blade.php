@@ -87,16 +87,17 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">10:30 - 10:45</div>
-                            <div class="event-title">TEDx Talk | Dr. Mohanad Alwadiya</div>
-                            <div class="event-description">Riding the Wealth Escalator: The Proven Path to Your Financial Freedom</div>
+                            <div class="event-title">TEDx Talk | Dr. Saeed Aldhaheri</div>
+                            <div class="event-description">What a Robot Taught Me About Being Human </div>
+
                         </div>
                     </div>
 
                     <div class="event-card">
                         <div>
                             <div class="event-time">10:45 - 11:00</div>
-                            <div class="event-title">TEDx Talk | Bernadette Abraham</div>
-                            <div class="event-description">The Hidden Problem with “Once in a While”</div>
+                            <div class="event-title">TEDx Talk | Dr. Mohanad Alwadiya</div>
+                            <div class="event-description">Riding the Wealth Escalator: The Proven Path to Your Financial Freedom</div>
                         </div>
                     </div>
 
@@ -126,8 +127,8 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">12:00 - 12:15</div>
-                            <div class="event-title">TEDx Talk | Dr. Saeed Aldhaheri</div>
-                            <div class="event-description">What a Robot Taught Me About Being Human </div>
+                            <div class="event-title">TEDx Talk | Bernadette Abraham</div>
+                            <div class="event-description">The Hidden Problem with “Once in a While”</div>
                         </div>
                     </div>
 
