@@ -182,7 +182,7 @@
                     <div class="event-card" style="background-color:rgb(182, 171, 171);">
                         <div>
                             <div class="event-time">14:00 - 14:15</div>
-                            <div class="event-title">Lunch Break</div>
+                            <div class="event-title">Cofee Break</div>
                         </div>
                     </div>
 
