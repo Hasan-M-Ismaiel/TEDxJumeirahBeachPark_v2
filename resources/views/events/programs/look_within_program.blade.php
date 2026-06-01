@@ -167,8 +167,8 @@
                     <div class="event-card">
                         <div>
                             <div class="event-time">13:30 - 13:45</div>
-                            <div class="event-title">TEDx Talk | Abdullah Alsalmani</div>
-                            <div class="event-description">...</div>
+                            <div class="event-title">TEDx Talk | Abdullah AlSalmani</div>
+                            <div class="event-description">Who Said Space Isn’t for You?</div>
                         </div>
                     </div>
 
