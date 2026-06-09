@@ -5,17 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PartnerCreateRequest;
 use App\Http\Requests\RegisterCreateRequest;
 use App\Http\Requests\VolunteerCreateRequest;
-use App\Mail\SpeakerConfirmationMail;
 use App\Models\Email;
 use App\Models\Partner;
 use App\Models\Register;
 use App\Models\Registration;
 use App\Models\TemporaryFile;
-use App\Models\User;
 use App\Models\Volunteer;
-use App\Notifications\NewRegister;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
@@ -34,13 +30,13 @@ class StoreFormInformationController extends Controller
                 $register->save();
             }
 
-            $users = User::all();
-            $user = $users->first();
-            $user->notify(new NewRegister($register));
+            // $users = User::all();
+            // $user = $users->first();
+            // $user->notify(new NewRegister($register));
 
-            Mail::to($register->email)->send(new SpeakerConfirmationMail([
-                'title' => 'Dear ' . $register->full_name,
-            ]));
+            // Mail::to($register->email)->send(new SpeakerConfirmationMail([
+            //     'title' => 'Dear ' . $register->full_name,
+            // ]));
 
             Alert::success('Success', 'Your request has been taken, Thank you!');
             return redirect()->back();
