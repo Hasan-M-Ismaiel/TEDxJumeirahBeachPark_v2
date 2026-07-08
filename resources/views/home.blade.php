@@ -50,7 +50,7 @@
         </div>
         <div class="event-info">
             <div class="event-date">
-                This event will occur
+                This event occurred
                 <br>
                 {{ \Carbon\Carbon::parse($event->date)->format('F Y') }}
             </div>
