@@ -23,7 +23,10 @@
                         </h3>
                     </div>
                     <p class="testimonial-text">
-                        <em>{{ $testimonial->message }}</em>
+                        <em>{!! preg_replace(
+                            '/(https?:\/\/[^\s<]+) /i', '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>' ,
+                                e($testimonial->message)
+                                ) !!}</em>
                     </p>
                 </div>
                 @endforeach
