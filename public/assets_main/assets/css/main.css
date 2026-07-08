@@ -1044,6 +1044,7 @@ ol {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breadcrumbs_other_events {
     padding-top: 100px;
@@ -4866,4 +4867,47 @@ only screen and (min-width: 1400px) {
   /* تكبير عند المرور */
   color: #ff4b3e;
   /* لون عند المرور */
+}
+
+
+.image-marquee-section {
+  background: #111;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.image-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.image-track img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 12px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform .3s ease;
+}
+
+.image-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

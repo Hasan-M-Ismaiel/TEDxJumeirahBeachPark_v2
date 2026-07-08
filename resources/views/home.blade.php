@@ -66,6 +66,55 @@
     </div>
 </div>
 
+<!-- Image Marquee -->
+<section class="image-marquee-section py-5">
+    <div class="image-marquee">
+        <div class="image-track">
+
+            {{-- المجموعة الأولى --}}
+            <img src="{{ asset('assets_main/assets/images/slider/1.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/2.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/3.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/4.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/5.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/6.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/7.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/8.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/9.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/10.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/11.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/12.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/13.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/14.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/15.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/16.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/17.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/18.webp') }}" alt="">
+
+            {{-- تكرار الصور للحصول على حركة لا نهائية --}}
+            <img src="{{ asset('assets_main/assets/images/slider/1.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/2.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/3.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/4.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/5.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/6.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/7.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/8.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/9.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/10.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/11.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/12.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/13.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/14.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/15.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/16.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/17.webp') }}" alt="">
+            <img src="{{ asset('assets_main/assets/images/slider/18.webp') }}" alt="">
+
+        </div>
+    </div>
+</section>
+
 <!-- team members section -->
 <!-- if($event->teammembers()->exists()) -->
 @include('includes.team')
