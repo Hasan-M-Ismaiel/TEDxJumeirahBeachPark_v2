@@ -4394,26 +4394,7 @@ only screen and (min-width: 1400px) {
   left: 50%;
 }
 
-.testimonials .tns-nav button {
-  height: 10px;
-  width: 10px;
-  background-color: #101130;
-  border-radius: 30px;
-  display: inline-block;
-  border: none;
-  margin: 0px 5px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
 
-.testimonials .tns-nav button:hover {
-  background-color: #000000;
-}
-
-.testimonials .tns-nav button.tns-nav-active {
-  width: 20px;
-  background-color: #000000;
-}
 
 .testimonials .single-testimonial {
   background-color: #fff;
