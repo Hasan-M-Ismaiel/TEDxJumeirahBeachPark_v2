@@ -61,6 +61,17 @@
     });
 
     // Read more toggle
+
+    function linkify(text) {
+    return text.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+}
+
+fullSpan.innerHTML = linkify(fullText);
+shortSpan.innerHTML = linkify(shortText);
+
     document.addEventListener("DOMContentLoaded", function() {
         const maxLength = 200;
 
@@ -75,11 +86,11 @@
             const shortText = fullText.substring(0, maxLength) + "...";
             const shortSpan = document.createElement("span");
             shortSpan.className = "short-text";
-            shortSpan.innerHTML = shortText;
+            shortSpan.innerHTML = linkify(shortText);
 
             const fullSpan = document.createElement("span");
             fullSpan.className = "full-text";
-            fullSpan.innerHTML = fullText;
+            fullSpan.innerHTML = linkify(fullText);
             fullSpan.style.display = "none";
 
             const moreLink = document.createElement("a");
