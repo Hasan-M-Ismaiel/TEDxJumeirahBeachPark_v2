@@ -67,7 +67,7 @@
 </div>
 
 <!-- Image Marquee -->
-<section class="image-marquee-section py-5">
+<section class="image-marquee-section py-5 mt-4">
     <div class="image-marquee">
         <div class="image-track">
 
