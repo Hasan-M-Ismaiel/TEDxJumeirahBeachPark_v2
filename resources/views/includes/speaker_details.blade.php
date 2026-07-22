@@ -100,7 +100,7 @@ $salonSlug = $salonEvent ? $salonEvent->slug : null;
                                         @endif
 
 
-                                        @if (!$isSalon && $speaker->talk !=="none")
+                                        @if (!$isSalon)
                                             <li>
                                                 <strong>TEDx Official Talk</strong>:
                                                 <a href="{{ $speaker->talk }}" target="_blank">TEDx talk</a>
